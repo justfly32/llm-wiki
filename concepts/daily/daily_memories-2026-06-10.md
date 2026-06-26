@@ -1,0 +1,43 @@
+---
+title: 2026-06-10 작업 기록
+created: 2026-06-11
+updated: 2026-06-11
+type: concept
+tags: [document, web]
+sources: [raw/local/general/daily_memories-2026-06-10-2026-06-11.md]
+source_file: /Users/bearj/.hermes/memories/daily_memories/2026-06-10.md
+confidence: high
+links: [[daily_memories-2026-06-09|← 6월 9일 작업 기록]], [[daily_memories-world_news_20260610|6월 10일 세계 뉴스 →]]
+---
+
+# 2026-06-10 작업 기록
+
+> 📁 원본: `/Users/bearj/.hermes/memories/daily_memories/2026-06-10.md`
+> 📅 수집: 2026-06-11
+> 🏷️ 카테고리: general
+
+## 내용
+
+# 2026-06-10 작업 기록
+
+## 완료
+- 세계 뉴스 요약 보고서 생성 및 텔레그램 발송 (미국, 중국, 일본, 유럽, 러시아, 브라질, 중동, 베트남 8개 지역)
+- 개인 사이트(post1) 업데이트 및 GitHub Pages 배포 (Activities: 179개, Cron jobs: 13개)
+- 초고속인터넷 가입 지원금 추이 보고서 생성, Google Drive 업로드, 텔레그램 발송
+- 주식 시장 동향 분석 (코스피 8,096.93 +8.18%, 코스닥 967.81 +6.19%), HTML/PPTX 가이드 생성, Notion 등록, 텔레그램 전송
+- 일일 메모리 동기화 (2026-06-09 Notion 업로드)
+
+## 주요 작업
+- 🌍 세계 뉴스: 이란-이스라엘 발포 중단, 시진핑 방북, 다카이치 일본 총리 출범, 러시아 드론 공격, 브라질 정치 스캔들 등
+- 📈 주식 분석: 블랙 먼데이(6/8) 후 역대급 반등, 반도체 주도 (삼성전자 +8.97%, SK하이닉스 +15.91%)
+- 📡 인터넷 지원금: SK브로드밴드 최대 52만원, LG U+ 최대 48만원, KT 최대 48만원
+- 🌐 개인 사이트: https://justfly32.github.io/post1
+
+## 진행 중
+- 없음
+
+## 다음 할 일
+- 2026-06-11 주식 시장 동향 분석 예정
+- VKOSPI 91.23 (역대 최고) → 변동성 지속 모니터링 필요
+- 코스피200 선물 -4.03% → 6/10 개장 하락 가능성 주시
+

@@ -1,0 +1,33 @@
+---
+title: Agents
+created: 2026-06-01
+updated: 2026-06-01
+type: concept
+tags: [ai-ml, programming, research, api]
+sources: [raw/local/ai-ml/univ_pass-agents-2026-06-01.md]
+source_file: /Users/bearj/projects/Univ_Pass/AGENTS.md
+confidence: high
+---
+
+# Agents
+
+> 📁 원본: `/Users/bearj/projects/Univ_Pass/AGENTS.md`
+> 📅 수집: 2026-06-01
+> 🏷️ 카테고리: ai-ml
+
+## 내용
+
+## Environment Variables
+
+| Variable | Required | Default | Description |
+|----------|----------|---------|-------------|
+| `OPENROUTER_API_KEY` | No | `''` | OpenRouter API key (required for paid models, free models work without) |
+| `OPENROUTER_MODEL` | No | `nvidia/nemotron-3-nano-30b-a3b:free` | OpenRouter model ID for 학생부 OCR analysis |
+
+## Project Info
+
+- Server: Express + EJS on port 3000
+- OCR engine: Tesseract.js with Korean language
+- LLM provider: OpenRouter
+- 학생부 이미지 분석: OCR → LLM → 6개 항목 점수 자동 채움
+

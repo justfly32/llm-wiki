@@ -1,0 +1,20 @@
+---
+source_url: https://arxiv.org/abs/2606.06492v1
+ingested: 2026-06-07
+type: paper
+arxiv_id: 2606.06492v1
+authors: Liliana Hotsko, Yinxi Li, Yuntian Deng
+published: 2026-06-04
+categories: cs.SE, cs.AI, cs.CL
+---
+
+# Code2LoRA: Hypernetwork-Generated Adapters for Code Language Models under Software Evolution
+
+**Authors:** Liliana Hotsko, Yinxi Li, Yuntian Deng
+**Published:** 2026-06-04
+**arXiv:** https://arxiv.org/abs/2606.06492v1
+**Categories:** cs.SE, cs.AI, cs.CL
+
+## Abstract
+
+Code language models need repository-level context to resolve imports, APIs, and project conventions. Existing methods inject this knowledge as long inputs (retrieved through RAG or dependency analysis) or through per-repository fine-tuning and LoRA -- costly at repository scale and brittle to evolving codebases. We introduce Code2LoRA, a hypernetwork framework that generates repository-specific LoRA adapters, effectively injecting repository knowledge with zero inference-time token overhead. Code2LoRA supports two usage scenarios: Code2LoRA-Static converts a single repository snapshot into an adapter, suitable for comprehension of stable codebases; while Code2LoRA-Evo maintains an adapter backed by a GRU hidden state updated per code diff, suitable for active development of evolving codebases. To evaluate Code2LoRA against parameter-efficient fine-tuning baselines, we build RepoPeftBench, a benchmark of 604 Python repositories with two tracks: a static track with 40K training and 12K test assertion-completion tasks, and an evolution track with 215K commit-derived training and 87K commit-derived test tasks. On the static track, Code2LoRA-Static achieves 63.8% cross-repo and 66.2% in-repo exact match, matching the per-repository LoRA upper bound; on the evolution track, Code2LoRA-Evo achieves 60.3% cross-repo exact match (+5.2 pp over a single shared LoRA). Code2LoRA's code can be found at https://anonymous.4open.science/r/code2lora-6857; the model checkpoints and RepoPeftBench datasets can be found at https://huggingface.co/code2lora.

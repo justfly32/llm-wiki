@@ -1,0 +1,43 @@
+---
+title: 2026-06-04 작업 기록
+created: 2026-06-05
+updated: 2026-06-05
+type: concept
+tags: [document, web]
+sources: [raw/local/general/daily_memories-2026-06-04-2026-06-05.md]
+source_file: /Users/bearj/.hermes/memories/daily_memories/2026-06-04.md
+confidence: high
+links: [[daily_memories-world_news_20260603|← 6월 3일 세계 뉴스]], [[daily_memories-world_news_20260604|6월 4일 세계 뉴스 →]]
+---
+
+# 2026-06-04 작업 기록
+
+> 📁 원본: `/Users/bearj/.hermes/memories/daily_memories/2026-06-04.md`
+> 📅 수집: 2026-06-05
+> 🏷️ 카테고리: general
+
+## 내용
+
+# 2026-06-04 작업 기록
+
+## 완료
+- **세계 뉴스 분석** — 8개 지역(미국, 중국, 일본, EU, 러시아, 브라질, 중동, 베트남) 뉴스 수집 및 텔레그램 전달
+- **개인 사이트 자동 생성/배포** — 127개 활동, 13개 크론 작업 반영, GitHub Pages 배포 (https://justfly32.github.io/post1)
+- **위키 자동 업데이트** — arXiv 논문 5건, Hacker News 5건, 로컬 파일 2건 신규 수집/번역, 인덱스 재빌드
+- **기술 뉴스 브리핑** — Geek News/Hacker News 상위 5건 선별, 슬랙 전달 (MiniMax-M3, AI Codex Sites 등)
+- **주식 동향 분석** — 코스피 8,639.41(-1.84%), 코스닥 1,049.73(+2.31%), 환율 1,531.70원; HTML/PPTX 가이드 생성, Google Drive 업로드, 노션 등록
+
+## 주요 작업
+- 코스피 하락 vs 코스닥 반등 대비, 원/달러 1530원 돌파가 핵심 시장 이슈
+- 미래에셋생명 +16.57%, LG전자 -15.41% 등 개별 종목 급등락 두드러짐
+- 트럼프-시 중국 정상회담 결과($17B 농산물 구매, 200대 보잉기, 희토류 합의)
+- 러시아의 우크라이나 대규모 드론/미사일 공격 (656대 드론, 73발 미사일)
+- 이란 정전 협정 심각한 균열, 중동 상황 불안정
+
+## 진행 중
+- 일일 메모리 Notion 동기화 (이 작업)
+
+## 다음 할 일
+- 이전 날짜 누락 메모리 파일 확인 보완
+- 노션 주식분석 페이지 최신 상태 유지
+

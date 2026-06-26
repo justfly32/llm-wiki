@@ -1,0 +1,39 @@
+---
+title: 2026-05-17 작업 기록
+created: 2026-06-01
+updated: 2026-06-01
+type: concept
+tags: [document, web]
+sources: [raw/local/general/daily_memories-2026-05-17-2026-06-01.md]
+source_file: /Users/bearj/.hermes/memories/daily_memories/2026-05-17.md
+confidence: high
+links: [[daily_memories-2026-05-16|← 5월 16일 작업 기록]], [[daily_memories-2026-05-18|5월 18일 작업 기록 →]]
+---
+
+# 2026-05-17 작업 기록
+
+> 📁 원본: `/Users/bearj/.hermes/memories/daily_memories/2026-05-17.md`
+> 📅 수집: 2026-06-01
+> 🏷️ 카테고리: general
+
+## 내용
+
+# 2026-05-17 작업 기록
+
+## 완료
+- 날씨 확인 기능 테스트
+- 구글 캘린더 일정 등록 (내일 오후 1시 동작 회의, 다음주 금요일 골프)
+- 2026년 경제 전망 분석 요청 → 칸반 작업으로 진행
+- basic-design-1 스킬 완성 및 배포:
+  - GitHub 다크 테마 기반 HTML/PPT 디자인 템플릿
+  - 위치: ~/.hermes/skills/creative/basic-design-1/
+  - Hermes Agent 가이드, OpenClaw 가이드에 적용
+
+## 완성된 가이드
+- Hermes Agent 초보자 가이드 (HTML + PPTX + PDF)
+- OpenClaw 초보자 가이드 (HTML + PPTX)
+- 구글 드라이브 업로드 + 텔레그램 링크 전달 완료
+
+## 다음 할일
+- 카카오톡 채팅 자동화 파이프라인 테스트
+

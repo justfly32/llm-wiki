@@ -1,0 +1,45 @@
+---
+title: 2026-06-01 작업 기록
+created: 2026-06-02
+updated: 2026-06-02
+type: concept
+tags: [document, web]
+sources: [raw/local/general/daily_memories-2026-06-01-2026-06-02.md]
+source_file: /Users/bearj/.hermes/memories/daily_memories/2026-06-01.md
+confidence: high
+links: [[daily_memories-world_news_20260531|← 5월 31일 세계 뉴스]], [[daily_memories-world_news_20260601|6월 1일 세계 뉴스 →]]
+---
+
+# 2026-06-01 작업 기록
+
+> 📁 원본: `/Users/bearj/.hermes/memories/daily_memories/2026-06-01.md`
+> 📅 수집: 2026-06-02
+> 🏷️ 카테고리: general
+
+## 내용
+
+# 2026-06-01 작업 기록
+
+## 완료
+- 주간 위키 정리 및 인덱스 재구성 (81페이지, 고아 페이지 80개 발견, 중복 후보 282건)
+- 초고속인터넷 가입 지원금액 추이 보고서 생성 및 텔레그램 발송
+- AI 모델 토큰 가격 비교 보고서 생성 및 텔레그램 발송
+- 일일 주식 동향 분석 (코스피 8,788.38 +3.68%, 코스닥 1,050.03 -2.30%) → Notion 등록 + 텔레그램 발송
+- 금 & 리츠 시세 분석 (KRX 금현물 25,530원, KODEX 리츠 +6.14% 급등) → Google Drive 업로드 + 텔레그램 발송
+
+## 주요 작업
+- **주간 위키 정리**: `weekly_cleanup.py` + `wiki.py index` 실행, 고아 페이지 80개(99%) 문제 확인
+- **인터넷 지원금 모니터링**: SK/KT/LG 통신사 지원금 수집, HTML 보고서 생성
+- **AI 토큰 가격 모니터링**: Top 20 유료 모델 + 12 무료 모델 비교 보고서 생성
+- **주식 분석 파이프라인**: 네이버 증권 데이터 수집, HTML/PPTX 가이드 생성, 노션 등록
+- **금/리츠 시세 파이프라인**: KRX 금현물 + 리츠 3종목 시세 수집, 투자 시그널 4건 생성
+
+## 진행 중
+- Google Drive OAuth 토큰 갱신 대기 (자동 갱신 불가, Bear J 수동 재인증 필요)
+
+## 다음 할 일
+- Google Drive OAuth 재인증 (`~/.hermes/google_token.json` 갱신)
+- 위키 고아 80페이지에 내부 링크 추가
+- Hermes Agent 가이드 3종 통합 검토
+- 주제별 허브/인덱스 페이지 추가 생성
+

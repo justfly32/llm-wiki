@@ -1,0 +1,49 @@
+---
+title: 2026-06-12 작업 기록
+created: 2026-06-13
+updated: 2026-06-13
+type: concept
+tags: [document, ai-ml, web]
+sources: [raw/local/general/daily_memories-2026-06-12-2026-06-13.md]
+source_file: /Users/bearj/.hermes/memories/daily_memories/2026-06-12.md
+confidence: high
+links: [[daily_memories-world_news_20260611|← 6월 11일 세계 뉴스]], [[daily_memories-world_news_20260612|6월 12일 세계 뉴스 →]]
+---
+
+# 2026-06-12 작업 기록
+
+> 📁 원본: `/Users/bearj/.hermes/memories/daily_memories/2026-06-12.md`
+> 📅 수집: 2026-06-13
+> 🏷️ 카테고리: general
+
+## 내용
+
+# 2026-06-12 작업 기록
+
+## 완료
+- ✅ 주식 시장 데이터 수집 (코스피 8,123.62 +4.63%, 코스닥 1,029.05 +3.22%, 원/달러 1,521.60원, S&P500 7,394.30 +1.75%)
+- ✅ 주식 동향 분석 HTML 가이드 생성 (basic-design-1 스타일, 15.8KB)
+- ✅ 주식 동향 분석 PPTX 가이드 생성 (29.7KB, 2슬라이드)
+- ✅ Google Drive 업로드 (HTML + PPTX)
+- ✅ Notion DB 등록 (368ad27653ad8141a1f2c8fb43464fff)
+- ✅ 텔레그램 전송 (message_id: 7890)
+- ✅ 칸반 5개 태스크 모두 완료 처리
+- ✅ 초고속인터넷 가입 지원금 보고서 생성 및 Google Drive 업로드
+- ✅ 인터넷 지원금 보고서 텔레그램 발송
+- ✅ 기술 뉴스 브리핑 (Geek News + Hacker News 상위 5개씩)
+- ✅ 개인 사이트 업데이트 및 GitHub Pages 배포 (Activities: 196개, Cron jobs: 13개)
+- ✅ 주식/부동산 세제 조사 완료 (8/8 칸반) 및 Google Drive 업로드
+
+## 주요 작업
+- **주식 동향 분석 파이프라인**: 네이버 증권 + Yahoo Finance → HTML/PPTX → GDrive → Notion → Telegram
+- **인터넷 지원금 모니터링**: SK브로드밴드/LG U+/KT 지원금 비교 보고서
+- **기술 뉴스 브리핑**: Claude Fable 5 출시, Apple Container, AI 콘텐츠 책임 판결 등
+- **개인 사이트 자동 배포**: post1 레포 generate_site.py 실행 후 git push
+
+## 진행 중
+- 없음
+
+## 다음 할 일
+- 주식 동향 분석 파이프라인 자동화 개선 (텔레그램 전송 안정화)
+- Figma Design-to-Code 스킬 개발 (GPTers 스터디 후속)
+
