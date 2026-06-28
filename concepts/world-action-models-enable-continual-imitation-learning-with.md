@@ -1,14 +1,14 @@
 ---
-title: 세계 행동 모델을 통한 순환적 생성 재생을 활용한 지속적 모방 학습
-created: 2026-06-27
-updated: 2026-06-27
+title: 세계 행동 모델(World Action Models)을 통한 반복적 생성 리플레이(Recurrent Generative Replays)를 활용한 연속적 모방 학습(Continual Imitation Learning)
+created: 2026-06-29
+updated: 2026-06-29
 type: concept
 tags: [research, diffusion]
-sources: [raw/papers/world-action-models-enable-continual-imitation-learning-with-2026-06-27.md]
+sources: [raw/papers/world-action-models-enable-continual-imitation-learning-with-2026-06-29.md]
 confidence: medium
 ---
 
-# 세계 행동 모델을 통한 순환적 생성 재생을 활용한 지속적 모방 학습
+# 세계 행동 모델(World Action Models)을 통한 반복적 생성 리플레이(Recurrent Generative Replays)를 활용한 연속적 모방 학습(Continual Imitation Learning)
 
 > 📄 원문: [World Action Models Enable Continual Imitation Learning with Recurrent Generative Replays](https://arxiv.org/abs/2606.27374v1)
 > ✍️ 저자: Manish Kumar Govind, Dominick Reilly, Smit Patel
@@ -17,7 +17,7 @@ confidence: medium
 
 ## 요약
 
-로봇 동작 예측을 넘어서, World Action Models (WAMs)는 미래의 시각적 관측값을 생성할 수도 있다. 우리는 이 생성 능력을 활용하여, 이전에 학습한 과제를 원본 인간 시연 데이터를 저장하지 않고도 로봇 정책이 이를 복습할 수 있도록 의사 재생 경로(pseudo-replay trajectories)를 합성하는 지속적 모방 학습 프레임워크인 Recurrent Generative Replay (REGEN)를 제안한다. 지속적 적응 과정에서 REGEN은 이전 과제 명령어와 현재 과제의 관측값만을 조건으로 WAM에 반복적으로 질의하여 의사 재생 경로를 합성한다. 시뮬레이션과 실제 조작 환경 모두에서의 실험 결과, REGEN은 순차적 미세 조정 대비 치명적 망각(catastrophic forgetting)을 최대 $50\%$까지 줄이는 것으로 나타났으며, 실제 재생 데이터에 접근해야 하는 특권 경험 재생(privileged experience replay) 방법들의 성능에 근접하였다. 마지막으로, 생성된 재생의 성능을 제한하는 요인을 분석하여 장기 시각적 열화(long-horizon visual degradation)와 동작-관측 불일치(action-observation inconsistency)가 주요 병목임을 확인하였다. 우리의 결과는 저장된 시연 데이터 없이도 WAM이 지속적 로봇 학습을 위한 유망한 기반이 될 수 있음을 입증한다.
+로봇 동작 예측을 넘어, 세계 행동 모델(World Action Models, WAMs)은 미래의 시각적 관측값을 생성할 수도 있다. 우리는 이러한 생성 능력에 기반하여 의사 재생 궤적(pseudo-replay trajectories)을 합성하는 지속적 모방 학습 프레임워크인 순환 생성 재생(Recurrent Generative Replay, REGEN)을 제안한다. 이를 통해 로봇 정책은 원본 인간 시연 데이터를 저장하지 않고도 이전에 학습한 과제를 복습할 수 있다. 지속적 적응 과정에서, REGEN은 이전 과제 지시문과 현재 과제 관측값에 조건화된 의사 재생 궤적을 WAM에 순차적으로 질의하여 생성한다. 시뮬레이션 및 실제 조작(manipulation) 환경에서의 실험 결과, REGEN은 순차적 미세조정(sequential fine-tuning) 대비 치명적 망각(catastrophic forgetting)을 최대 50%까지 줄이는 동시에, 실제 재생 데이터에 접근해야 하는 특권적 경험 재생(privileged experience replay) 방법의 성능에 근접하는 것으로 나타났다. 마지막으로, 우리는 생성된 재생의 성능을 제한하는 요인을 분석하여 장기 시각적 열화(long-horizon visual degradation)와 행동-관측 불일치(action-observation inconsistency)가 주요 병목임을 확인했다. 본 연구 결과는 WAM이 저장된 시연 데이터 없이 지속적 로봇 학습을 위한 유망한 기반임을 입증한다.
 
 ## 원문 영어
 

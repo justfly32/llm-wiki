@@ -1,14 +1,14 @@
 ---
-title: 오픈 데이터, 훈련, 평가를 통한 확장 가능한 행동 클로닝
-created: 2026-06-27
-updated: 2026-06-27
+title: 공개 데이터, 련  평가를 활용한 확장 가능한 행동 복제(Scalable Behavior Cloning)
+created: 2026-06-29
+updated: 2026-06-29
 type: concept
 tags: [research, multimodal, diffusion]
-sources: [raw/papers/scalable-behavior-cloning-with-open-data-training-and-eval-2026-06-27.md]
+sources: [raw/papers/scalable-behavior-cloning-with-open-data-training-and-eval-2026-06-29.md]
 confidence: medium
 ---
 
-# 오픈 데이터, 훈련, 평가를 통한 확장 가능한 행동 클로닝
+# 공개 데이터, 련  평가를 활용한 확장 가능한 행동 복제(Scalable Behavior Cloning)
 
 > 📄 원문: [Scalable Behavior Cloning with Open Data, Training, and Evaluation](https://arxiv.org/abs/2606.27375v1)
 > ✍️ 저자: Arthur Allshire, Himanshu Gaurav Singh, Ritvik Singh
@@ -17,7 +17,7 @@ confidence: medium
 
 ## 요약
 
-우리는 behavior cloning을 활용한 조작을 위한 완전한 오픈소스 스택인 ABC를 소개합니다. 그 핵심은 195가지 다양한 작업에 걸쳐 130K 이상의 에피소드, 총 3,500시간의 데이터를 포함하는 현재까지 가장 규모가 큰 오픈소스 teleoperation 데이터셋인 ABC-130K입니다. 또한, 접근 가능한 하드웨어 설정, training infrastructure, 그리고 simulation pipeline도 오픈소스로 공개합니다. 나아가 400시간의 sim-teleop 데이터를 공개하고, 시뮬레이션과 실세계 평가 간의 상관성을 확보한 co-training recipe를 제공하여 비용이 많이 드는 실세계 평가 이전에 model-design 및 training decision을 ablating하기 위한 신뢰할 수 있는 proxy를 제공합니다. 우리는 다양한 training recipe를 탐구하고 Diffusion Transformers (DiT) 및 Vision-Language-Action (VLA) 모델에 대한 일반적인 architectural choice를 비교하며, 그 결과를 실세계 평가에 기반하여 도출합니다. 이를 통해 얻어진 policy는 상자 접기(box folding)나 지갑에서 신용카드 추출하기와 같은 정교한 작업을 성공적으로 수행합니다. 재현 가능한 toolkit을 제공함으로써, 연구자들이 동일한 출발선에 설 수 있도록 하여 공동체가 함께 Behavior Cloning의 ABC를 배울 수 있는 필수적인 기반을 마련하고자 합니다.
+우리는 행동 클로닝(behavior cloning)을 위한 완전한 오픈소스 스택인 ABC를 소개합니다. ABC의 핵심은 ABC-130K로, 이는 현재까지 가장 큰 오픈소스 원격조작(teleoperation) 데이터셋으로, 195가지 다양한 작업에 걸쳐 130K 이상의 에피소드에 걸친 3,500시간의 데이터를 포함하고 있습니다. 또한 접근 가능한 하드웨어 셋업, 훈련 인프라, 시뮬레이션 파이프라인을 오픈소스로 공개합니다. 400시간의 시뮬레이션 원격조작(sim-teleop) 데이터도 공개하며, 시뮬레이션과 실제 환경 평가 간에 상관관계를 갖는 공동 훈련(co-training) 레시피를 제공하여 비용이 많이 드는 실제 환경 평가에 앞서 모델 설계 및 훈련 결정을 검증(ablating)할 수 있는 신뢰할 수 있는 대안을 제시합니다. 우리는 다양한 훈련 레시피를 탐구하고 디퓨전 트랜스포머(Diffusion Transformers, DiT) 및 비전-언어-행동(Vision-Language-Action, VLA) 모델에 대한 일반적인 아키텍처 선택을 비교하며, 실제 환경 평가를 바탕으로 연구 결과를 입증합니다. 이를 통해 얻은 정책(policies)은 상자 접기나 지갑에서 신용카드 꺼내기 같은 정교한 작업을 성공적으로 수행합니다. 재현 가능한 툴킷을 제공함으로써, 연구자들이 동등한 위치에서 연구할 수 있도록 하여 공동체가 함께 행동 클로닝(Behavior Cloning)의 ABC를 배울 수 있는 필수적인 기반을 마련하고자 합니다.
 
 ## 원문 영어
 
