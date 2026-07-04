@@ -1,0 +1,33 @@
+---
+title: Distributed Attacks in Persistent-State AI Control
+created: 2026-07-05
+updated: 2026-07-05
+type: concept
+tags: [research, programming, agent]
+sources: [raw/papers/distributed-attacks-in-persistent-state-ai-control-2026-07-05.md]
+confidence: medium
+---
+
+# Distributed Attacks in Persistent-State AI Control
+
+> 📄 원문: [Distributed Attacks in Persistent-State AI Control](https://arxiv.org/abs/2607.02514v1)
+> ✍️ 저자: Josh Hills, Ida Caspary, Asa Cooper Stickland
+> 📅 발행: 2026-07-02
+> 🏷️ 카테고리: cs.AI
+
+## 요약
+
+As AI coding agents become more autonomous, they increasingly ship code iteratively, with the codebase persisting across sessions. This persistence creates a new attack surface: a misaligned or prompt-injected agent can distribute attacks across pull requests (PRs) and time its payload for the PR with the best natural cover. To study the resulting dynamics, we introduce Iterative VibeCoding, a setting for AI control, the study of safely deploying capable but potentially untrusted AI. In Iterative VibeCoding, a coding agent builds software over a sequence of PRs in a persistent codebase while pursuing a covert side task. Our benchmark includes two task families: CLI tools and Flask web services, across 20 total task variations. We use Claude Sonnet 4.5 as the attack agent and GPT-4o as the monitor. We compare gradual attacks, which distribute the side task across PRs, against non-gradual attacks concentrated in a single PR. No single monitor is robust to both: which strategy evades best (success while evading the monitor) depends on the monitor type, so a defender cannot close off both gradual and non-gradual attacks with any one monitor. High evasion (&gt;= 65%) generalizes across model attack agent backends (Sonnet 4.5, Gemini 3.1 Pro, Kimi K2.5), confirming this is a property of the persistent-state attack surface rather than a single model's capability. Evasion also remains high across state-of-the-art monitor models and the gap between gradual and non-gradual evasion widens for more capable models. We introduce a stateful link-tracker monitor that tracks suspicious buildup across PRs. On both task families, it detects gradual attacks substantially better than diff monitors that merely see more accumulated history. Combining this stronger monitor with trajectory monitors in a four-monitor ensemble reduces gradual-attack evasion from 93% under the weakest standard diff monitor to 47%.
+
+## 원문 영어
+
+<details>
+<summary>원문 보기</summary>
+
+As AI coding agents become more autonomous, they increasingly ship code iteratively, with the codebase persisting across sessions. This persistence creates a new attack surface: a misaligned or prompt-injected agent can distribute attacks across pull requests (PRs) and time its payload for the PR with the best natural cover. To study the resulting dynamics, we introduce Iterative VibeCoding, a setting for AI control, the study of safely deploying capable but potentially untrusted AI. In Iterativ
+
+</details>
+
+## 관련
+
+- [arXiv 원문 보기](https://arxiv.org/abs/2607.02514v1)
