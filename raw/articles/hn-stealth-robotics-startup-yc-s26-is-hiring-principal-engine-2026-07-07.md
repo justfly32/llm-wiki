@@ -1,0 +1,18 @@
+---
+source_url: https://news.ycombinator.com/item?id=48806976
+ingested: 2026-07-07
+type: hn_article
+hn_id: 48806976
+hn_score: 1
+hn_author: david-venegas
+---
+
+# Stealth robotics startup (YC S26) is hiring principal engineers (Palo Alto)
+
+**Score:** 1 | **By:** david-venegas | **Comments:** 0
+**URL:** https://news.ycombinator.com/item?id=48806976
+**HN:** https://news.ycombinator.com/item?id=48806976
+
+## Content
+
+Stealth robotics startup (YC S26) is hiring principal engineers (Palo Alto) | Hacker News Hacker News new | past | comments | ask | show | jobs | submit login Stealth robotics startup (YC S26) is hiring principal engineers (Palo Alto) 4 hours ago | hide We are a new robotics company based in Palo Alto, California, building wearable robotic devices. Our first product is a device that reduces the physical cost of carrying heavy loads over distance, allowing people to move farther, carry more, and arrive less fatigued. The company is early but already operating in the field, with hardware on real users and a direct feedback loop in the most demanding conditions imaginable. We are backed by Y Combinator and a group of leading deep-technology investors. We recently moved to the Bay Area to grow the team and are hiring three principal engineers (we&#x27;re in stealth for the time being, but hopefully not for too much longer!). $200-250K + 1-2% equity + full benefits, onsite in Palo Alto. These senior roles each own their domain with full authority, no inherited design decisions, and no one between them and the problem. What you build will go on real users within weeks. - Mechanical (Principal Engineer): own the mechanical platform, including structures, joints, actuator integration, ruggedness, and field serviceability. You have designed hardware for robots, humanoids, or other high-performance actuated systems. - Firmware (Principal Engineer): own the embedded stack, including real-time BLDC motor control, sensor integration (IMUs, encoders, current sensing), OTA, and debug tooling. You have written real-time firmware for physical robots or autonomous systems. - Software (Principal Engineer): own the software infrastructure, including device-to-cloud telemetry, test and log databases, data pipelines, and user applications. You have built software for hardware fleets and the people who use them. Please send a note to chrome.braindance@gmail.com that shows what you&#x27;ve built. A resume works, but a quick description of a real project is better. Photos, videos, and links are welcome. We look forward to meeting you! Guidelines | FAQ | Lists | API | Security | Legal | Apply to YC | Contact Search:
