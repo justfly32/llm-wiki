@@ -1,0 +1,20 @@
+---
+source_url: https://arxiv.org/abs/2607.06565v1
+ingested: 2026-07-09
+type: paper
+arxiv_id: 2607.06565v1
+authors: Tianjiao Yu, Xinzhuo Li, Yifan Shen
+published: 2026-07-07
+categories: cs.CV, cs.AI, cs.LG
+---
+
+# ELSA3D: Elastic Semantic Anchoring for Unified 3D Understanding and Generation
+
+**Authors:** Tianjiao Yu, Xinzhuo Li, Yifan Shen
+**Published:** 2026-07-07
+**arXiv:** https://arxiv.org/abs/2607.06565v1
+**Categories:** cs.CV, cs.AI, cs.LG
+
+## Abstract
+
+Unified 3D foundation models aspire to generate 3D assets and reason about them in language within a single backbone, but their text-3D interaction remains largely implicit. Existing methods concatenate text and 3D tokens into a flat sequence and rely on self-attention, collapsing coarse structural cues and fine geometric details into one undifferentiated representation. We introduce ELSA3D, a unified 3D model that addresses this with elastic semantic anchoring, structuring language and geometric reasoning jointly along matched abstraction scales. ELSA3D represents geometry with a scale-aware octree tokenizer and introduces Anchor Tokens, sparse cross-modal units that select semantic cues, route them to the most relevant 3D scale, retrieve scale-specific geometric evidence, and write the fused signal back into the unified representation, keeping interaction sparse yet precise. A lightweight per-block router makes both computation and reasoning elastic, choosing which text tokens instantiate anchors at which geometric scale so that cross-modal capacity concentrates where alignment is most needed. ELSA3D achieves state-of-the-art performance across image-to-3D generation, text-to-3D generation, and 3D captioning, outperforming the strongest unified baseline while roughly halving FLOPs and inference latency relative to the non-elastic version of the same model.

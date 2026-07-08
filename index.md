@@ -1,7 +1,7 @@
 # Wiki Index
 
-> Content catalog. Last updated: 2026-07-08
-> Total pages: 73
+> Content catalog. Last updated: 2026-07-09
+> Total pages: 83
 
 ## Entities
 
@@ -25,13 +25,16 @@
 - [[danceopd-on-policy-generative-field-distillation]] — # DanceOPD: 온-정책 생성 필드 증류  > 📄 원문: [DanceOPD: On-Policy Generative Field Distillation](https://arxiv
 - [[distributed-attacks-in-persistent-state-ai-control]] — # Distributed Attacks in Persistent-State AI Control  > 📄 원문: [Distributed Attacks in Persistent-Sta
 - [[drift-behavior-in-a-bounded-confidence-opinion-model-with-me]] — # 미디어 영향력이 있는 유한 신뢰도(bounded-confidence) 의견 모델에서의 표류(drift) 행동  > 📄 원문: [Drift Behavior in a Bounded
+- [[elsa3d-elastic-semantic-anchoring-for-unified-3d-understand]] — # ELSA3D: Elastic Semantic Anchoring for Unified 3D Understanding and Generation  > 📄 원문: [ELSA3D: E
 - [[embodied-cpp-a-portable-inference-runtime-of-embodied-ai-mo]] — # Embodied.cpp: A Portable Inference Runtime of Embodied AI Models on Heterogeneous Robots  > 📄 원문:
 - [[from-fixed-to-free-cameras-calibration-free-view-robust-vis]] — # From Fixed to Free Cameras: Calibration-Free View-Robust Vision-Language-Action Model  > 📄 원문: [Fr
 - [[from-sra-to-self-flow-data-augmentation-or-self-supervision]] — # From SRA to Self-Flow: Data Augmentation or Self-Supervision?  > 📄 원문: [From SRA to Self-Flow: Dat
 - [[hn-ai-meets-cryptography-1-what-ai-found-in-cloudflare-s-circl]] — # AI Meets Cryptography 1: What AI Found in Cloudflare's Circl  > 📰 원문: [AI Meets Cryptography 1: Wh
 - [[hn-amd-ryzen-ai-halo-4k-ai-dev-kit]] — # AMD Ryzen AI Halo – $4k AI Dev Kit  > 📰 원문: [AMD Ryzen AI Halo – $4k AI Dev Kit](https://www.lttla
 - [[hn-chat-control-1-0-and-2-0-explained]] — # Chat Control 1.0 and 2.0 Explained  > 📰 원문: [Chat Control 1.0 and 2.0 Explained](https://fightchat
+- [[hn-chatto-is-now-open-source]] — # Chatto is now Open Source  > 📰 원문: [Chatto is now Open Source](https://www.hmans.dev/blog/chatto-i
 - [[hn-command-and-conquer-generals-natively-ported-to-macos-iphon]] — # Command and Conquer Generals natively ported to macOS, iPhone, iPad using Fable  > 📰 원문: [Command
+- [[hn-decoding-the-obfuscated-bash-script-on-a-uniqlo-t-shirt]] — # Decoding the obfuscated bash script on a Uniqlo t-shirt  > 📰 원문: [Decoding the obfuscated bash scr
 - [[hn-explanation-of-everything-you-can-see-in-htop-top-on-linux]] — # Explanation of everything you can see in htop/top on Linux (2019)  > 📰 원문: [Explanation of everyth
 - [[hn-glm-5-2-beats-claude-in-our-benchmarks]] — # 벤치마크에서 GLM 5.2가 Claude를 앞섰습니다.  > 📰 원문: [GLM 5.2 beats Claude in our benchmarks](https://semgrep.d
 - [[hn-google-books-or-similar-all-book-scans-200k-bounty-202]] — # Google Books (or similar) all book scans – $200k bounty (2025)  > 📰 원문: [Google Books (or similar)
@@ -42,6 +45,7 @@
 - [[hn-kani-a-model-checker-for-rust]] — # Kani: A Model Checker for Rust  > 📰 원문: [Kani: A Model Checker for Rust](https://arxiv.org/abs/260
 - [[hn-librepods-airpods-liberated]] — # 리브레포드(Librepods): 해방된 에어팟(AirPods)  > 📰 원문: [Librepods: AirPods liberated](https://github.com/libr
 - [[hn-linux-on-the-atari-jaguar-no-really]] — # Linux on the Atari Jaguar. No, really.  > 📰 원문: [Linux on the Atari Jaguar. No, really.](https://c
+- [[hn-mistral-s-robostral-navigate-a-state-of-the-art-robotics-na]] — # Mistral's Robostral Navigate: a state of the art robotics navigation model  > 📰 원문: [Mistral's Rob
 - [[hn-mr-baby-paint-and-accidentally-discovering-a-new-cellular-a]] — # Mr. Baby Paint and accidentally discovering a new cellular automata  > 📰 원문: [Mr. Baby Paint and a
 - [[hn-new-ai-tutor-achieves-0-71-1-30-sd-effect-size-in-dartmouth]] — # New AI tutor achieves 0.71-1.30 SD effect size in Dartmouth course [pdf]  > 📰 원문: [New AI tutor ac
 - [[hn-ornith-1-0-self-improving-open-source-models-for-agentic-co]] — # Ornith-1.0: 에이전트 코딩(agentic coding)을 위한 자기 개선형 오픈소스 모델  > 📰 원문: [Ornith-1.0: self-improving open-s
@@ -54,16 +58,20 @@
 - [[hn-rocketlab-acquires-iridium]] — # 로켓랩(Rocketlab), 이리듐(Iridium) 인수  > 📰 원문: [Rocketlab acquires Iridium](https://investors.rocketlabc
 - [[hn-self-a-new-top-level-domain-designed-to-support-self-hosti]] — # .self: 자체 호스팅(self-hosting)을 지원하기 위해 설계된 로운 최상위 도메인  > 📰 원문: [.self: A new top-level domain design
 - [[hn-show-hn-davit-a-apple-containers-ui]] — # Show HN: Davit, a Apple Containers UI  > 📰 원문: [Show HN: Davit, a Apple Containers UI](https://dav
+- [[hn-show-hn-microsoft-releases-flint-a-visualization-language]] — # Show HN: Microsoft releases Flint, a visualization language for AI agents  > 📰 원문: [Show HN: Micro
 - [[hn-show-hn-osint-tool-that-finds-exposed-files-on-domains]] — # Show HN: Osint tool that finds exposed files on domains  > 📰 원문: [Show HN: Osint tool that finds e
 - [[hn-show-hn-rowboat-open-source-local-first-alternative-to-c]] — # Show HN: Rowboat – Open-source, local-first alternative to Claude Desktop  > 📰 원문: [Show HN: Rowbo
 - [[hn-stealth-robotics-startup-yc-s26-is-hiring-principal-engine]] — # Stealth robotics startup (YC S26) is hiring principal engineers (Palo Alto)  > 📰 원문: [Stealth robo
+- [[hn-swe-1-7-reach-near-gpt-5-5-and-opus-intelligence]] — # SWE-1.7 Reach Near GPT 5.5 and Opus Intelligence  > 📰 원문: [SWE-1.7 Reach Near GPT 5.5 and Opus Int
 - [[hn-the-gap-between-open-weights-llms-and-closed-source-llms]] — # 오픈 웨이트 대형 언어 모델(LLM)과 클로즈드 소스 대형 언어 모델(LLM) 간의 격차  > 📰 원문: [The gap between open weights LLMs and
 - [[hn-top500-at-isc-26-we-have-a-new-number-1-supercomputer]] — # ISC'26에서 발표된 TOP500: 새로운 슈퍼컴퓨터 1위 등극  > 📰 원문: [TOP500 at ISC’26: We have a New Number 1 Supercompu
 - [[hn-u-s-government-will-decide-who-gets-to-use-gpt-5-6]] — # 미국 정부가 GPT-5.6의 사용자를 결정할 것이다.  > 📰 원문: [U.S. government will decide who gets to use GPT-5.6](https
 - [[hn-what-happens-when-you-run-a-cuda-kernel]] — # CUDA 커널을 실행하면 어떤 일이 발생하는가?  > 📰 원문: [What happens when you run a CUDA kernel?](https://fergusfinn.
 - [[interpretable-human-label-free-deep-learning-for-real-bogus]] — # Interpretable Human-Label-Free Deep Learning for Real-Bogus Classification with Uncertainty Quanti
 - [[lacuna-a-testbed-for-evaluating-localization-precision-for]] — # LACUNA: A Testbed for Evaluating Localization Precision for LLM Unlearning  > 📄 원문: [LACUNA: A Tes
+- [[lift3d-vla-lifting-vla-models-to-3d-geometry-and-dynamics-a]] — # Lift3D-VLA: Lifting VLA Models to 3D Geometry and Dynamics-Aware Manipulation  > 📄 원문: [Lift3D-VLA
 - [[llm-as-a-verifier-a-general-purpose-verification-framework]] — # LLM-as-a-Verifier: A General-Purpose Verification Framework  > 📄 원문: [LLM-as-a-Verifier: A General
+- [[minimum-energies-and-magnetic-field-strengths-of-edge-bright]] — # Minimum Energies and Magnetic Field Strengths of Edge-brightened Compact Symmetric Objects  > 📄 원문
 - [[near-threshold-scattering-of-proton-and-omega-baryon-and-pos]] — # 양성자와 오메가 중입자의 근문턱(threshold) 산란 및 가속 상태(bound states)의 可能性  > 📄 원문: [Near-threshold scattering of
 - [[online-safety-monitoring-for-llms]] — # Online Safety Monitoring for LLMs  > 📄 원문: [Online Safety Monitoring for LLMs](https://arxiv.org/a
 - [[paying-more-attention-to-visual-tokens-in-self-evolving-larg]] — # 자기 진화 대규다중양모델(Self-Evolving Large Multimodal Models)에서 시각적 토큰(Visual Tokens)에 더 많은 주의 기울이기  > 📄 원문
@@ -72,8 +80,10 @@
 - [[program-as-weights-a-programming-paradigm-for-fuzzy-functio]] — # Program-as-Weights: A Programming Paradigm for Fuzzy Functions  > 📄 원문: [Program-as-Weights: A Pro
 - [[reasoning-llm-improves-speaker-recognition-in-long-form-tv-d]] — # Reasoning LLM Improves Speaker Recognition in Long-form TV Dramas  > 📄 원문: [Reasoning LLM Improves
 - [[scalable-behavior-cloning-with-open-data-training-and-eval]] — # 공개 데이터, 련  평가를 활용한 확장 가능한 행동 복제(Scalable Behavior Cloning)  > 📄 원문: [Scalable Behavior Cloning wit
+- [[skipping-the-rungs-calibrating-distance-indicators-through]] — # Skipping the rungs! Calibrating distance indicators through their clustering with galaxies  > 📄 원문
 - [[structsplat-generalizable-3d-gaussian-splatting-from-uncali]] — # StructSplat: Generalizable 3D Gaussian Splatting from Uncalibrated Sparse Views  > 📄 원문: [StructSp
 - [[syncity-3000-bootstrapping-scene-scale-3d-diffusion]] — # SynCity 3000: Bootstrapping Scene-Scale 3D Diffusion  > 📄 원문: [SynCity 3000: Bootstrapping Scene-S
+- [[the-chiral-random-matrix-ensemble-of-the-type-iib-axion-dil]] — # The Chiral Random-Matrix Ensemble of the Type-IIB Axion--Dilaton Wormhole Partition Function  > 📄
 - [[visually-grounded-self-reflection-for-vision-language-models]] — # Visually Grounded Self-Reflection for Vision-Language Models via Reinforcement Learning  > 📄 원문: [
 - [[vt-wam-visual-tactile-world-action-model-for-contact-rich-m]] — # VT-WAM: Visual-Tactile World Action Model for Contact-Rich Manipulation  > 📄 원문: [VT-WAM: Visual-T
 - [[warp-rm-a-warp-augmented-relative-progress-reward-model-for]] — # WARP-RM: 데이터 큐레이션을 위한 Warp 증강 상대적 진행도 보상 모델  > 📄 원문: [WARP-RM: A Warp-Augmented Relative Progress
