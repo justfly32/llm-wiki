@@ -1,7 +1,7 @@
 # Wiki Index
 
-> Content catalog. Last updated: 2026-07-11
-> Total pages: 103
+> Content catalog. Last updated: 2026-07-12
+> Total pages: 113
 
 ## Entities
 
@@ -22,11 +22,13 @@
 - [[accurate-interdisciplinary-and-transparent-structure-proper]] — # Accurate, Interdisciplinary and Transparent Structure-property Understanding with Deep Native Stru
 - [[alignment-is-all-you-need-for-x-to-4d-generation]] — # Alignment Is All You Need For X-to-4D Generation  > 📄 원문: [Alignment Is All You Need For X-to-4D G
 - [[any-dimensional-learning-by-sampling]] — # Any-Dimensional Learning by Sampling  > 📄 원문: [Any-Dimensional Learning by Sampling](https://arxiv
+- [[ardy-autoregressive-diffusion-with-hybrid-representation-fo]] — # ARDY: Autoregressive Diffusion with Hybrid Representation for Interactive Human Motion Generation
 - [[ask-solve-generate-self-evolving-unified-multimodal-under]] — # 질문하고, 고, 생성하기: 자기 일관성 보상을 통한 자기 진화적 통합 다중 모달 이해 및 생성  > 📄 원문: [Ask, Solve, Generate: Self-Evolving
 - [[co-lmlm-continuous-query-limited-memory-language-models]] — # Co-LMLM: Continuous-Query Limited Memory Language Models  > 📄 원문: [Co-LMLM: Continuous-Query Limit
 - [[combating-textual-noise-and-redundancy-entropy-aware-dense]] — # Combating Textual Noise and Redundancy: Entropy-Aware Dense Visual Token Pruning  > 📄 원문: [Combati
 - [[danceopd-on-policy-generative-field-distillation]] — # DanceOPD: 온-정책 생성 필드 증류  > 📄 원문: [DanceOPD: On-Policy Generative Field Distillation](https://arxiv
 - [[distributed-attacks-in-persistent-state-ai-control]] — # Distributed Attacks in Persistent-State AI Control  > 📄 원문: [Distributed Attacks in Persistent-Sta
+- [[do-transformations-reveal-the-truth-generative-residual-lea]] — # Do Transformations Reveal the Truth? Generative Residual Learning for Generalized AI-Generated Ima
 - [[drift-behavior-in-a-bounded-confidence-opinion-model-with-me]] — # 미디어 영향력이 있는 유한 신뢰도(bounded-confidence) 의견 모델에서의 표류(drift) 행동  > 📄 원문: [Drift Behavior in a Bounded
 - [[elsa3d-elastic-semantic-anchoring-for-unified-3d-understand]] — # ELSA3D: Elastic Semantic Anchoring for Unified 3D Understanding and Generation  > 📄 원문: [ELSA3D: E
 - [[embodied-cpp-a-portable-inference-runtime-of-embodied-ai-mo]] — # Embodied.cpp: A Portable Inference Runtime of Embodied AI Models on Heterogeneous Robots  > 📄 원문:
@@ -34,6 +36,7 @@
 - [[from-sra-to-self-flow-data-augmentation-or-self-supervision]] — # From SRA to Self-Flow: Data Augmentation or Self-Supervision?  > 📄 원문: [From SRA to Self-Flow: Dat
 - [[geometry-and-gradient-based-partitioning-for-panoramic-outdo]] — # Geometry and Gradient-based Partitioning for Panoramic Outdoor Reconstruction  > 📄 원문: [Geometry a
 - [[hn-a-love-letter-to-flashcards]] — # A Love Letter to Flashcards  > 📰 원문: [A Love Letter to Flashcards](https://lesleylai.info/en/flash
+- [[hn-ai-can-t-recreate-the-thrust-game-but-it-can-help-you-under]] — # AI Can't Recreate the Thrust Game (But It Can Help You Understand It)  > 📰 원문: [AI Can't Recreate
 - [[hn-ai-meets-cryptography-1-what-ai-found-in-cloudflare-s-circl]] — # AI Meets Cryptography 1: What AI Found in Cloudflare's Circl  > 📰 원문: [AI Meets Cryptography 1: Wh
 - [[hn-amd-ryzen-ai-halo-4k-ai-dev-kit]] — # AMD Ryzen AI Halo – $4k AI Dev Kit  > 📰 원문: [AMD Ryzen AI Halo – $4k AI Dev Kit](https://www.lttla
 - [[hn-buried-apple-feature-turns-an-iphone-into-the-perfect-kids]] — # Buried Apple Feature Turns an iPhone into the Perfect Kids' Dumb Phone  > 📰 원문: [Buried Apple Feat
@@ -58,8 +61,10 @@
 - [[hn-lost-city-discovered-beneath-egypt-s-desert-with-ancient-chu]] — # Lost city discovered beneath Egypt's desert with ancient church  > 📰 원문: [Lost city discovered ben
 - [[hn-materials-innovation-has-a-scale-up-problem-not-discovery]] — # Materials innovation has a scale-up problem, not discovery  > 📰 원문: [Materials innovation has a sc
 - [[hn-mistral-s-robostral-navigate-a-state-of-the-art-robotics-na]] — # Mistral's Robostral Navigate: a state of the art robotics navigation model  > 📰 원문: [Mistral's Rob
+- [[hn-modern-decor-may-be-straining-people-s-brains]] — # Modern decor may be straining people's brains  > 📰 원문: [Modern decor may be straining people's bra
 - [[hn-mr-baby-paint-and-accidentally-discovering-a-new-cellular-a]] — # Mr. Baby Paint and accidentally discovering a new cellular automata  > 📰 원문: [Mr. Baby Paint and a
 - [[hn-new-ai-tutor-achieves-0-71-1-30-sd-effect-size-in-dartmouth]] — # New AI tutor achieves 0.71-1.30 SD effect size in Dartmouth course [pdf]  > 📰 원문: [New AI tutor ac
+- [[hn-nvidia-coreweave-and-nebius-inside-the-circular-financing]] — # Nvidia, CoreWeave, and Nebius: Inside the Circular Financing of the GPU Boom  > 📰 원문: [Nvidia, Cor
 - [[hn-ornith-1-0-self-improving-open-source-models-for-agentic-co]] — # Ornith-1.0: 에이전트 코딩(agentic coding)을 위한 자기 개선형 오픈소스 모델  > 📰 원문: [Ornith-1.0: self-improving open-s
 - [[hn-potential-session-cache-leakage-between-workspace-instances]] — # Potential session/cache leakage between workspace instances or consumer accounts  > 📰 원문: [Potenti
 - [[hn-previewing-gpt-5-6-sol-a-next-generation-model]] — # 차세대 모델 GPT‑5.6 Sol 미리보기  > 📰 원문: [Previewing GPT‑5.6 Sol: a next-generation model](https://openai.
@@ -76,25 +81,30 @@
 - [[hn-snails-teeth-beats-spider-silk-as-nature-s-strongest-materi]] — # Snails' teeth beats spider silk as nature's strongest material (2015)  > 📰 원문: [Snails' teeth beat
 - [[hn-stealth-robotics-startup-yc-s26-is-hiring-principal-engine]] — # Stealth robotics startup (YC S26) is hiring principal engineers (Palo Alto)  > 📰 원문: [Stealth robo
 - [[hn-swe-1-7-reach-near-gpt-5-5-and-opus-intelligence]] — # SWE-1.7 Reach Near GPT 5.5 and Opus Intelligence  > 📰 원문: [SWE-1.7 Reach Near GPT 5.5 and Opus Int
+- [[hn-the-early-history-of-the-singular-value-decomposition-1993]] — # The early History of the Singular Value Decomposition (1993) [pdf]  > 📰 원문: [The early History of
 - [[hn-the-gap-between-open-weights-llms-and-closed-source-llms]] — # 오픈 웨이트 대형 언어 모델(LLM)과 클로즈드 소스 대형 언어 모델(LLM) 간의 격차  > 📰 원문: [The gap between open weights LLMs and
 - [[hn-top500-at-isc-26-we-have-a-new-number-1-supercomputer]] — # ISC'26에서 발표된 TOP500: 새로운 슈퍼컴퓨터 1위 등극  > 📰 원문: [TOP500 at ISC’26: We have a New Number 1 Supercompu
 - [[hn-train-sim-created-by-just-one-person-is-being-called-the-bes]] — # Train SIM Created by Just One Person Is Being Called the Best Ever Made  > 📰 원문: [Train SIM Create
 - [[hn-u-s-government-will-decide-who-gets-to-use-gpt-5-6]] — # 미국 정부가 GPT-5.6의 사용자를 결정할 것이다.  > 📰 원문: [U.S. government will decide who gets to use GPT-5.6](https
 - [[hn-what-happens-when-you-run-a-cuda-kernel]] — # CUDA 커널을 실행하면 어떤 일이 발생하는가?  > 📰 원문: [What happens when you run a CUDA kernel?](https://fergusfinn.
+- [[hn-who-manages-the-agents]] — # Who manages the agents?  > 📰 원문: [Who manages the agents?](https://www.off-policy.com/dont-go-quie
 - [[interpretable-human-label-free-deep-learning-for-real-bogus]] — # Interpretable Human-Label-Free Deep Learning for Real-Bogus Classification with Uncertainty Quanti
 - [[lacuna-a-testbed-for-evaluating-localization-precision-for]] — # LACUNA: A Testbed for Evaluating Localization Precision for LLM Unlearning  > 📄 원문: [LACUNA: A Tes
 - [[lift3d-vla-lifting-vla-models-to-3d-geometry-and-dynamics-a]] — # Lift3D-VLA: Lifting VLA Models to 3D Geometry and Dynamics-Aware Manipulation  > 📄 원문: [Lift3D-VLA
 - [[llm-as-a-verifier-a-general-purpose-verification-framework]] — # LLM-as-a-Verifier: A General-Purpose Verification Framework  > 📄 원문: [LLM-as-a-Verifier: A General
 - [[longe2v-long-horizon-event-based-video-reconstruction-pred]] — # LongE2V: Long-Horizon Event-based Video Reconstruction, Prediction, and Frame Interpolation with V
 - [[minimum-energies-and-magnetic-field-strengths-of-edge-bright]] — # Minimum Energies and Magnetic Field Strengths of Edge-brightened Compact Symmetric Objects  > 📄 원문
+- [[multi-resolution-feature-stem-for-diabetic-retinopathy-lesio]] — # Multi-Resolution Feature Stem for Diabetic Retinopathy lesion segmentation  > 📄 원문: [Multi-Resolut
 - [[near-threshold-scattering-of-proton-and-omega-baryon-and-pos]] — # 양성자와 오메가 중입자의 근문턱(threshold) 산란 및 가속 상태(bound states)의 可能性  > 📄 원문: [Near-threshold scattering of
 - [[online-safety-monitoring-for-llms]] — # Online Safety Monitoring for LLMs  > 📄 원문: [Online Safety Monitoring for LLMs](https://arxiv.org/a
 - [[paying-more-attention-to-visual-tokens-in-self-evolving-larg]] — # 자기 진화 대규다중양모델(Self-Evolving Large Multimodal Models)에서 시각적 토큰(Visual Tokens)에 더 많은 주의 기울이기  > 📄 원문
 - [[perceptionrubrics-calibrating-multimodal-evaluation-to-huma]] — # PerceptionRubrics: Calibrating Multimodal Evaluation to Human Perception  > 📄 원문: [PerceptionRubri
 - [[pointdit-pixel-space-diffusion-for-monocular-geometry-estim]] — # PointDiT: Pixel-Space Diffusion for Monocular Geometry Estimation  > 📄 원문: [PointDiT: Pixel-Space
+- [[pose-to-biomechanics-bridging-3d-human-pose-estimation-and]] — # Pose-to-Biomechanics: Bridging 3D Human Pose Estimation and Biomechanical Attribute Prediction  >
 - [[program-as-weights-a-programming-paradigm-for-fuzzy-functio]] — # Program-as-Weights: A Programming Paradigm for Fuzzy Functions  > 📄 원문: [Program-as-Weights: A Pro
 - [[radio-emission-from-close-in-exoplanets-can-we-extend-the-r]] — # Radio emission from close-in exoplanets: Can we extend the radio-magnetic scaling law to the sub-A
 - [[reasoning-llm-improves-speaker-recognition-in-long-form-tv-d]] — # Reasoning LLM Improves Speaker Recognition in Long-form TV Dramas  > 📄 원문: [Reasoning LLM Improves
+- [[sam-mt-real-time-interactive-multi-target-video-segmentatio]] — # SAM-MT: Real-Time Interactive Multi-Target Video Segmentation  > 📄 원문: [SAM-MT: Real-Time Interact
 - [[scalable-behavior-cloning-with-open-data-training-and-eval]] — # 공개 데이터, 련  평가를 활용한 확장 가능한 행동 복제(Scalable Behavior Cloning)  > 📄 원문: [Scalable Behavior Cloning wit
 - [[skipping-the-rungs-calibrating-distance-indicators-through]] — # Skipping the rungs! Calibrating distance indicators through their clustering with galaxies  > 📄 원문
 - [[structsplat-generalizable-3d-gaussian-splatting-from-uncali]] — # StructSplat: Generalizable 3D Gaussian Splatting from Uncalibrated Sparse Views  > 📄 원문: [StructSp
