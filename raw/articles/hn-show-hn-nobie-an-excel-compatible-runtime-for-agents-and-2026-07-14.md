@@ -1,0 +1,18 @@
+---
+source_url: https://nobie.com
+ingested: 2026-07-14
+type: hn_article
+hn_id: 48896703
+hn_score: 24
+hn_author: matthewgapp
+---
+
+# Show HN: Nobie – an Excel-compatible runtime for agents and humans
+
+**Score:** 24 | **By:** matthewgapp | **Comments:** 8
+**URL:** https://nobie.com
+**HN:** https://news.ycombinator.com/item?id=48896703
+
+## Content
+
+Nobie — The best way to xlsx on Mac human agent Download The best way to xlsx on Mac It's time to fall back in love with your craft. BETA Download Forged by and for the Excel community Shaped by muscle memory; built for the future. All your keybindings Every Windows Excel shortcut, preserved. It's fast Performance is our main focus. Nobie gets faster week after week. Pixel-perfect fidelity Every formula, every cell, calculated correctly. Fully Excel-compatible. Your AI, your choice Claude, Codex, Gemini — use the AI you already trust. Local-only Your data never leaves your Mac. Pure xlsx No proprietary format. Open your files in Excel anytime. The easiest way to open xlsx on Mac. No account. Download and start working. That's it. Free forever For everything you can do in Excel or Google Sheets. Local-only Your data never leaves your Mac. You shouldn't need to compromise All your features, shortcuts and speed. All Excel formulas All Excel styling Unmatched performance Tables Charts &amp; Pivots EDITING COMING SOON AI-first: use Claude, Codex, etc. VBA &amp; Macros COMING SOON Multiplayer COMING SOON Your data never leaves your Mac. Nobie is local-only. We don't collect, process, or transmit your data. Everything stays on your machine. Local-only Your spreadsheets never leave your Mac. No servers, no uploads, no exceptions. No middleman Claude, Codex, Gemini — your AI connects directly to your spreadsheet. Nothing in between. You own your data No vendor lock-in. Your files are always standard .xlsx. Don't worry, we speak xlsx Every formula, every pixel, calculated the same as Excel. Your files are always standard .xlsx — open them in Excel anytime, no surprises. Pixel-perfect Every cell, calculated the same as Excel. xlsx in and out No proprietary format. No surprises Open in Excel anytime. Nobie doesn't break your workbooks Full round-trip fidelity. Work in Nobie, open in Excel. Work in Excel, open in Nobie. Your numbers always tie. Use Claude, Codex or Gemini Bring your most powerful AI and stay in the flow state, without leaving the context of your computer-use agent. Own Your Craft. Privacy Policy License Agreement Made with ❤️ in San Francisco, London, and Toronto Microsoft and Excel are trademarks of the Microsoft group of companies. Nobie is an independent product, not affiliated with or endorsed by Microsoft. © 2026 - Nobie, Inc.

@@ -1,7 +1,7 @@
 # Wiki Index
 
-> Content catalog. Last updated: 2026-07-13
-> Total pages: 123
+> Content catalog. Last updated: 2026-07-14
+> Total pages: 133
 
 ## Entities
 
@@ -42,6 +42,7 @@
 - [[hn-ai-can-t-recreate-the-thrust-game-but-it-can-help-you-under]] — # AI Can't Recreate the Thrust Game (But It Can Help You Understand It)  > 📰 원문: [AI Can't Recreate
 - [[hn-ai-meets-cryptography-1-what-ai-found-in-cloudflare-s-circl]] — # AI Meets Cryptography 1: What AI Found in Cloudflare's Circl  > 📰 원문: [AI Meets Cryptography 1: Wh
 - [[hn-amd-ryzen-ai-halo-4k-ai-dev-kit]] — # AMD Ryzen AI Halo – $4k AI Dev Kit  > 📰 원문: [AMD Ryzen AI Halo – $4k AI Dev Kit](https://www.lttla
+- [[hn-apple-s-new-speechanalyzer-api-benchmarked-against-whisper]] — # Apple's new SpeechAnalyzer API, benchmarked against Whisper and its predecessor  > 📰 원문: [Apple's
 - [[hn-buried-apple-feature-turns-an-iphone-into-the-perfect-kids]] — # Buried Apple Feature Turns an iPhone into the Perfect Kids' Dumb Phone  > 📰 원문: [Buried Apple Feat
 - [[hn-chat-control-1-0-and-2-0-explained]] — # Chat Control 1.0 and 2.0 Explained  > 📰 원문: [Chat Control 1.0 and 2.0 Explained](https://fightchat
 - [[hn-chatgpt-work]] — # ChatGPT Work  > 📰 원문: [ChatGPT Work](https://openai.com/index/chatgpt-for-your-most-ambitious-work
@@ -63,6 +64,7 @@
 - [[hn-kani-a-model-checker-for-rust]] — # Kani: A Model Checker for Rust  > 📰 원문: [Kani: A Model Checker for Rust](https://arxiv.org/abs/260
 - [[hn-librepods-airpods-liberated]] — # 리브레포드(Librepods): 해방된 에어팟(AirPods)  > 📰 원문: [Librepods: AirPods liberated](https://github.com/libr
 - [[hn-linux-on-the-atari-jaguar-no-really]] — # Linux on the Atari Jaguar. No, really.  > 📰 원문: [Linux on the Atari Jaguar. No, really.](https://c
+- [[hn-linux-on-the-sega-32x-who-needs-hardware-synchronization-pr]] — # Linux on the Sega 32X. Who needs hardware synchronization primitives anyway?  > 📰 원문: [Linux on th
 - [[hn-lost-city-discovered-beneath-egypt-s-desert-with-ancient-chu]] — # Lost city discovered beneath Egypt's desert with ancient church  > 📰 원문: [Lost city discovered ben
 - [[hn-materials-innovation-has-a-scale-up-problem-not-discovery]] — # Materials innovation has a scale-up problem, not discovery  > 📰 원문: [Materials innovation has a sc
 - [[hn-mistral-s-robostral-navigate-a-state-of-the-art-robotics-na]] — # Mistral's Robostral Navigate: a state of the art robotics navigation model  > 📰 원문: [Mistral's Rob
@@ -80,13 +82,16 @@
 - [[hn-reparaible-and-open-source-paper-printer]] — # Reparaible and open source paper printer  > 📰 원문: [Reparaible and open source paper printer](https
 - [[hn-rocketlab-acquires-iridium]] — # 로켓랩(Rocketlab), 이리듐(Iridium) 인수  > 📰 원문: [Rocketlab acquires Iridium](https://investors.rocketlabc
 - [[hn-self-a-new-top-level-domain-designed-to-support-self-hosti]] — # .self: 자체 호스팅(self-hosting)을 지원하기 위해 설계된 로운 최상위 도메인  > 📰 원문: [.self: A new top-level domain design
+- [[hn-show-hn-billai-bass-an-ai-powered-big-mouth-billy-bass-usi]] — # Show HN: BillAI Bass, an AI-Powered Big Mouth Billy Bass Using Strands Agents  > 📰 원문: [Show HN: B
 - [[hn-show-hn-davit-a-apple-containers-ui]] — # Show HN: Davit, a Apple Containers UI  > 📰 원문: [Show HN: Davit, a Apple Containers UI](https://dav
 - [[hn-show-hn-microsoft-releases-flint-a-visualization-language]] — # Show HN: Microsoft releases Flint, a visualization language for AI agents  > 📰 원문: [Show HN: Micro
+- [[hn-show-hn-nobie-an-excel-compatible-runtime-for-agents-and]] — # Show HN: Nobie – an Excel-compatible runtime for agents and humans  > 📰 원문: [Show HN: Nobie – an E
 - [[hn-show-hn-osint-tool-that-finds-exposed-files-on-domains]] — # Show HN: Osint tool that finds exposed files on domains  > 📰 원문: [Show HN: Osint tool that finds e
 - [[hn-show-hn-rowboat-open-source-local-first-alternative-to-c]] — # Show HN: Rowboat – Open-source, local-first alternative to Claude Desktop  > 📰 원문: [Show HN: Rowbo
 - [[hn-snails-teeth-beats-spider-silk-as-nature-s-strongest-materi]] — # Snails' teeth beats spider silk as nature's strongest material (2015)  > 📰 원문: [Snails' teeth beat
 - [[hn-stealth-robotics-startup-yc-s26-is-hiring-principal-engine]] — # Stealth robotics startup (YC S26) is hiring principal engineers (Palo Alto)  > 📰 원문: [Stealth robo
 - [[hn-swe-1-7-reach-near-gpt-5-5-and-opus-intelligence]] — # SWE-1.7 Reach Near GPT 5.5 and Opus Intelligence  > 📰 원문: [SWE-1.7 Reach Near GPT 5.5 and Opus Int
+- [[hn-telegram-s-t-me-domain-has-been-suspended]] — # Telegram's t.me domain has been suspended  > 📰 원문: [Telegram's t.me domain has been suspended](htt
 - [[hn-the-early-history-of-the-singular-value-decomposition-1993]] — # The early History of the Singular Value Decomposition (1993) [pdf]  > 📰 원문: [The early History of
 - [[hn-the-gap-between-open-weights-llms-and-closed-source-llms]] — # 오픈 웨이트 대형 언어 모델(LLM)과 클로즈드 소스 대형 언어 모델(LLM) 간의 격차  > 📰 원문: [The gap between open weights LLMs and
 - [[hn-the-one-step-trap-in-ai-research]] — # The One-Step Trap (In AI Research)  > 📰 원문: [The One-Step Trap (In AI Research)](http://incomplete
@@ -104,10 +109,14 @@
 - [[multi-resolution-feature-stem-for-diabetic-retinopathy-lesio]] — # Multi-Resolution Feature Stem for Diabetic Retinopathy lesion segmentation  > 📄 원문: [Multi-Resolut
 - [[multtipop-a-multitrack-transcription-dataset-for-pop-music]] — # MulTTiPop: A Multitrack Transcription Dataset for Pop Music  > 📄 원문: [MulTTiPop: A Multitrack Tran
 - [[near-threshold-scattering-of-proton-and-omega-baryon-and-pos]] — # 양성자와 오메가 중입자의 근문턱(threshold) 산란 및 가속 상태(bound states)의 可能性  > 📄 원문: [Near-threshold scattering of
+- [[nonlinear-particle-detectors-across-the-rindler-firewall]] — # Nonlinear particle detectors across the Rindler firewall  > 📄 원문: [Nonlinear particle detectors ac
 - [[online-safety-monitoring-for-llms]] — # Online Safety Monitoring for LLMs  > 📄 원문: [Online Safety Monitoring for LLMs](https://arxiv.org/a
 - [[opencof-learning-to-reason-through-video-generation]] — # OpenCoF: Learning to Reason Through Video Generation  > 📄 원문: [OpenCoF: Learning to Reason Through
+- [[openlongtail-generative-scaling-of-long-tail-driving-data]] — # OpenLongTail: Generative Scaling of Long-Tail Driving Data  > 📄 원문: [OpenLongTail: Generative Scal
+- [[panoworld-real-world-panoramic-generation]] — # PanoWorld: Real-World Panoramic Generation  > 📄 원문: [PanoWorld: Real-World Panoramic Generation](h
 - [[paying-more-attention-to-visual-tokens-in-self-evolving-larg]] — # 자기 진화 대규다중양모델(Self-Evolving Large Multimodal Models)에서 시각적 토큰(Visual Tokens)에 더 많은 주의 기울이기  > 📄 원문
 - [[perceptionrubrics-calibrating-multimodal-evaluation-to-huma]] — # PerceptionRubrics: Calibrating Multimodal Evaluation to Human Perception  > 📄 원문: [PerceptionRubri
+- [[phinn-eeg-topological-time-series-analysis-of-dream-state-e]] — # PHINN-EEG: Topological Time-Series Analysis of Dream-State EEG -- Dynamic Betti Curves for Dream C
 - [[pointdit-pixel-space-diffusion-for-monocular-geometry-estim]] — # PointDiT: Pixel-Space Diffusion for Monocular Geometry Estimation  > 📄 원문: [PointDiT: Pixel-Space
 - [[pose-to-biomechanics-bridging-3d-human-pose-estimation-and]] — # Pose-to-Biomechanics: Bridging 3D Human Pose Estimation and Biomechanical Attribute Prediction  >
 - [[program-as-weights-a-programming-paradigm-for-fuzzy-functio]] — # Program-as-Weights: A Programming Paradigm for Fuzzy Functions  > 📄 원문: [Program-as-Weights: A Pro
@@ -115,6 +124,7 @@
 - [[reasoning-llm-improves-speaker-recognition-in-long-form-tv-d]] — # Reasoning LLM Improves Speaker Recognition in Long-form TV Dramas  > 📄 원문: [Reasoning LLM Improves
 - [[sam-mt-real-time-interactive-multi-target-video-segmentatio]] — # SAM-MT: Real-Time Interactive Multi-Target Video Segmentation  > 📄 원문: [SAM-MT: Real-Time Interact
 - [[scalable-behavior-cloning-with-open-data-training-and-eval]] — # 공개 데이터, 련  평가를 활용한 확장 가능한 행동 복제(Scalable Behavior Cloning)  > 📄 원문: [Scalable Behavior Cloning wit
+- [[scalable-visual-pretraining-for-language-intelligence]] — # Scalable Visual Pretraining for Language Intelligence  > 📄 원문: [Scalable Visual Pretraining for La
 - [[score-accuracy-along-the-forward-diffusion-does-not-certify]] — # Score Accuracy Along the Forward Diffusion Does Not Certify Numerical Stability in Diffusion Sampl
 - [[skipping-the-rungs-calibrating-distance-indicators-through]] — # Skipping the rungs! Calibrating distance indicators through their clustering with galaxies  > 📄 원문
 - [[structsplat-generalizable-3d-gaussian-splatting-from-uncali]] — # StructSplat: Generalizable 3D Gaussian Splatting from Uncalibrated Sparse Views  > 📄 원문: [StructSp
