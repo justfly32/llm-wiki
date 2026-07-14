@@ -1,7 +1,7 @@
 # Wiki Index
 
-> Content catalog. Last updated: 2026-07-14
-> Total pages: 133
+> Content catalog. Last updated: 2026-07-15
+> Total pages: 143
 
 ## Entities
 
@@ -43,12 +43,14 @@
 - [[hn-ai-meets-cryptography-1-what-ai-found-in-cloudflare-s-circl]] — # AI Meets Cryptography 1: What AI Found in Cloudflare's Circl  > 📰 원문: [AI Meets Cryptography 1: Wh
 - [[hn-amd-ryzen-ai-halo-4k-ai-dev-kit]] — # AMD Ryzen AI Halo – $4k AI Dev Kit  > 📰 원문: [AMD Ryzen AI Halo – $4k AI Dev Kit](https://www.lttla
 - [[hn-apple-s-new-speechanalyzer-api-benchmarked-against-whisper]] — # Apple's new SpeechAnalyzer API, benchmarked against Whisper and its predecessor  > 📰 원문: [Apple's
+- [[hn-bonsai-27b-a-27b-class-model-that-runs-on-a-phone]] — # Bonsai 27B: A 27B-Class Model that runs on a phone  > 📰 원문: [Bonsai 27B: A 27B-Class Model that ru
 - [[hn-buried-apple-feature-turns-an-iphone-into-the-perfect-kids]] — # Buried Apple Feature Turns an iPhone into the Perfect Kids' Dumb Phone  > 📰 원문: [Buried Apple Feat
 - [[hn-chat-control-1-0-and-2-0-explained]] — # Chat Control 1.0 and 2.0 Explained  > 📰 원문: [Chat Control 1.0 and 2.0 Explained](https://fightchat
 - [[hn-chatgpt-work]] — # ChatGPT Work  > 📰 원문: [ChatGPT Work](https://openai.com/index/chatgpt-for-your-most-ambitious-work
 - [[hn-chatto-is-now-open-source]] — # Chatto is now Open Source  > 📰 원문: [Chatto is now Open Source](https://www.hmans.dev/blog/chatto-i
 - [[hn-claude-code-sends-33k-tokens-before-reading-the-prompt-open]] — # Claude Code sends 33k tokens before reading the prompt; OpenCode sends 7k  > 📰 원문: [Claude Code se
 - [[hn-command-and-conquer-generals-natively-ported-to-macos-iphon]] — # Command and Conquer Generals natively ported to macOS, iPhone, iPad using Fable  > 📰 원문: [Command
+- [[hn-cursor-0day-when-full-disclosure-becomes-the-only-protectio]] — # Cursor 0day: When Full Disclosure Becomes the Only Protection Left  > 📰 원문: [Cursor 0day: When Ful
 - [[hn-decoding-the-obfuscated-bash-script-on-a-uniqlo-t-shirt]] — # Decoding the obfuscated bash script on a Uniqlo t-shirt  > 📰 원문: [Decoding the obfuscated bash scr
 - [[hn-explanation-of-everything-you-can-see-in-htop-top-on-linux]] — # Explanation of everything you can see in htop/top on Linux (2019)  > 📰 원문: [Explanation of everyth
 - [[hn-girls-just-wanna-have-fast-mpmc-queues-with-bounded-waiting]] — # Girls Just Wanna Have Fast MPMC Queues with Bounded Waiting  > 📰 원문: [Girls Just Wanna Have Fast M
@@ -57,6 +59,7 @@
 - [[hn-gpt-5-5-codex-reasoning-token-clustering-may-be-leading-to-d]] — # GPT-5.5 Codex reasoning-token clustering may be leading to degraded performance  > 📰 원문: [GPT-5.5
 - [[hn-gpt-5-6]] — # GPT-5.6  > 📰 원문: [GPT-5.6](https://openai.com/index/gpt-5-6/) > 🔥 HN Score: 727 | By: logickkk1 |
 - [[hn-gpt-5-6-sol-ultra-produces-proof-of-the-cycle-double-cover-c]] — # GPT-5.6 Sol Ultra produces proof of the Cycle Double Cover Conjecture [pdf]  > 📰 원문: [GPT-5.6 Sol
+- [[hn-how-to-stop-claude-from-saying-load-bearing]] — # How to stop Claude from saying load-bearing  > 📰 원문: [How to stop Claude from saying load-bearing]
 - [[hn-i-love-llms-i-hate-hype]] — # I love LLMs, I hate hype  > 📰 원문: [I love LLMs, I hate hype](https://geohot.github.io//blog/jekyll
 - [[hn-i-used-claude-code-to-get-a-second-opinion-on-my-mri]] — # 저는 MRI에 대한 제2의 의견을 얻기 위해 Claude Code를 사용했습니다.  > 📰 원문: [I used Claude Code to get a second opinion
 - [[hn-introduction-to-compilers-and-language-design-2021]] — # Introduction to Compilers and Language Design (2021)  > 📰 원문: [Introduction to Compilers and Langu
@@ -67,6 +70,7 @@
 - [[hn-linux-on-the-sega-32x-who-needs-hardware-synchronization-pr]] — # Linux on the Sega 32X. Who needs hardware synchronization primitives anyway?  > 📰 원문: [Linux on th
 - [[hn-lost-city-discovered-beneath-egypt-s-desert-with-ancient-chu]] — # Lost city discovered beneath Egypt's desert with ancient church  > 📰 원문: [Lost city discovered ben
 - [[hn-materials-innovation-has-a-scale-up-problem-not-discovery]] — # Materials innovation has a scale-up problem, not discovery  > 📰 원문: [Materials innovation has a sc
+- [[hn-measuring-input-latency-on-linux-x11-vs-wayland-vrr-and]] — # Measuring Input Latency on Linux: X11 vs. Wayland, VRR, and DXVK  > 📰 원문: [Measuring Input Latency
 - [[hn-mistral-s-robostral-navigate-a-state-of-the-art-robotics-na]] — # Mistral's Robostral Navigate: a state of the art robotics navigation model  > 📰 원문: [Mistral's Rob
 - [[hn-modern-decor-may-be-straining-people-s-brains]] — # Modern decor may be straining people's brains  > 📰 원문: [Modern decor may be straining people's bra
 - [[hn-mr-baby-paint-and-accidentally-discovering-a-new-cellular-a]] — # Mr. Baby Paint and accidentally discovering a new cellular automata  > 📰 원문: [Mr. Baby Paint and a
@@ -94,6 +98,7 @@
 - [[hn-telegram-s-t-me-domain-has-been-suspended]] — # Telegram's t.me domain has been suspended  > 📰 원문: [Telegram's t.me domain has been suspended](htt
 - [[hn-the-early-history-of-the-singular-value-decomposition-1993]] — # The early History of the Singular Value Decomposition (1993) [pdf]  > 📰 원문: [The early History of
 - [[hn-the-gap-between-open-weights-llms-and-closed-source-llms]] — # 오픈 웨이트 대형 언어 모델(LLM)과 클로즈드 소스 대형 언어 모델(LLM) 간의 격차  > 📰 원문: [The gap between open weights LLMs and
+- [[hn-the-largest-available-minecraft-world-totalling-15-tb]] — # The largest available Minecraft world, totalling 15 TB  > 📰 원문: [The largest available Minecraft w
 - [[hn-the-one-step-trap-in-ai-research]] — # The One-Step Trap (In AI Research)  > 📰 원문: [The One-Step Trap (In AI Research)](http://incomplete
 - [[hn-top500-at-isc-26-we-have-a-new-number-1-supercomputer]] — # ISC'26에서 발표된 TOP500: 새로운 슈퍼컴퓨터 1위 등극  > 📰 원문: [TOP500 at ISC’26: We have a New Number 1 Supercompu
 - [[hn-train-sim-created-by-just-one-person-is-being-called-the-bes]] — # Train SIM Created by Just One Person Is Being Called the Best Ever Made  > 📰 원문: [Train SIM Create
@@ -101,11 +106,14 @@
 - [[hn-what-happens-when-you-run-a-cuda-kernel]] — # CUDA 커널을 실행하면 어떤 일이 발생하는가?  > 📰 원문: [What happens when you run a CUDA kernel?](https://fergusfinn.
 - [[hn-who-manages-the-agents]] — # Who manages the agents?  > 📰 원문: [Who manages the agents?](https://www.off-policy.com/dont-go-quie
 - [[interpretable-human-label-free-deep-learning-for-real-bogus]] — # Interpretable Human-Label-Free Deep Learning for Real-Bogus Classification with Uncertainty Quanti
+- [[invariant-learning-dynamics-of-transformers-in-inductive-rea]] — # Invariant Learning Dynamics of Transformers in Inductive Reasoning Tasks  > 📄 원문: [Invariant Learn
 - [[lacuna-a-testbed-for-evaluating-localization-precision-for]] — # LACUNA: A Testbed for Evaluating Localization Precision for LLM Unlearning  > 📄 원문: [LACUNA: A Tes
+- [[latent-identity-tuning-in-text-to-image-personalization-mode]] — # Latent-Identity Tuning in Text-to-Image Personalization Models  > 📄 원문: [Latent-Identity Tuning in
 - [[lift3d-vla-lifting-vla-models-to-3d-geometry-and-dynamics-a]] — # Lift3D-VLA: Lifting VLA Models to 3D Geometry and Dynamics-Aware Manipulation  > 📄 원문: [Lift3D-VLA
 - [[llm-as-a-verifier-a-general-purpose-verification-framework]] — # LLM-as-a-Verifier: A General-Purpose Verification Framework  > 📄 원문: [LLM-as-a-Verifier: A General
 - [[longe2v-long-horizon-event-based-video-reconstruction-pred]] — # LongE2V: Long-Horizon Event-based Video Reconstruction, Prediction, and Frame Interpolation with V
 - [[minimum-energies-and-magnetic-field-strengths-of-edge-bright]] — # Minimum Energies and Magnetic Field Strengths of Edge-brightened Compact Symmetric Objects  > 📄 원문
+- [[mixture-of-frames-policy-multi-frame-action-denoising-for-b]] — # Mixture of Frames Policy: Multi-Frame Action Denoising for Bimanual Mobile Manipulation  > 📄 원문: [
 - [[multi-resolution-feature-stem-for-diabetic-retinopathy-lesio]] — # Multi-Resolution Feature Stem for Diabetic Retinopathy lesion segmentation  > 📄 원문: [Multi-Resolut
 - [[multtipop-a-multitrack-transcription-dataset-for-pop-music]] — # MulTTiPop: A Multitrack Transcription Dataset for Pop Music  > 📄 원문: [MulTTiPop: A Multitrack Tran
 - [[near-threshold-scattering-of-proton-and-omega-baryon-and-pos]] — # 양성자와 오메가 중입자의 근문턱(threshold) 산란 및 가속 상태(bound states)의 可能性  > 📄 원문: [Near-threshold scattering of
@@ -121,7 +129,9 @@
 - [[pose-to-biomechanics-bridging-3d-human-pose-estimation-and]] — # Pose-to-Biomechanics: Bridging 3D Human Pose Estimation and Biomechanical Attribute Prediction  >
 - [[program-as-weights-a-programming-paradigm-for-fuzzy-functio]] — # Program-as-Weights: A Programming Paradigm for Fuzzy Functions  > 📄 원문: [Program-as-Weights: A Pro
 - [[radio-emission-from-close-in-exoplanets-can-we-extend-the-r]] — # Radio emission from close-in exoplanets: Can we extend the radio-magnetic scaling law to the sub-A
+- [[read-it-back-pretrained-mllms-are-zero-shot-reward-models-f]] — # Read It Back: Pretrained MLLMs Are Zero-Shot Reward Models for Text-to-Image Generation  > 📄 원문: [
 - [[reasoning-llm-improves-speaker-recognition-in-long-form-tv-d]] — # Reasoning LLM Improves Speaker Recognition in Long-form TV Dramas  > 📄 원문: [Reasoning LLM Improves
+- [[requential-coding-pushing-the-limits-of-model-compression-w]] — # Requential Coding: Pushing the Limits of Model Compression with Self-Generated Training Data  > 📄
 - [[sam-mt-real-time-interactive-multi-target-video-segmentatio]] — # SAM-MT: Real-Time Interactive Multi-Target Video Segmentation  > 📄 원문: [SAM-MT: Real-Time Interact
 - [[scalable-behavior-cloning-with-open-data-training-and-eval]] — # 공개 데이터, 련  평가를 활용한 확장 가능한 행동 복제(Scalable Behavior Cloning)  > 📄 원문: [Scalable Behavior Cloning wit
 - [[scalable-visual-pretraining-for-language-intelligence]] — # Scalable Visual Pretraining for Language Intelligence  > 📄 원문: [Scalable Visual Pretraining for La
