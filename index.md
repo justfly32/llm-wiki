@@ -1,7 +1,7 @@
 # Wiki Index
 
-> Content catalog. Last updated: 2026-07-15
-> Total pages: 143
+> Content catalog. Last updated: 2026-07-16
+> Total pages: 153
 
 ## Entities
 
@@ -28,7 +28,9 @@
 - [[co-lmlm-continuous-query-limited-memory-language-models]] — # Co-LMLM: Continuous-Query Limited Memory Language Models  > 📄 원문: [Co-LMLM: Continuous-Query Limit
 - [[combating-textual-noise-and-redundancy-entropy-aware-dense]] — # Combating Textual Noise and Redundancy: Entropy-Aware Dense Visual Token Pruning  > 📄 원문: [Combati
 - [[danceopd-on-policy-generative-field-distillation]] — # DanceOPD: 온-정책 생성 필드 증류  > 📄 원문: [DanceOPD: On-Policy Generative Field Distillation](https://arxiv
+- [[densereward-dense-reward-learning-via-failure-synthesis-for]] — # DenseReward: Dense Reward Learning via Failure Synthesis for Robotic Manipulation  > 📄 원문: [DenseR
 - [[distributed-attacks-in-persistent-state-ai-control]] — # Distributed Attacks in Persistent-State AI Control  > 📄 원문: [Distributed Attacks in Persistent-Sta
+- [[do-ai-agents-know-when-a-task-is-simple-toward-complexity-a]] — # Do AI Agents Know When a Task Is Simple? Toward Complexity-Aware Reasoning and Execution  > 📄 원문:
 - [[do-transformations-reveal-the-truth-generative-residual-lea]] — # Do Transformations Reveal the Truth? Generative Residual Learning for Generalized AI-Generated Ima
 - [[drift-behavior-in-a-bounded-confidence-opinion-model-with-me]] — # 미디어 영향력이 있는 유한 신뢰도(bounded-confidence) 의견 모델에서의 표류(drift) 행동  > 📄 원문: [Drift Behavior in a Bounded
 - [[elsa3d-elastic-semantic-anchoring-for-unified-3d-understand]] — # ELSA3D: Elastic Semantic Anchoring for Unified 3D Understanding and Generation  > 📄 원문: [ELSA3D: E
@@ -62,9 +64,11 @@
 - [[hn-how-to-stop-claude-from-saying-load-bearing]] — # How to stop Claude from saying load-bearing  > 📰 원문: [How to stop Claude from saying load-bearing]
 - [[hn-i-love-llms-i-hate-hype]] — # I love LLMs, I hate hype  > 📰 원문: [I love LLMs, I hate hype](https://geohot.github.io//blog/jekyll
 - [[hn-i-used-claude-code-to-get-a-second-opinion-on-my-mri]] — # 저는 MRI에 대한 제2의 의견을 얻기 위해 Claude Code를 사용했습니다.  > 📰 원문: [I used Claude Code to get a second opinion
+- [[hn-inkling-our-open-weights-model]] — # Inkling: Our Open-Weights Model  > 📰 원문: [Inkling: Our Open-Weights Model](https://thinkingmachine
 - [[hn-introduction-to-compilers-and-language-design-2021]] — # Introduction to Compilers and Language Design (2021)  > 📰 원문: [Introduction to Compilers and Langu
 - [[hn-is-it-out-yet]] — # Is It Out Yet?  > 📰 원문: [Is It Out Yet?](https://outyet.ai) > 🔥 HN Score: 16 | By: partsch | 💬 Com
 - [[hn-kani-a-model-checker-for-rust]] — # Kani: A Model Checker for Rust  > 📰 원문: [Kani: A Model Checker for Rust](https://arxiv.org/abs/260
+- [[hn-launch-hn-coasty-yc-s26-an-api-for-computer-use-agents]] — # Launch HN: Coasty (YC S26) – An API for computer-use agents  > 📰 원문: [Launch HN: Coasty (YC S26) –
 - [[hn-librepods-airpods-liberated]] — # 리브레포드(Librepods): 해방된 에어팟(AirPods)  > 📰 원문: [Librepods: AirPods liberated](https://github.com/libr
 - [[hn-linux-on-the-atari-jaguar-no-really]] — # Linux on the Atari Jaguar. No, really.  > 📰 원문: [Linux on the Atari Jaguar. No, really.](https://c
 - [[hn-linux-on-the-sega-32x-who-needs-hardware-synchronization-pr]] — # Linux on the Sega 32X. Who needs hardware synchronization primitives anyway?  > 📰 원문: [Linux on th
@@ -77,6 +81,7 @@
 - [[hn-new-ai-tutor-achieves-0-71-1-30-sd-effect-size-in-dartmouth]] — # New AI tutor achieves 0.71-1.30 SD effect size in Dartmouth course [pdf]  > 📰 원문: [New AI tutor ac
 - [[hn-nvidia-coreweave-and-nebius-inside-the-circular-financing]] — # Nvidia, CoreWeave, and Nebius: Inside the Circular Financing of the GPU Boom  > 📰 원문: [Nvidia, Cor
 - [[hn-old-and-new-apps-via-modern-coding-agents]] — # Old and new apps, via modern coding agents  > 📰 원문: [Old and new apps, via modern coding agents](h
+- [[hn-open-source-memory-for-coding-agents-synced-over-ssh]] — # Open-source memory for coding agents, synced over SSH  > 📰 원문: [Open-source memory for coding agen
 - [[hn-ornith-1-0-self-improving-open-source-models-for-agentic-co]] — # Ornith-1.0: 에이전트 코딩(agentic coding)을 위한 자기 개선형 오픈소스 모델  > 📰 원문: [Ornith-1.0: self-improving open-s
 - [[hn-potential-session-cache-leakage-between-workspace-instances]] — # Potential session/cache leakage between workspace instances or consumer accounts  > 📰 원문: [Potenti
 - [[hn-previewing-gpt-5-6-sol-a-next-generation-model]] — # 차세대 모델 GPT‑5.6 Sol 미리보기  > 📰 원문: [Previewing GPT‑5.6 Sol: a next-generation model](https://openai.
@@ -85,8 +90,10 @@
 - [[hn-re-i-m-begging-you-to-leave-your-ai-note-taker-at-home]] — # Re: I'm Begging You to Leave Your AI Note-Taker at Home  > 📰 원문: [Re: I'm Begging You to Leave You
 - [[hn-reparaible-and-open-source-paper-printer]] — # Reparaible and open source paper printer  > 📰 원문: [Reparaible and open source paper printer](https
 - [[hn-rocketlab-acquires-iridium]] — # 로켓랩(Rocketlab), 이리듐(Iridium) 인수  > 📰 원문: [Rocketlab acquires Iridium](https://investors.rocketlabc
+- [[hn-running-gemma-4-26b-at-5-tokens-sec-on-a-13-year-old-xeon-wi]] — # Running Gemma 4 26B at 5 tokens/sec on a 13-year-old Xeon with no GPU  > 📰 원문: [Running Gemma 4 26
 - [[hn-self-a-new-top-level-domain-designed-to-support-self-hosti]] — # .self: 자체 호스팅(self-hosting)을 지원하기 위해 설계된 로운 최상위 도메인  > 📰 원문: [.self: A new top-level domain design
 - [[hn-show-hn-billai-bass-an-ai-powered-big-mouth-billy-bass-usi]] — # Show HN: BillAI Bass, an AI-Powered Big Mouth Billy Bass Using Strands Agents  > 📰 원문: [Show HN: B
+- [[hn-show-hn-capn-hook-for-coding-agents-don-t-grep-the-same-m]] — # Show HN: Capn-hook for coding agents – don't grep the same mystery twice  > 📰 원문: [Show HN: Capn-h
 - [[hn-show-hn-davit-a-apple-containers-ui]] — # Show HN: Davit, a Apple Containers UI  > 📰 원문: [Show HN: Davit, a Apple Containers UI](https://dav
 - [[hn-show-hn-microsoft-releases-flint-a-visualization-language]] — # Show HN: Microsoft releases Flint, a visualization language for AI agents  > 📰 원문: [Show HN: Micro
 - [[hn-show-hn-nobie-an-excel-compatible-runtime-for-agents-and]] — # Show HN: Nobie – an Excel-compatible runtime for agents and humans  > 📰 원문: [Show HN: Nobie – an E
@@ -121,6 +128,7 @@
 - [[online-safety-monitoring-for-llms]] — # Online Safety Monitoring for LLMs  > 📄 원문: [Online Safety Monitoring for LLMs](https://arxiv.org/a
 - [[opencof-learning-to-reason-through-video-generation]] — # OpenCoF: Learning to Reason Through Video Generation  > 📄 원문: [OpenCoF: Learning to Reason Through
 - [[openlongtail-generative-scaling-of-long-tail-driving-data]] — # OpenLongTail: Generative Scaling of Long-Tail Driving Data  > 📄 원문: [OpenLongTail: Generative Scal
+- [[palmclaw-a-native-on-device-agent-framework-for-mobile-phon]] — # PalmClaw: A Native On-Device Agent Framework for Mobile Phones  > 📄 원문: [PalmClaw: A Native On-Dev
 - [[panoworld-real-world-panoramic-generation]] — # PanoWorld: Real-World Panoramic Generation  > 📄 원문: [PanoWorld: Real-World Panoramic Generation](h
 - [[paying-more-attention-to-visual-tokens-in-self-evolving-larg]] — # 자기 진화 대규다중양모델(Self-Evolving Large Multimodal Models)에서 시각적 토큰(Visual Tokens)에 더 많은 주의 기울이기  > 📄 원문
 - [[perceptionrubrics-calibrating-multimodal-evaluation-to-huma]] — # PerceptionRubrics: Calibrating Multimodal Evaluation to Human Perception  > 📄 원문: [PerceptionRubri
@@ -139,8 +147,10 @@
 - [[skipping-the-rungs-calibrating-distance-indicators-through]] — # Skipping the rungs! Calibrating distance indicators through their clustering with galaxies  > 📄 원문
 - [[structsplat-generalizable-3d-gaussian-splatting-from-uncali]] — # StructSplat: Generalizable 3D Gaussian Splatting from Uncalibrated Sparse Views  > 📄 원문: [StructSp
 - [[syncity-3000-bootstrapping-scene-scale-3d-diffusion]] — # SynCity 3000: Bootstrapping Scene-Scale 3D Diffusion  > 📄 원문: [SynCity 3000: Bootstrapping Scene-S
+- [[terrazero-procedural-driving-simulation-for-zero-demonstrat]] — # TerraZero: Procedural Driving Simulation for Zero-Demonstration Self-Play at Scale  > 📄 원문: [Terra
 - [[the-chiral-random-matrix-ensemble-of-the-type-iib-axion-dil]] — # The Chiral Random-Matrix Ensemble of the Type-IIB Axion--Dilaton Wormhole Partition Function  > 📄
 - [[the-key-to-going-linear-analysis-driven-transformer-lineari]] — # The Key to Going Linear: Analysis-Driven Transformer Linearization  > 📄 원문: [The Key to Going Line
+- [[the-seriality-gap-in-video-diffusion-models]] — # The Seriality Gap in Video Diffusion Models  > 📄 원문: [The Seriality Gap in Video Diffusion Models]
 - [[uniclawbench-a-universal-benchmark-for-proactive-agents-on]] — # UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks  > 📄 원문: [UniClawBenc
 - [[visually-grounded-self-reflection-for-vision-language-models]] — # Visually Grounded Self-Reflection for Vision-Language Models via Reinforcement Learning  > 📄 원문: [
 - [[vt-wam-visual-tactile-world-action-model-for-contact-rich-m]] — # VT-WAM: Visual-Tactile World Action Model for Contact-Rich Manipulation  > 📄 원문: [VT-WAM: Visual-T
