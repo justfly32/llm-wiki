@@ -201,3 +201,9 @@
 ## [2026-07-16] lint | 2 issues found
 
 ## [2026-07-16] lint | 2 issues found
+
+## [2026-08-09] daily-sync | 작업 변경 감지 75개, daily 페이지 갱신 (2026-08-09.md 생성)
+- collect_work.py 신규 도입: ~/projects + ~/.hermes 작업 변경 감지 파이프라인
+- llm-wiki-daily-sync 크론 프롬프트 교체 (외부 수집 금지 → 작업 내역 수집)
+
+## [2026-08-09] lint | 2 issues found

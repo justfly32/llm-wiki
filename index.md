@@ -166,6 +166,10 @@
 
 <!-- Empty -->
 
+## Daily (작업 일지)
+
+- [[2026-08-09]] — 2026-08-09 작업 일지: MI8_project 카드뉴스 51개, lotto-predictor 필터 재조정, SEO 스킬 업데이트
+
 ## Queries
 
 <!-- Empty -->
