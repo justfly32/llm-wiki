@@ -207,3 +207,10 @@
 - llm-wiki-daily-sync 크론 프롬프트 교체 (외부 수집 금지 → 작업 내역 수집)
 
 ## [2026-08-09] lint | 2 issues found
+
+## [2026-08-09] wiki-v4 | 위키 전면 재구축 (외부 콘텐츠 삭제 → Hermes 작업 인덱스)
+- 기존 raw 2,448 + concepts 266 + entities 10 삭제 (git 태그 legacy-wiki-2026-08-09로 보존)
+- build_index.py: 10,806개 작업 파일 FTS5 인덱싱 (5.4초)
+- search.py: FTS5 + RAG 답변 CLI
+- web.py: /api/search 통합 검색
+- SCHEMA.md v2 재작성, llm-wiki 스킬 v4 업데이트

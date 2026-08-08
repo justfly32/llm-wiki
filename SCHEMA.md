@@ -1,101 +1,50 @@
-# Wiki Schema
+# LLM Wiki — Schema (v2, 2026-08-09)
 
-## Domain
-Personal knowledge base for Bear J + Agent. Covers project records, research results, learnings, and daily work logs.
+> **목적:** Hermes Agent가 만들어낸 모든 작업 결과물을 인덱싱하고 검색 가능하게 하는
+> 내부 검색 시스템 (Glean 형태). "LLM이 한 모든 작업을 쉽게 검색하고 찾아갈 수 있게"가 핵심 목표.
 
-## Structure
+## 도메인 정의
 
-```
-wiki/
-├── SCHEMA.md           # This file
-├── index.md            # Content catalog
-├── log.md              # Change history
-├── concepts/           # Categorized knowledge
-│   ├── projects/       # Project plans, specs, drafts
-│   ├── knowledge/      # Research, docs, guides, reports
-│   ├── learnings/      # Failure patterns, feedback, improvements
-│   └── daily/          # Daily work logs (chronological)
-├── raw/
-│   ├── articles/       # Original ingested articles
-│   └── archive/        # Deprecated papers, news, external content
-├── entities/           # Entity pages (people, orgs, tools)
-├── comparisons/        # Side-by-side analyses
-└── queries/            # Filed query results
-```
+이 위키는 **외부 콘텐츠 수집(뉴스/RSS/arXiv)이 아니라, Hermes가 생성한 작업 산출물의 인덱스**다.
 
-## Conventions
-- File names: lowercase, hyphens, no spaces
-- Every wiki page starts with YAML frontmatter
-- Use `[[wikilinks]]` to link between pages (minimum 2 outbound links per page)
-- Frontmatter `links:` field required — list of `[[slug|description]]`
-- When updating a page, always bump the `updated` date
-- Every new page must be added to `index.md` under the correct section
-- Every action must be appended to `log.md`
+- ❌ 외부 기사, 뉴스, 논문 요약 → 저장 금지
+- ✅ ~/projects, ~/.hermes, ~/documents 내 작업 파일 → 인덱싱 대상
+- ✅ 작업 변경 내역 (daily) → concepts/daily/
 
-## Frontmatter
-```yaml
----
-title: Page Title
-created: YYYY-MM-DD
-updated: YYYY-MM-DD
-type: project | knowledge | learning | daily | entity | concept | comparison | query
-tags: [from taxonomy below]
-links: [[other-page-slug|description]]
-# Optional:
-confidence: high | medium | low
-sources: [raw/articles/source-name.md]
----
+## 인덱싱 대상
+
+| 루트 | 포함 | 제외 |
+|------|------|------|
+| `~/projects/` | 모든 프로젝트 (코드, 문서, 설정) | node_modules, .git, .venv, dist, build, .next, __pycache__ |
+| `~/.hermes/` | scripts, skills, memories, cron, sessions, kanban 등 | cache, logs, node, lsp, pastes, sandboxes, state.db 등 |
+| `~/documents/` | 작업 문서 | — |
+
+## 인덱스 구조
+
+- **DB:** `~/wiki/index.db` (SQLite FTS5)
+- **테이블:** `files(path TEXT, rel TEXT, root TEXT, type TEXT, size INT, mtime REAL, content TEXT)` + FTS5 인덱스
+- **갱신:** mtime 기반 증분 — `build_index.py`가 마지막 인덱스 시각 이후 변경 파일만 재인덱싱
+- **검색:** `search.py` — FTS5 키워드 검색 + LLM RAG 답변
+
+## 위키 페이지 규칙
+
+- `concepts/daily/YYYY-MM-DD.md` — 매일 작업 요약 (크론이 자동 생성)
+- `concepts/knowledge/` — 장기 보관 가치 있는 지식/가이드
+- `concepts/projects/` — 프로젝트 계획/스펙
+- `concepts/learnings/` — 실패 패턴, 개선점
+- `entities/` — 사람/조직/제품 (필요시)
+- 프론트매터 필수: `title, created, updated, type, tags, links`
+- 최소 1개 이상 outbound wikilink (`[[index]]` 포함 가능)
+
+## 검색 사용법
+
+```bash
+python3 ~/wiki/scripts/search.py "질문"          # FTS5 + RAG 답변
+python3 ~/wiki/scripts/search.py --raw "키워드"  # 원본 검색 결과만
+python3 ~/wiki/scripts/build_index.py             # 전체 인덱싱 (증분)
 ```
 
-## Tag Taxonomy
-- **Domains:** ai-ml, programming, research, business, tools, agent, tax, investment
-- **Types:** project, report, guide, analysis, workflow, command
-- **Methods:** automation, orchestration, research, documentation
-- **Meta:** comparison, timeline, learning, how-to
+## 보안 원칙 (Phase 3 확장 대비)
 
-## Page Rules
-- **Create a page** when: project completed, research conducted, learning captured
-- **Link every page** to at least 2 related pages via `links:` frontmatter
-- **Daily pages** link to previous/next day (chronological chain)
-- **Project pages** link to related knowledge docs and learnings
-- **Archive** superseded content to `raw/archive/`
-
-## Update Policy
-When new information conflicts:
-1. Check dates — newer generally supersedes older
-2. If genuinely contradictory, note both with dates and sources
-3. Mark in frontmatter: `contradictions: [page-name]`
-
-## 추천글 정리 (User-Recommended Content)
-
-사용자가 링크나 추천글을 올려주면:
-1. **요약 작성** — 핵심 개념, 기능, 인사이트를 간결하게 정리
-2. **knowledge/ 또는 projects/ 에 저장** — 주제에 맞는 폴더 선택
-3. **wikilink 연결** — 관련 기존 페이지와 크로스레퍼런스
-4. **index.md 업데이트** — 해당 섹션에 추가
-5. **원본 보존** — raw/articles/ 또는 raw/archive/ 에 원본 저장
-
-형식: 위 devbox.md 참고 (frontmatter + 요약 + 표 + 관련 문서)
-
-## 세션 저장 규칙 (Session → Wiki)
-
-세션이 끝나기 전에 다음을 llm-wiki에 기록:
-
-1. **daily/YYYY-MM-DD.md** — 오늘 주요 작업 내역
-   - 완료한 작업, 결정된 사항, 핵심 인사이트
-   - 이전 날짜 daily와 링크 (prev/next chain)
-
-2. **knowledge/ 업데이트** — 새로 얻은 지식, 리서치 결과
-3. **learnings/ 업데이트** — 실패 패턴, 피드백
-4. **log.md** — 변경 이력 기록
-
-### 세션 시작 시 로딩 순서
-1. MEMORY.md 자동 주입 (시스템)
-2. `cd ~/wiki && python3 wiki.py search "최근 작업"` → 최신 daily 확인
-3. 필요 시 `concepts/daily/YYYY-MM-DD.md` 읽어서 맥락 파악
-4. 과거 상세 필요 시 `session_search(query="키워드")` 로 대화 기록 검색
-
-### 세션 ↔ 위키 연결
-- session_search: 대화 기록 검색 (누슨 무엇을 했는지)
-- llm-wiki: 지식 + 결과물 저장 (무엇을 알게 됐는지)
-- 둘은 독립적이지만, daily/ 가 다리를 놓는 역할
+- 인덱스는 로컬 SQLite에만 저장 (클라우드 경유 금지)
+- 사내 확장 시: 사용자/그룹 → ACL → 검색 결과 필터링 (Glean Permission Mirroring)

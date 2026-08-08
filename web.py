@@ -166,7 +166,9 @@ def get_graph_data() -> dict:
     return {"nodes": nodes, "links": links}
 
 def search_pages(term: str) -> list:
+    """위키 페이지 검색 + 작업 인덱스(FTS5) 검색 통합 (Glean 형태)"""
     results = []
+    # 1) 위키 페이지 검색 (기존)
     term_lower = term.lower()
     for d in ALL_DIRS:
         for f in d.glob("*.md"):
@@ -181,7 +183,28 @@ def search_pages(term: str) -> list:
                 results.append({
                     "slug": f.stem, "title": pg["title"], "type": pg["page_type"],
                     "context": " ... ".join([" ".join(c) for c in ctx[:3]])[:200],
+                    "source": "wiki",
                 })
+    # 2) 작업 인덱스 검색 (FTS5)
+    try:
+        import sqlite3
+        conn = sqlite3.connect(Path.home() / "wiki" / "index.db")
+        match_q = " OR ".join(f'"{t}"*' for t in term.split() if t)
+        if match_q:
+            rows = conn.execute(
+                """SELECT f.rel, f.root, f.type, snippet(files_fts, 4, '⟪', '⟫', '…', 10)
+                   FROM files_fts JOIN files f ON f.path = files_fts.path
+                   WHERE files_fts MATCH ? ORDER BY bm25(files_fts) LIMIT 10""",
+                (match_q,)).fetchall()
+            for rel, root, ftype, snip in rows:
+                results.append({
+                    "slug": rel, "title": f"[{root}] {rel}", "type": ftype,
+                    "context": (snip or "")[:200], "source": "index",
+                    "path": str(Path.home() / root / rel) if root != "documents" else str(Path.home() / "documents" / rel),
+                })
+        conn.close()
+    except Exception:
+        pass
     return results
 
 def get_tags() -> dict:
