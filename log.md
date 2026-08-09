@@ -251,3 +251,11 @@
 - 검증: npm install + build 성공, dev 서버 기동 (API 4010 / Vite 5175), health·system-status·hermes-stats(3.4억 토큰/1,877세션)·openclaw-stats 정상 응답, title PC·LLM 대시보드로 변경
 - 기존 3개 폴더 → ~/.Trash/hermes-removed-20260809/ 이동
 - 레지스트리: 29 → 27개, CANONICAL에 pc-llm-dashboard 등록, 대시보드 그룹 중복 후보 제거
+
+## [2026-08-09] personal-site-move | justfly32.github.io를 projects로 이동
+- 사용자 발견: 개인 사이트 폴더가 home 직속(~/justfly32.github.io)에 있어 projects와 분산
+- 이동: ~/justfly32.github.io → ~/projects/justfly32.github.io (git remote/branch 그대로, clean 상태)
+- 참조 확인: post1 크론은 /Users/bearj/projects/post1 사용(무관), jobs.json의 justfly32는 URL 텍스트뿐 → 파일 경로 참조는 레지스트리 EXTRA_DIRS뿐
+- generate_project_registry.py: EXTRA_DIRS 비움(projects 스캔으로 자동 포함), 규칙 문구를 "개인 사이트 포함 projects 통일"로 변경
+- personal-sites.md: 위치/규칙 갱신 (home 직속 금지 추가)
+- 레지스트리: 27 → 28개 폴더 (justfly32.github.io가 git 프로젝트로 합류, git 10개)

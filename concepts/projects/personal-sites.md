@@ -14,10 +14,10 @@ links: [[index]]
 
 ## 현재 존재하는 폴더 3개 (2026-08-09 기준)
 
-### 1. `~/justfly32.github.io` — 메인 포트폴리오 (운영 중) ⭐
+### 1. `~/projects/justfly32.github.io` — 메인 포트폴리오 (운영 중) ⭐
 | 항목 | 내용 |
 |------|------|
-| 위치 | `~/justfly32.github.io/` (home 직속) |
+| 위치 | `~/projects/justfly32.github.io/` (2026-08-09 home 직속 → projects로 이동) |
 | GitHub | `justfly32/justfly32.github.io` (SSH) |
 | URL | https://justfly32.github.io (HTTP 200) |
 | 성격 | **크리에이티브 개발자 포트폴리오** — Hero/About/Skills/Projects/Simpli GIF/Timeline/Contact |
@@ -50,7 +50,7 @@ links: [[index]]
 ## 진화 관계 (중복 방지 핵심)
 
 ```
-personal-site (2026-05-30, 프로토타입)
+personal-site (2026-05-30, 프로토타입 — 보존만)
       ↓ 진화
 post1 (2026-06-11, 활동 로그 — 운영 중)
 justfly32.github.io (2026-06-13, 포트폴리오 — 운영 중)
@@ -59,6 +59,7 @@ justfly32.github.io (2026-06-13, 포트폴리오 — 운영 중)
 **규칙:**
 - ❌ `personal-site`, `post1`, `justfly32.github.io` 이름의 새 폴더를 만들지 말 것
 - ❌ personal-site를 post1로 "이동/병합" 시도하지 말 것 (보존용)
+- ✅ 모든 프로젝트 폴더는 `~/projects/` 통일 (2026-08-09 justfly32.github.io 이동 완료 — home 직속 금지)
 - ✅ 새 개인 사이트 작업은 **기존 폴더 수정** 또는 **이 문서에 새 항목 추가 후** 진행
 - ✅ 배포는 반드시 GitHub Pages (각 repo의 main 브랜치 push)
 

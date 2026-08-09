@@ -27,7 +27,8 @@ PROJECTS_DIR = HOME / "projects"
 OUTPUT = HOME / "wiki" / "concepts" / "projects" / "project-registry.md"
 
 # home 직속 추가 프로젝트 폴더 (projects/ 밖에 있는 것)
-EXTRA_DIRS = [HOME / "justfly32.github.io"]
+# 2026-08-09: justfly32.github.io → ~/projects/로 이동 완료 (더 이상 EXTRA_DIRS 불필요)
+EXTRA_DIRS = []
 
 # ⭐ 정본(canonical) 지정 — 중복 그룹에서 운영 정본 (2026-08-09 확정, "최신 것이 정본" 원칙)
 CANONICAL = {
@@ -161,7 +162,7 @@ def render(items: list) -> str:
         "## 규칙 (중복 방지)",
         "",
         "- ❌ 같은 역할의 폴더가 이미 있으면 새로 만들지 말 것 (아래 목록에서 유사 항목 검색)",
-        "- ❌ 프로젝트 폴더 위치: `~/projects/` 통일 (개인 사이트만 `~/justfly32.github.io`)",
+        "- ❌ 프로젝트 폴더 위치: `~/projects/` 통일 (개인 사이트 포함, 2026-08-09 justfly32.github.io 이동 완료)",
         "- ✅ 새 프로젝트는 `~/projects/<kebab-case>` 로 생성 후 이 문서를 갱신",
         "- ✅ 비슷한 게 보이면 기존 폴더 확장 또는 이 문서에 병합/분리 사유 기록",
         "- ✅ 중복 그룹에서 **✅ 정본**만 운영, 비정본은 삭제 (2026-08-09 3개 그룹 7개 폴더 휴지통 이동 완료)",

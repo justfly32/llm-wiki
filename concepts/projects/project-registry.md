@@ -16,7 +16,7 @@ links: [[index]]
 ## 규칙 (중복 방지)
 
 - ❌ 같은 역할의 폴더가 이미 있으면 새로 만들지 말 것 (아래 목록에서 유사 항목 검색)
-- ❌ 프로젝트 폴더 위치: `~/projects/` 통일 (개인 사이트만 `~/justfly32.github.io`)
+- ❌ 프로젝트 폴더 위치: `~/projects/` 통일 (개인 사이트 포함, 2026-08-09 justfly32.github.io 이동 완료)
 - ✅ 새 프로젝트는 `~/projects/<kebab-case>` 로 생성 후 이 문서를 갱신
 - ✅ 비슷한 게 보이면 기존 폴더 확장 또는 이 문서에 병합/분리 사유 기록
 - ✅ 중복 그룹에서 **✅ 정본**만 운영, 비정본은 삭제 (2026-08-09 3개 그룹 7개 폴더 휴지통 이동 완료)
@@ -30,6 +30,7 @@ links: [[index]]
 
 | 폴더 | 설명 | remote | 최근 커밋 |
 |------|------|--------|----------|
+| `  justfly32.github.io` | 크리에이티브 개발자 Bear J의 개인 포트폴리오 사이트입니다. | justfly32/justfly32.github.io | 2026-08-09 |
 | `  post1` | - | justfly32/post1 | 2026-08-09 |
 | `  MI8_project` | 절대 규칙: Root 디렉토리를 직접 수정하거나 파일을 생성하지 마세요. | justfly32/MI8_project | 2026-08-04 |
 | `  kanban-board` | / 기능 / 설명 / | justfly32/kanban-board | 2026-06-29 |
@@ -77,7 +78,7 @@ links: [[index]]
 아래 이름이 비슷한 그룹은 병합/보존 판단이 필요할 수 있다.
 
 - **PPT/문서**: `html2pptx`, `PPT_Generator`
-- **개인 사이트**: `personal-site`, `post1`
+- **개인 사이트**: `personal-site`, `post1`, `justfly32.github.io`
 
 ## 🗑️ 삭제된 비정본 (2026-08-09)
 
