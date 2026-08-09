@@ -29,6 +29,20 @@ OUTPUT = HOME / "wiki" / "concepts" / "projects" / "project-registry.md"
 # home 직속 추가 프로젝트 폴더 (projects/ 밖에 있는 것)
 EXTRA_DIRS = [HOME / "justfly32.github.io"]
 
+# ⭐ 정본(canonical) 지정 — 중복 그룹에서 운영 정본 (2026-08-09 확정, "최신 것이 정본" 원칙)
+CANONICAL = {
+    "elderly-health-care": "노인 건강관리 정본 (4개 기능 구현, 커밋 f317391)",
+    "elderly-health": "NON-CANONICAL: create-next-app 초기 커밋만 있는 빈 껍데기",
+    "code-edu-lab": "코딩 교육 정본 (4스택 9,700파일, 6/27 최신)",
+    "code-tutorial": "NON-CANONICAL: 초기 4파일 버전 (Code Vibe)",
+    "code-express": "NON-CANONICAL: node_modules만 있는 빈 폴더",
+    "simpli-gif-maker": "GIF 생성 정본 (Flask+기능 최다 4,239파일, 포트폴리오 서빙 중)",
+    "stickman-gif-creator": "NON-CANONICAL: 6/13 구버전 파이썬 구현",
+    "simple-anim-maker": "NON-CANONICAL: 빈 폴더",
+    "animation-maker": "NON-CANONICAL: 4파일 미니멀 버전",
+    "simpli-video-maker": "NON-CANONICAL: 2파일 미니멀 버전",
+}
+
 # 설명 추출 제외 키워드 (부트스트랩 기본 설명)
 NOISE_DESC = {"this is a", "this template", "<div align", ">", "create-next-app"}
 
@@ -110,6 +124,7 @@ def scan() -> list:
                 "git": "✅" if git["remote"] or git["last"] != "-" else "—",
                 "remote": git["remote"] or "",
                 "last": git["last"],
+                "canonical": CANONICAL.get(name, ""),
             })
     return items
 
@@ -141,6 +156,12 @@ def render(items: list) -> str:
         "- ❌ 프로젝트 폴더 위치: `~/projects/` 통일 (개인 사이트만 `~/justfly32.github.io`)",
         "- ✅ 새 프로젝트는 `~/projects/<kebab-case>` 로 생성 후 이 문서를 갱신",
         "- ✅ 비슷한 게 보이면 기존 폴더 확장 또는 이 문서에 병합/분리 사유 기록",
+        "- ✅ 중복 그룹에서 **✅ 정본**만 운영, ⚠️ 비정본은 유지보수/신규 개발 금지 (보존만)",
+        "",
+        "## 정본 표시",
+        "",
+        "- **✅ 정본** = 운영 중인 최신 폴더 (새 작업은 여기서 진행)",
+        "- **⚠️ 비정본** = 구버전/빈 껍데기 (삭제 금지, 보존만 — 새 작업 금지)",
         "",
         "## 🟢 Git 프로젝트 (배포/히스토리 있음)",
         "",
@@ -149,12 +170,26 @@ def render(items: list) -> str:
     ]
     for i in active:
         desc = clean_cell(i["desc"] or "-")
-        lines.append(f"| `{i['name']}` | {desc} | {i['remote'] or '-'} | {i['last']} |")
+        badge = "✅" if i["canonical"] and not i["canonical"].startswith("NON") else ("⚠️" if i["canonical"] else " ")
+        lines.append(f"| `{badge} {i['name']}` | {desc} | {i['remote'] or '-'} | {i['last']} |")
 
     lines += ["", "## 📦 로컬 전용 (git 없음)", "", "| 폴더 | 설명 | 파일 수 |", "|------|------|--------|"]
     for i in local:
         desc = clean_cell(i["desc"] or "-")
-        lines.append(f"| `{i['name']}` | {desc} | {i['files']} |")
+        badge = "✅" if i["canonical"] and not i["canonical"].startswith("NON") else ("⚠️" if i["canonical"] else " ")
+        lines.append(f"| `{badge} {i['name']}` | {desc} | {i['files']} |")
+
+    lines += [
+        "",
+        "## 정본/비정본 상세 (2026-08-09 확정 — 최신 것이 정본)",
+        "",
+        "| 폴더 | 상태 | 근거 |",
+        "|------|------|------|",
+    ]
+    for i in sorted(items, key=lambda x: x["name"]):
+        if i["canonical"]:
+            badge = "✅ 정본" if not i["canonical"].startswith("NON") else "⚠️ 비정본"
+            lines.append(f"| `{i['name']}` | {badge} | {clean_cell(i['canonical'])} |")
 
     lines += [
         "",
