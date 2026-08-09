@@ -237,3 +237,9 @@
 - 사전 검증: 크론/스크립트/포트폴리오(justfly32.github.io) 참조 없음 확인 후 삭제
 - 레지스트리 갱신: 36 → 29개 폴더 (git 9/로컬 20), CANONICAL 3개 정본만 유지 (elderly-health-care, code-edu-lab, simpli-gif-maker)
 - generate_project_registry.py에 REMOVED 섹션 + 삭제 기록 표 추가, index.md 설명 갱신
+
+## [2026-08-09] registry-auto | llm-wiki-daily-sync에 레지스트리 자동 재생성 추가
+- llm-wiki-daily-sync 크론(매일 05:30) 프롬프트에 Step 1.5 추가: generate_project_registry.py 실행
+- 새 폴더 생성 시 ~/projects 스캔 → project-registry.md 자동 갱신 (다음 날 05:30 반영)
+- 최종 보고에 레지스트리 폴더 수 + 신규 폴더 이름 포함하도록 변경
+- llm-wiki 스킬 SKILL.md 크론 섹션에도 반영 (1~6단계로 재구성)
