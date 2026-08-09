@@ -13,7 +13,7 @@
 
 ## Projects
 
-- [[project-registry]] — 프로젝트 레지스트리 (전체 폴더 현황 29개) — 코딩 전 필수 조회, 중복 방지
+- [[project-registry]] — 프로젝트 레지스트리 (전체 폴더 현황 27개) — 코딩 전 필수 조회, 중복 방지
 - [[personal-sites]] — 개인 사이트 3개 폴더 내역 (justfly32.github.io / post1 / personal-site) 중복 방지 가이드
 
 ## Learnings

@@ -243,3 +243,11 @@
 - 새 폴더 생성 시 ~/projects 스캔 → project-registry.md 자동 갱신 (다음 날 05:30 반영)
 - 최종 보고에 레지스트리 폴더 수 + 신규 폴더 이름 포함하도록 변경
 - llm-wiki 스킬 SKILL.md 크론 섹션에도 반영 (1~6단계로 재구성)
+
+## [2026-08-09] dashboard-merge | 대시보드 3종 → pc-llm-dashboard 단일 통합
+- 배경: system-dashboard / system-monitor-dashboard / openclaw-token-dashboard 3개가 동일 기능 복제본임을 확인 (라우트 동일, 같은 날 생성)
+- 기능 정체성 확정: PC 상태 확인 + LLM 사용량 확인 → 폴더명을 기능 기준 pc-llm-dashboard로 신설
+- 코드 베이스: openclaw-token-dashboard(리팩토링 완료, useMemo/fetchStats) 채택, system-dashboard와 diff 비교 후 고유 기능 없음 확인
+- 검증: npm install + build 성공, dev 서버 기동 (API 4010 / Vite 5175), health·system-status·hermes-stats(3.4억 토큰/1,877세션)·openclaw-stats 정상 응답, title PC·LLM 대시보드로 변경
+- 기존 3개 폴더 → ~/.Trash/hermes-removed-20260809/ 이동
+- 레지스트리: 29 → 27개, CANONICAL에 pc-llm-dashboard 등록, 대시보드 그룹 중복 후보 제거

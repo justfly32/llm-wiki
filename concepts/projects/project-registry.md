@@ -55,13 +55,11 @@ links: [[index]]
 | `  internet-checker` | SKB, KT, LGU+ 통신 3사의 초고속인터넷 주소별 서비스 가용성을 한 번에 조회하는 도구입니다. | 15 |
 | `  kakao-hybrid-adapter` | [GPTers 글 «카톡 매크로 시대 끝? …»](https://www.gpters.org/dev/post/kakaotalk-macro-era-how-lEVSOKmyNxOqCtI)에서 다룬 아키텍처를 코드로 옮긴 예 | 22 |
 | `  lotto-predictor` | 1231회차 전체 데이터 기반 번호별 확률 학습 예측 모델. | 11 |
-| `  openclaw-token-dashboard` | - | 33 |
 | `  orchestration-workflow` | - | 1 |
+| `✅ pc-llm-dashboard` | PC 상태 확인 + LLM 사용량 확인 통합 모니터링 대시보드. | 25 |
 | `  personal-site` | - | 90 |
 | `  phone-report` | - | 8 |
 | `✅ simpli-gif-maker` | 텍스트 설명을 받아 간단한 졸라맨 GIF 애니메이션을 생성합니다. | 4232 |
-| `  system-dashboard` | - | 24 |
-| `  system-monitor-dashboard` | This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules. | 19 |
 | `  useful-sites` | - | 1 |
 | `  windfriend-archive` | - | 52237 |
 
@@ -71,13 +69,13 @@ links: [[index]]
 |------|------|------|
 | `code-edu-lab` | ✅ 정본 | 코딩 교육 정본 (4스택 9,700파일, 6/27 최신) |
 | `elderly-health-care` | ✅ 정본 | 노인 건강관리 정본 (4개 기능 구현, 커밋 f317391) |
+| `pc-llm-dashboard` | ✅ 정본 | PC 상태+LLM 사용량 통합 대시보드 정본 (3종 통합, React19+Vite+Express, 포트 5175/4010) |
 | `simpli-gif-maker` | ✅ 정본 | GIF 생성 정본 (Flask+기능 최다 4,239파일, 포트폴리오 서빙 중) |
 
 ## 중복 유사 후보 (확인 필요)
 
 아래 이름이 비슷한 그룹은 병합/보존 판단이 필요할 수 있다.
 
-- **대시보드**: `system-dashboard`, `system-monitor-dashboard`, `openclaw-token-dashboard`
 - **PPT/문서**: `html2pptx`, `PPT_Generator`
 - **개인 사이트**: `personal-site`, `post1`
 
@@ -89,9 +87,12 @@ links: [[index]]
 | `code-express` | node_modules만 있는 빈 폴더 |
 | `code-tutorial` | 초기 4파일 버전 (Code Vibe, GitHub 원격에 백업 존재) |
 | `elderly-health` | create-next-app 초기 커밋만 있는 빈 껍데기 (git remote 없음) |
+| `openclaw-token-dashboard` | 대시보드 구버전 (리팩토링 코드를 pc-llm-dashboard 베이스로 사용) |
 | `simple-anim-maker` | 빈 폴더 |
 | `simpli-video-maker` | 2파일 미니멀 버전 |
 | `stickman-gif-creator` | 6/13 구버전 파이썬 구현 |
+| `system-dashboard` | 대시보드 구버전 (pc-llm-dashboard로 통합) |
+| `system-monitor-dashboard` | 대시보드 축소판 (시스템 모니터 탭만, pc-llm-dashboard로 통합) |
 
 > 보존 위치: `~/.Trash/hermes-removed-20260809/` (복구 가능)
 

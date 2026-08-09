@@ -34,6 +34,7 @@ CANONICAL = {
     "elderly-health-care": "노인 건강관리 정본 (4개 기능 구현, 커밋 f317391)",
     "code-edu-lab": "코딩 교육 정본 (4스택 9,700파일, 6/27 최신)",
     "simpli-gif-maker": "GIF 생성 정본 (Flask+기능 최다 4,239파일, 포트폴리오 서빙 중)",
+    "pc-llm-dashboard": "PC 상태+LLM 사용량 통합 대시보드 정본 (3종 통합, React19+Vite+Express, 포트 5175/4010)",
 }
 
 # 🗑️ 삭제된 비정본 (2026-08-09 휴지통 이동: ~/.Trash/hermes-removed-20260809/)
@@ -45,6 +46,9 @@ REMOVED = {
     "simple-anim-maker": "빈 폴더",
     "animation-maker": "4파일 미니멀 버전",
     "simpli-video-maker": "2파일 미니멀 버전",
+    "system-dashboard": "대시보드 구버전 (pc-llm-dashboard로 통합)",
+    "system-monitor-dashboard": "대시보드 축소판 (시스템 모니터 탭만, pc-llm-dashboard로 통합)",
+    "openclaw-token-dashboard": "대시보드 구버전 (리팩토링 코드를 pc-llm-dashboard 베이스로 사용)",
 }
 
 # 설명 추출 제외 키워드 (부트스트랩 기본 설명)
@@ -203,7 +207,6 @@ def render(items: list) -> str:
         "",
     ]
     groups = {
-        "대시보드": ["system-dashboard", "system-monitor-dashboard", "openclaw-token-dashboard"],
         "PPT/문서": ["html2pptx", "PPT_Generator"],
         "개인 사이트": ["personal-site", "post1", "justfly32.github.io"],
     }
