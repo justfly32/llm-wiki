@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Hermes 작업 결과물 인덱스. Last updated: 2026-08-09
-> Total pages: 0
+> Total pages: 1
 
 ## Daily (작업 일지)
 
@@ -13,7 +13,7 @@
 
 ## Projects
 
-<!-- 프로젝트 계획/스펙 -->
+- [[personal-sites]] — 개인 사이트 3개 폴더 내역 (justfly32.github.io / post1 / personal-site) 중복 방지 가이드
 
 ## Learnings
 

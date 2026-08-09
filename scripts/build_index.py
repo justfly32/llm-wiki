@@ -36,6 +36,7 @@ SCAN_ROOTS = [
     ("projects", HOME / "projects"),
     ("hermes", HOME / ".hermes"),
     ("documents", HOME / "documents"),
+    ("wiki", HOME / "wiki"),  # 위키 페이지(concepts/)도 인덱싱 — 중복 방지 문서 검색용 (2026-08-09)
 ]
 
 EXCLUDE_DIRS = {

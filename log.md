@@ -219,3 +219,8 @@
 - collect_cron_errors.py 신규: 크론 output에서 최근 24h FAILED/Error 수집
 - llm-wiki-daily-sync 프롬프트에 에러 분석 단계 추가 (패턴 분석 + 개선 제안)
 - 8건 분석: naver-session-hourly-keepalive 5회 반복 (Broken pipe) — 재시도 적용 검토 대상
+
+## [2026-08-09] personal-sites | 개인 사이트 폴더 내역 기록 (중복 방지)
+- concepts/projects/personal-sites.md 신규 생성: justfly32.github.io(포트폴리오) / post1(활동로그) / personal-site(구 프로토타입) 3개 폴더 역할·위치·갱신방식 정리
+- index.md 카탈로그 등록 (Total pages: 1)
+- 목적: personal-site→post1 진화 구조를 기록해 폴더 중복 생성 방지
