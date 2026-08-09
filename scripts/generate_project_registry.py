@@ -32,15 +32,19 @@ EXTRA_DIRS = [HOME / "justfly32.github.io"]
 # ⭐ 정본(canonical) 지정 — 중복 그룹에서 운영 정본 (2026-08-09 확정, "최신 것이 정본" 원칙)
 CANONICAL = {
     "elderly-health-care": "노인 건강관리 정본 (4개 기능 구현, 커밋 f317391)",
-    "elderly-health": "NON-CANONICAL: create-next-app 초기 커밋만 있는 빈 껍데기",
     "code-edu-lab": "코딩 교육 정본 (4스택 9,700파일, 6/27 최신)",
-    "code-tutorial": "NON-CANONICAL: 초기 4파일 버전 (Code Vibe)",
-    "code-express": "NON-CANONICAL: node_modules만 있는 빈 폴더",
     "simpli-gif-maker": "GIF 생성 정본 (Flask+기능 최다 4,239파일, 포트폴리오 서빙 중)",
-    "stickman-gif-creator": "NON-CANONICAL: 6/13 구버전 파이썬 구현",
-    "simple-anim-maker": "NON-CANONICAL: 빈 폴더",
-    "animation-maker": "NON-CANONICAL: 4파일 미니멀 버전",
-    "simpli-video-maker": "NON-CANONICAL: 2파일 미니멀 버전",
+}
+
+# 🗑️ 삭제된 비정본 (2026-08-09 휴지통 이동: ~/.Trash/hermes-removed-20260809/)
+REMOVED = {
+    "elderly-health": "create-next-app 초기 커밋만 있는 빈 껍데기 (git remote 없음)",
+    "code-tutorial": "초기 4파일 버전 (Code Vibe, GitHub 원격에 백업 존재)",
+    "code-express": "node_modules만 있는 빈 폴더",
+    "stickman-gif-creator": "6/13 구버전 파이썬 구현",
+    "simple-anim-maker": "빈 폴더",
+    "animation-maker": "4파일 미니멀 버전",
+    "simpli-video-maker": "2파일 미니멀 버전",
 }
 
 # 설명 추출 제외 키워드 (부트스트랩 기본 설명)
@@ -156,12 +160,12 @@ def render(items: list) -> str:
         "- ❌ 프로젝트 폴더 위치: `~/projects/` 통일 (개인 사이트만 `~/justfly32.github.io`)",
         "- ✅ 새 프로젝트는 `~/projects/<kebab-case>` 로 생성 후 이 문서를 갱신",
         "- ✅ 비슷한 게 보이면 기존 폴더 확장 또는 이 문서에 병합/분리 사유 기록",
-        "- ✅ 중복 그룹에서 **✅ 정본**만 운영, ⚠️ 비정본은 유지보수/신규 개발 금지 (보존만)",
+        "- ✅ 중복 그룹에서 **✅ 정본**만 운영, 비정본은 삭제 (2026-08-09 3개 그룹 7개 폴더 휴지통 이동 완료)",
         "",
         "## 정본 표시",
         "",
         "- **✅ 정본** = 운영 중인 최신 폴더 (새 작업은 여기서 진행)",
-        "- **⚠️ 비정본** = 구버전/빈 껍데기 (삭제 금지, 보존만 — 새 작업 금지)",
+        "- **🗑️ 삭제된 비정본** = 구버전/빈 껍데기 → `~/.Trash/hermes-removed-20260809/` 보관 (아래 목록 참조)",
         "",
         "## 🟢 Git 프로젝트 (배포/히스토리 있음)",
         "",
@@ -199,17 +203,21 @@ def render(items: list) -> str:
         "",
     ]
     groups = {
-        "건강관리": ["elderly-health", "elderly-health-care"],
-        "GIF/애니메이션": ["simpli-gif-maker", "stickman-gif-creator", "simple-anim-maker", "animation-maker", "simpli-video-maker"],
         "대시보드": ["system-dashboard", "system-monitor-dashboard", "openclaw-token-dashboard"],
         "PPT/문서": ["html2pptx", "PPT_Generator"],
         "개인 사이트": ["personal-site", "post1", "justfly32.github.io"],
-        "코딩 교육": ["code-edu-lab", "code-tutorial", "code-express"],
     }
     for gname, members in groups.items():
         exist = [m for m in members if any(i["name"] == m for i in items)]
         if len(exist) >= 2:
             lines.append(f"- **{gname}**: {', '.join(f'`{m}`' for m in exist)}")
+
+    lines += ["", "## 🗑️ 삭제된 비정본 (2026-08-09)", "", "| 폴더 | 사유 |", "|------|------|"]
+    for name, reason in sorted(REMOVED.items()):
+        lines.append(f"| `{name}` | {clean_cell(reason)} |")
+    lines.append("")
+    lines.append("> 보존 위치: `~/.Trash/hermes-removed-20260809/` (복구 가능)")
+
     lines += ["", "## 관련", "", "- [[personal-sites]] — 개인 사이트 3개 폴더 상세", "- [[index]]", ""]
     return "\n".join(lines)
 

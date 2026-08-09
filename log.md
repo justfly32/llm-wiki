@@ -230,3 +230,10 @@
 - 중복 유사 후보 6그룹 식별: 건강관리(elderly-health×2), GIF(simpli×5), 대시보드(system×3), PPT(html2pptx/PPT_Generator), 개인사이트(personal-site/post1), 코딩교육(code-edu×3)
 - hermes-orchestration 스킬에 "코딩 전 레지스트리 조회" 필수 규칙 추가
 - 갱신 명령: python3 ~/wiki/scripts/generate_project_registry.py
+
+## [2026-08-09] project-registry-cleanup | 비정본 7개 폴더 삭제 (휴지통 이동)
+- 정리 3개 그룹(건강관리·코딩 교육·GIF) 비정본 확정 후 삭제: elderly-health, code-tutorial, code-express, simple-anim-maker, simpli-video-maker, animation-maker, stickman-gif-creator
+- 삭제 방식: ~/.Trash/hermes-removed-20260809/ 로 이동 (복구 가능), code-tutorial은 GitHub 원격 백업 존재
+- 사전 검증: 크론/스크립트/포트폴리오(justfly32.github.io) 참조 없음 확인 후 삭제
+- 레지스트리 갱신: 36 → 29개 폴더 (git 9/로컬 20), CANONICAL 3개 정본만 유지 (elderly-health-care, code-edu-lab, simpli-gif-maker)
+- generate_project_registry.py에 REMOVED 섹션 + 삭제 기록 표 추가, index.md 설명 갱신
