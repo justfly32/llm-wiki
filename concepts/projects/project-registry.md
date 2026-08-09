@@ -1,7 +1,7 @@
 ---
 title: 프로젝트 레지스트리 (전체 폴더 현황)
-created: 2026-08-09
-updated: 2026-08-09
+created: 2026-08-10
+updated: 2026-08-10
 type: projects
 tags: [registry, projects, folder-map, 중복방지]
 links: [[index]]
@@ -11,7 +11,7 @@ links: [[index]]
 
 > **목적:** 새 코딩 작업 시작 전 반드시 이 문서를 확인해 폴더 중복 생성과 위치 혼란을 방지한다.
 > 자동 생성: `python3 ~/wiki/scripts/generate_project_registry.py` (갱신 시 재실행)
-> Last updated: 2026-08-09
+> Last updated: 2026-08-10
 
 ## 규칙 (중복 방지)
 
@@ -30,6 +30,7 @@ links: [[index]]
 
 | 폴더 | 설명 | remote | 최근 커밋 |
 |------|------|--------|----------|
+| `✅ enterprise-search` | 암호화(DRM) 저장 파일 → 권한 기반 인덱싱 → 하이브리드 검색 → RAG 답변 | justfly32/enterprise-search | 2026-08-09 |
 | `  justfly32.github.io` | 크리에이티브 개발자 Bear J의 개인 포트폴리오 사이트입니다. | justfly32/justfly32.github.io | 2026-08-09 |
 | `  post1` | - | justfly32/post1 | 2026-08-09 |
 | `  MI8_project` | 절대 규칙: Root 디렉토리를 직접 수정하거나 파일을 생성하지 마세요. | justfly32/MI8_project | 2026-08-04 |
@@ -51,7 +52,6 @@ links: [[index]]
 | `  ai_business_report` | - | 5 |
 | `  best-practice` | - | 1 |
 | `  claude-cowork-guide` | - | 1 |
-| `✅ enterprise-search` | 암호화(DRM) 저장 파일 → 권한 기반 인덱싱 → 하이브리드 검색 → RAG 답변 | 21 |
 | `  hermes_ops` | - | 148 |
 | `  html2pptx` | HTML 디자인을 PPTX로 최대한 보존 변환하는 도구. | 15 |
 | `  internet-checker` | SKB, KT, LGU+ 통신 3사의 초고속인터넷 주소별 서비스 가용성을 한 번에 조회하는 도구입니다. | 15 |

@@ -268,3 +268,9 @@
 - 검증: CLI 5개 시나리오 + 브라우저 E2E — 일반 직원 급여 차단, 법무팀 계약서 접근, admin 전체 접근, RAG 답변(월 1,500만원/건당 300만원) + 출처 표기
 - 배운 점: HTTP 헤더 한글 불가 → 사용자 컨텍스트는 body 전달 (브라우저 fetch 제약), Next 15.4.1→16.3.0 필요 (Node22 호환)
 - schema/supabase.sql: documents + file_acl + RLS + pgvector (운영용)
+
+## [2026-08-10] daily-sync | 인덱스 +43/-162, 레지스트리 29개 폴더, 크론 에러 7건, 작업 변경 271개
+- 인덱스: 신규 43 / 갱신 162 / 총 11,120개 파일 (FTS 10,880)
+- 레지스트리: 28 → 29개 폴더 (git 11 / 로컬 18) — enterprise-search 신규 합류
+- 크론 에러 7건: naver-session-hourly-keepalive 4 (2일 연속 반복, 조치 필요), Broken pipe 5 / empty stream 2
+- 작업 변경 271개: MI8_project 138, enterprise-search 51, pc-llm-dashboard 25, justfly32.github.io 2, post1 1 / git 커밋 3개 저장소 22건
