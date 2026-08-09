@@ -224,3 +224,9 @@
 - concepts/projects/personal-sites.md 신규 생성: justfly32.github.io(포트폴리오) / post1(활동로그) / personal-site(구 프로토타입) 3개 폴더 역할·위치·갱신방식 정리
 - index.md 카탈로그 등록 (Total pages: 1)
 - 목적: personal-site→post1 진화 구조를 기록해 폴더 중복 생성 방지
+
+## [2026-08-09] project-registry | 프로젝트 폴더 레지스트리 도입 (중복 방지 시스템)
+- generate_project_registry.py 신규: ~/projects + justfly32.github.io 스캔 → concepts/projects/project-registry.md 자동 생성 (36개 폴더, git 11/로컬 25)
+- 중복 유사 후보 6그룹 식별: 건강관리(elderly-health×2), GIF(simpli×5), 대시보드(system×3), PPT(html2pptx/PPT_Generator), 개인사이트(personal-site/post1), 코딩교육(code-edu×3)
+- hermes-orchestration 스킬에 "코딩 전 레지스트리 조회" 필수 규칙 추가
+- 갱신 명령: python3 ~/wiki/scripts/generate_project_registry.py

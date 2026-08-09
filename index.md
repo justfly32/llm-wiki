@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Hermes 작업 결과물 인덱스. Last updated: 2026-08-09
-> Total pages: 1
+> Total pages: 2
 
 ## Daily (작업 일지)
 
@@ -13,6 +13,7 @@
 
 ## Projects
 
+- [[project-registry]] — 프로젝트 레지스트리 (전체 폴더 현황 36개) — 코딩 전 필수 조회, 중복 방지
 - [[personal-sites]] — 개인 사이트 3개 폴더 내역 (justfly32.github.io / post1 / personal-site) 중복 방지 가이드
 
 ## Learnings
