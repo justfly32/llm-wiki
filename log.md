@@ -259,3 +259,12 @@
 - generate_project_registry.py: EXTRA_DIRS 비움(projects 스캔으로 자동 포함), 규칙 문구를 "개인 사이트 포함 projects 통일"로 변경
 - personal-sites.md: 위치/규칙 갱신 (home 직속 금지 추가)
 - 레지스트리: 27 → 28개 폴더 (justfly32.github.io가 git 프로젝트로 합류, git 10개)
+
+## [2026-08-09] enterprise-search | 사내 파일 검색 PoC 구축
+- 신규 프로젝트: ~/projects/enterprise-search (Next.js 16 + FastAPI + SQLite/Supabase RLS)
+- FileAccessor 인터페이스 (DRM 무관 추상화): LocalFileAccessor 구현, 파수/마크애니/MIP는 제품 확정 후 추가 예정
+- 인덱서: FTS5(bm25) + n-gram 벡터(cosine) 하이브리드, mtime 증분
+- 권한 모델: 파일별 ACL(dept/role/users) → 검색 단계 차단 (Glean Permission Mirroring 원칙)
+- 검증: CLI 5개 시나리오 + 브라우저 E2E — 일반 직원 급여 차단, 법무팀 계약서 접근, admin 전체 접근, RAG 답변(월 1,500만원/건당 300만원) + 출처 표기
+- 배운 점: HTTP 헤더 한글 불가 → 사용자 컨텍스트는 body 전달 (브라우저 fetch 제약), Next 15.4.1→16.3.0 필요 (Node22 호환)
+- schema/supabase.sql: documents + file_acl + RLS + pgvector (운영용)

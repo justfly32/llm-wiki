@@ -51,6 +51,7 @@ links: [[index]]
 | `  ai_business_report` | - | 5 |
 | `  best-practice` | - | 1 |
 | `  claude-cowork-guide` | - | 1 |
+| `✅ enterprise-search` | 암호화(DRM) 저장 파일 → 권한 기반 인덱싱 → 하이브리드 검색 → RAG 답변 | 21 |
 | `  hermes_ops` | - | 148 |
 | `  html2pptx` | HTML 디자인을 PPTX로 최대한 보존 변환하는 도구. | 15 |
 | `  internet-checker` | SKB, KT, LGU+ 통신 3사의 초고속인터넷 주소별 서비스 가용성을 한 번에 조회하는 도구입니다. | 15 |
@@ -70,6 +71,7 @@ links: [[index]]
 |------|------|------|
 | `code-edu-lab` | ✅ 정본 | 코딩 교육 정본 (4스택 9,700파일, 6/27 최신) |
 | `elderly-health-care` | ✅ 정본 | 노인 건강관리 정본 (4개 기능 구현, 커밋 f317391) |
+| `enterprise-search` | ✅ 정본 | 사내 파일 검색 PoC (DRM 무관 Accessor 추상화 + 권한 ACL + 하이브리드 검색 + RAG, 포트 8091/3001) |
 | `pc-llm-dashboard` | ✅ 정본 | PC 상태+LLM 사용량 통합 대시보드 정본 (3종 통합, React19+Vite+Express, 포트 5175/4010) |
 | `simpli-gif-maker` | ✅ 정본 | GIF 생성 정본 (Flask+기능 최다 4,239파일, 포트폴리오 서빙 중) |
 

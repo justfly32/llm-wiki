@@ -36,6 +36,7 @@ CANONICAL = {
     "code-edu-lab": "코딩 교육 정본 (4스택 9,700파일, 6/27 최신)",
     "simpli-gif-maker": "GIF 생성 정본 (Flask+기능 최다 4,239파일, 포트폴리오 서빙 중)",
     "pc-llm-dashboard": "PC 상태+LLM 사용량 통합 대시보드 정본 (3종 통합, React19+Vite+Express, 포트 5175/4010)",
+    "enterprise-search": "사내 파일 검색 PoC (DRM 무관 Accessor 추상화 + 권한 ACL + 하이브리드 검색 + RAG, 포트 8091/3001)",
 }
 
 # 🗑️ 삭제된 비정본 (2026-08-09 휴지통 이동: ~/.Trash/hermes-removed-20260809/)
