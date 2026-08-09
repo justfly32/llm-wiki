@@ -214,3 +214,8 @@
 - search.py: FTS5 + RAG 답변 CLI
 - web.py: /api/search 통합 검색
 - SCHEMA.md v2 재작성, llm-wiki 스킬 v4 업데이트
+
+## [2026-08-09] cron-errors | collect_cron_errors.py 도입, 24h 내 에러 8건 분석 기록
+- collect_cron_errors.py 신규: 크론 output에서 최근 24h FAILED/Error 수집
+- llm-wiki-daily-sync 프롬프트에 에러 분석 단계 추가 (패턴 분석 + 개선 제안)
+- 8건 분석: naver-session-hourly-keepalive 5회 반복 (Broken pipe) — 재시도 적용 검토 대상
