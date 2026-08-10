@@ -274,3 +274,8 @@
 - 레지스트리: 28 → 29개 폴더 (git 11 / 로컬 18) — enterprise-search 신규 합류
 - 크론 에러 7건: naver-session-hourly-keepalive 4 (2일 연속 반복, 조치 필요), Broken pipe 5 / empty stream 2
 - 작업 변경 271개: MI8_project 138, enterprise-search 51, pc-llm-dashboard 25, justfly32.github.io 2, post1 1 / git 커밋 3개 저장소 22건
+## [2026-08-11] daily-sync | 인덱스 +8/+67, 레지스트리 29개 폴더, 크론 에러 10건, 작업 변경 70개
+- 인덱스: 신규 8 / 갱신 67 / 총 11,128개 파일 (FTS 10,888)
+- 레지스트리: 29개 폴더 (git 11 / 로컬 18) — 전일과 동일, 신규 폴더 없음
+- 크론 에러 10건: naver-session-hourly-keepalive 5 (3일 연속 반복, 조치 필요), Broken pipe 6 (09:08~10:10 집중) / empty stream 3, llm-wiki-daily-sync 1건은 오탐
+- 작업 변경 70개: MI8_project 50 (카드뉴스 md), post1 1 / git 커밋 1건

@@ -1,10 +1,11 @@
 # Wiki Index
 
-> Hermes 작업 결과물 인덱스. Last updated: 2026-08-10
-> Total pages: 3
+> Hermes 작업 결과물 인덱스. Last updated: 2026-08-11
+> Total pages: 4
 
 ## Daily (작업 일지)
 
+- [[2026-08-11]] — daily-sync: 인덱스 +8/+67, 레지스트리 29개, 크론 에러 10건 (keepalive 3일 연속 반복, 조치 필요)
 - [[2026-08-10]] — daily-sync: 인덱스 +43/-162, 레지스트리 29개 (enterprise-search 합류), 크론 에러 7건 (keepalive 2일 연속 반복)
 - [[2026-08-09]] — LLM Wiki v4 재구축 (작업 결과물 인덱스), 로또 필터 재조정, 카드뉴스 51개
 

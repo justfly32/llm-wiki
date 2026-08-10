@@ -1,7 +1,7 @@
 ---
 title: 프로젝트 레지스트리 (전체 폴더 현황)
-created: 2026-08-10
-updated: 2026-08-10
+created: 2026-08-11
+updated: 2026-08-11
 type: projects
 tags: [registry, projects, folder-map, 중복방지]
 links: [[index]]
@@ -11,7 +11,7 @@ links: [[index]]
 
 > **목적:** 새 코딩 작업 시작 전 반드시 이 문서를 확인해 폴더 중복 생성과 위치 혼란을 방지한다.
 > 자동 생성: `python3 ~/wiki/scripts/generate_project_registry.py` (갱신 시 재실행)
-> Last updated: 2026-08-10
+> Last updated: 2026-08-11
 
 ## 규칙 (중복 방지)
 
@@ -30,9 +30,9 @@ links: [[index]]
 
 | 폴더 | 설명 | remote | 최근 커밋 |
 |------|------|--------|----------|
+| `  post1` | - | justfly32/post1 | 2026-08-10 |
 | `✅ enterprise-search` | 암호화(DRM) 저장 파일 → 권한 기반 인덱싱 → 하이브리드 검색 → RAG 답변 | justfly32/enterprise-search | 2026-08-09 |
 | `  justfly32.github.io` | 크리에이티브 개발자 Bear J의 개인 포트폴리오 사이트입니다. | justfly32/justfly32.github.io | 2026-08-09 |
-| `  post1` | - | justfly32/post1 | 2026-08-09 |
 | `  MI8_project` | 절대 규칙: Root 디렉토리를 직접 수정하거나 파일을 생성하지 마세요. | justfly32/MI8_project | 2026-08-04 |
 | `  kanban-board` | / 기능 / 설명 / | justfly32/kanban-board | 2026-06-29 |
 | `  dev-commercialization-helper` | 개발 상품화 도우미 — Next.js + Supabase + Stripe SaaS 보일러플레이트 | justfly32/dev-commercialization-helper | 2026-06-28 |
