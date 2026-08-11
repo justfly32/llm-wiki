@@ -279,3 +279,8 @@
 - 레지스트리: 29개 폴더 (git 11 / 로컬 18) — 전일과 동일, 신규 폴더 없음
 - 크론 에러 10건: naver-session-hourly-keepalive 5 (3일 연속 반복, 조치 필요), Broken pipe 6 (09:08~10:10 집중) / empty stream 3, llm-wiki-daily-sync 1건은 오탐
 - 작업 변경 70개: MI8_project 50 (카드뉴스 md), post1 1 / git 커밋 1건
+## [2026-08-12] daily-sync | 인덱스 +7/+64, 레지스트리 29개 폴더, 크론 에러 8건, 작업 변경 66개
+- 인덱스: 신규 7 / 갱신 64 / 총 11,135개 파일 (FTS 10,895)
+- 레지스트리: 29개 폴더 (git 11 / 로컬 18) — 전일과 동일, 신규 폴더 없음
+- 크론 에러 8건 (오탐 1 제외 실질 7): naver-session-hourly-keepalive 5 (4일 연속 반복, 조치 필요), Broken pipe 5 (09:09~10:09 집중, 2일 연속 동일 창) / empty stream 2, llm-wiki-daily-sync 1건은 오탐 (2일 연속)
+- 작업 변경 66개: MI8_project 50 (카드뉴스 md), post1 1 / git 커밋 1건
