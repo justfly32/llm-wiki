@@ -301,3 +301,9 @@
 - 레지스트리: 29개 폴더 (git 11 / 로컬 18) — 전일과 동일, 신규 폴더 없음
 - 크론 에러 7건 (오탐 1 제외 실질 6): naver-session-hourly-keepalive 3 (6일 연속 반복, 조치 필요), Broken pipe 5 (09:08~10:09 4건 집중 3일 연속 + 01:09 확산), card-news-supabase-sync 1건 신규 (Duplicate KeyAlreadyExists), llm-wiki-daily-sync 1건 오탐 (4일 연속)
 - 작업 변경 73개: MI8_project 62 (카드뉴스 md 54 + 이미지 11), post1 1 (git 커밋 3911341) / git 커밋 1건
+
+## [2026-08-16] daily-sync | 인덱스 +218/+64, 레지스트리 31개 폴더, 크론 에러 9건, 작업 변경 277개
+- 인덱스: 신규 218 / 갱신 64 / 총 11,383개 파일 (FTS 11,138, 298.6MB)
+- 레지스트리: 31개 폴더 (git 12 / 로컬 19) — 전일 29개에서 +2. 신규: auto-trading (git, 한국 주식 자동매매, 최근 커밋 2026-08-16), auto-trading-research (로컬)
+- 크론 에러 9건 (오탐 1 제외 실질 8): naver-session-hourly-keepalive 5 (8일 연속 반복, 조치 필요, Broken pipe 4 + empty stream 1, 09~13시 집중 + 01:09 확산), seo-monitor-search 1 (10:09), telecom-3sa-daily-news 1 (09:09), card-news-supabase-sync 1 (Duplicate KeyAlreadyExists 03:11, 2일 간격 재발), llm-wiki-daily-sync 1건 오탐 (6일 연속)
+- 작업 변경 277개: auto-trading 190 (git 커밋 20건: 금 10% 동적 리밸런스, bear_recovery_days 15→0, 5년 백테스트), MI8_project 50 (카드뉴스 md), auto-trading-research 2 (신규), post1 1 (git 커밋 a1fb013), lotto-predictor 1 / git 커밋 21건 (2개 저장소)
