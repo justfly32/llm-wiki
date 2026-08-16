@@ -307,3 +307,9 @@
 - 레지스트리: 31개 폴더 (git 12 / 로컬 19) — 전일 29개에서 +2. 신규: auto-trading (git, 한국 주식 자동매매, 최근 커밋 2026-08-16), auto-trading-research (로컬)
 - 크론 에러 9건 (오탐 1 제외 실질 8): naver-session-hourly-keepalive 5 (8일 연속 반복, 조치 필요, Broken pipe 4 + empty stream 1, 09~13시 집중 + 01:09 확산), seo-monitor-search 1 (10:09), telecom-3sa-daily-news 1 (09:09), card-news-supabase-sync 1 (Duplicate KeyAlreadyExists 03:11, 2일 간격 재발), llm-wiki-daily-sync 1건 오탐 (6일 연속)
 - 작업 변경 277개: auto-trading 190 (git 커밋 20건: 금 10% 동적 리밸런스, bear_recovery_days 15→0, 5년 백테스트), MI8_project 50 (카드뉴스 md), auto-trading-research 2 (신규), post1 1 (git 커밋 a1fb013), lotto-predictor 1 / git 커밋 21건 (2개 저장소)
+
+## [2026-08-17] daily-sync | 인덱스 +32/+159, 레지스트리 31개 폴더, 크론 에러 2건, 작업 변경 195개
+- 인덱스: 신규 32 / 갱신 159 / 총 11,415개 파일 (FTS 11,170, 299.0MB)
+- 레지스트리: 31개 폴더 (git 12 / 로컬 19) — 전일과 동일, 신규 폴더 없음
+- 크론 에러 2건 (오탐 1 제외 실질 1): naver-session-hourly-keepalive 1 (Broken pipe 01:09, 9일 연속 반복, 조치 필요 — 전일 5건→1건 급감), llm-wiki-daily-sync 1건 오탐 (7일 연속)
+- 작업 변경 195개: MI8_project 147 (카드뉴스 .seo.json — 전일 50→147 급증), auto-trading 13 (git 커밋 7건: trading-rules.md 단일 문서, 장중 체크 10시+14시, 트레일링 스톱 10% 확정), post1 1 (git 커밋 9763644) / git 커밋 8건 (2개 저장소)
