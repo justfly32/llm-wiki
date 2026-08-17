@@ -313,3 +313,5 @@
 - 레지스트리: 31개 폴더 (git 12 / 로컬 19) — 전일과 동일, 신규 폴더 없음
 - 크론 에러 2건 (오탐 1 제외 실질 1): naver-session-hourly-keepalive 1 (Broken pipe 01:09, 9일 연속 반복, 조치 필요 — 전일 5건→1건 급감), llm-wiki-daily-sync 1건 오탐 (7일 연속)
 - 작업 변경 195개: MI8_project 147 (카드뉴스 .seo.json — 전일 50→147 급증), auto-trading 13 (git 커밋 7건: trading-rules.md 단일 문서, 장중 체크 10시+14시, 트레일링 스톱 10% 확정), post1 1 (git 커밋 9763644) / git 커밋 8건 (2개 저장소)
+
+## [2026-08-18] daily-sync | 인덱스 +230/+71, 레지스트리 32개 폴더 (신규: slide-master), 크론 에러 오탐 1건→수정, 작업 변경 306개 (MI8 77, slide-master 65, post1 커밋 1)
