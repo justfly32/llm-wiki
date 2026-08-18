@@ -315,3 +315,9 @@
 - 작업 변경 195개: MI8_project 147 (카드뉴스 .seo.json — 전일 50→147 급증), auto-trading 13 (git 커밋 7건: trading-rules.md 단일 문서, 장중 체크 10시+14시, 트레일링 스톱 10% 확정), post1 1 (git 커밋 9763644) / git 커밋 8건 (2개 저장소)
 
 ## [2026-08-18] daily-sync | 인덱스 +230/+71, 레지스트리 32개 폴더 (신규: slide-master), 크론 에러 오탐 1건→수정, 작업 변경 306개 (MI8 77, slide-master 65, post1 커밋 1)
+
+## [2026-08-19] daily-sync | 인덱스 +29/+68, 레지스트리 32개 폴더, 크론 에러 1건, 작업 변경 105개
+- 인덱스: 신규 29 / 갱신 68 / 총 11,674개 파일 (FTS 11,429, 303.2MB)
+- 레지스트리: 32개 폴더 (git 13 / 로컬 19) — 전일과 동일, 신규 폴더 없음
+- 크론 에러 1건: card-news-supabase-sync (Duplicate KeyAlreadyExists 23:20, 주 3회 이상 재발, 조치 필요)
+- 작업 변경 105개: MI8_project 64 (카드뉴스 md), auto-trading 20 (git 커밋 77012b2: NHPLUG 라이브 연동), post1 1 (git 커밋 d26b40f) / git 커밋 2건 (2개 저장소)
