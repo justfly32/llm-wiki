@@ -321,3 +321,9 @@
 - 레지스트리: 32개 폴더 (git 13 / 로컬 19) — 전일과 동일, 신규 폴더 없음
 - 크론 에러 1건: card-news-supabase-sync (Duplicate KeyAlreadyExists 23:20, 주 3회 이상 재발, 조치 필요)
 - 작업 변경 105개: MI8_project 64 (카드뉴스 md), auto-trading 20 (git 커밋 77012b2: NHPLUG 라이브 연동), post1 1 (git 커밋 d26b40f) / git 커밋 2건 (2개 저장소)
+
+## [2026-08-20] daily-sync | 인덱스 +0/+55, 레지스트리 32개 폴더, 크론 에러 0건, 작업 변경 96개
+- 인덱스: 신규 0 / 갱신 55 / 총 11,694개 파일 (FTS 11,449, 303.3MB)
+- 레지스트리: 32개 폴더 (git 13 / 로컬 19) — 전일과 동일, 신규 폴더 없음
+- 크론 에러 0건 (정상) — 전일까지 재발하던 card-news-supabase-sync Duplicate 미발생
+- 작업 변경 96개: MI8_project 52 (카드뉴스 md), auto-trading 14 (git 커밋 7건: 장중/장후 모드 분리, env별 분리, ops-runbook), post1 1 (git 커밋 0ce483a) / git 커밋 3개 저장소
