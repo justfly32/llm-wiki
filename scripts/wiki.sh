@@ -69,10 +69,6 @@ wiki-daily() {
         return 0
     fi
     echo "$today" > "$log_file"
-    echo "📚 Collecting arXiv papers..."
-    python3 "$WIKI_PATH/scripts/collect_arxiv.py" 2>&1
-    echo "🔥 Collecting Hacker News..."
-    python3 "$WIKI_PATH/scripts/collect_hn.py" 2>&1
     echo "🔍 Linting..."
     python3 "$WIKI_PY" lint 2>&1
     wiki-save
