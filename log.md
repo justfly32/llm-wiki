@@ -322,6 +322,12 @@
 - 크론 에러 1건: card-news-supabase-sync (Duplicate KeyAlreadyExists 23:20, 주 3회 이상 재발, 조치 필요)
 - 작업 변경 105개: MI8_project 64 (카드뉴스 md), auto-trading 20 (git 커밋 77012b2: NHPLUG 라이브 연동), post1 1 (git 커밋 d26b40f) / git 커밋 2건 (2개 저장소)
 
+## [2026-08-21] daily-sync | 인덱스 +10/+78, 레지스트리 32개 폴더, 크론 에러 2건, 작업 변경 83개
+- 인덱스: 신규 10 / 갱신 78 / 총 11,704개 파일 (FTS 11,459, 303.5MB)
+- 레지스트리: 32개 폴더 (git 13 / 로컬 19) — 전일과 동일, 신규 폴더 없음
+- 크론 에러 2건: (1) card-news-supabase-sync 03:21 — Supabase status.json DELETE curl 10초 타임아웃(TimeExpired), (2) auto-trading 16:05 — NHPLUG 22642 주문가격 입력 불가 (시간외 71, 커밋 8a2f7e3으로 수정 완료)
+- 작업 변경 83개: MI8_project 52 (카드뉴스 md), auto-trading 11 (git 커밋 8건: 장후코어 81 정합, bull_hold 매도 억제, --no-save), post1 1 (git 커밋 978ee99) / git 커밋 3개 저장소
+
 ## [2026-08-20] daily-sync | 인덱스 +0/+55, 레지스트리 32개 폴더, 크론 에러 0건, 작업 변경 96개
 - 인덱스: 신규 0 / 갱신 55 / 총 11,694개 파일 (FTS 11,449, 303.3MB)
 - 레지스트리: 32개 폴더 (git 13 / 로컬 19) — 전일과 동일, 신규 폴더 없음
