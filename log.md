@@ -328,6 +328,12 @@
 - 크론 에러 2건: (1) card-news-supabase-sync 03:21 — Supabase status.json DELETE curl 10초 타임아웃(TimeExpired), (2) auto-trading 16:05 — NHPLUG 22642 주문가격 입력 불가 (시간외 71, 커밋 8a2f7e3으로 수정 완료)
 - 작업 변경 83개: MI8_project 52 (카드뉴스 md), auto-trading 11 (git 커밋 8건: 장후코어 81 정합, bull_hold 매도 억제, --no-save), post1 1 (git 커밋 978ee99) / git 커밋 3개 저장소
 
+## [2026-08-22] daily-sync | 인덱스 +7/+67, 레지스트리 32개 폴더, 크론 에러 16건, 작업 변경 69개
+- 인덱스: 신규 7 / 갱신 67 / 총 11,711개 파일 (FTS 11,466, 303.6MB)
+- 레지스트리: 32개 폴더 (git 13 / 로컬 19) — 전일과 동일, 신규 폴더 없음
+- 크론 에러 16건 — **모두 동일 유형 (인퍼런스 설정 drift, unpinned, 조치 필요)**: naver-session-hourly-keepalive 15회(매시간 14:00~05:00), auto-trading-evening-briefing 1회. 원인: 글로벌 설정 migrate(provider opencode-go→openrouter, model deepseek-v4-flash→deepseek/deepseek-v4-flash-0731) 후 unpinned 작업 안전 차단. 해결: 각 job을 `cronjob action=update`로 pin.
+- 작업 변경 69개: MI8_project 51 (카드뉴스 md), auto-trading 4, lotto-predictor 2, post1 1 (git 커밋 cc3f963) / git 커밋 2개 저장소
+
 ## [2026-08-20] daily-sync | 인덱스 +0/+55, 레지스트리 32개 폴더, 크론 에러 0건, 작업 변경 96개
 - 인덱스: 신규 0 / 갱신 55 / 총 11,694개 파일 (FTS 11,449, 303.3MB)
 - 레지스트리: 32개 폴더 (git 13 / 로컬 19) — 전일과 동일, 신규 폴더 없음
