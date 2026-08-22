@@ -4,6 +4,8 @@
 > Format: `## [YYYY-MM-DD] action | subject`
 > Actions: ingest, update, query, lint, create, archive, delete
 
+## [2026-08-23] daily-sync | 인덱스 +5/+68, 레지스트리 32개 폴더, 크론 에러 17건 (inference config drift unpinned), 작업 변경 72개
+
 ## [2026-06-01] create | Wiki initialized
 - Domain: Personal knowledge base
 - Structure created with SCHEMA.md, index.md, log.md
