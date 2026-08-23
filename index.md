@@ -5,6 +5,7 @@
 
 ## Daily (작업 일지)
 
+- [[2026-08-24]] — daily-sync: 인덱스 +4/+149, 레지스트리 32개 (변동 없음), 크론 에러 1건 (card-news-supabase-sync 상태 동기화 curl 타임아웃), 작업 변경 149개
 - [[2026-08-23]] — daily-sync: 인덱스 +5/+68, 레지스트리 32개 (변동 없음), 크론 에러 17건 (naver-session hourly keepalive 14회 반복 + seo-monitor 2건 + 주간 주식 분석 1 — 전부 inference config drift unpinned, 조치 필요), 작업 변경 72개
 - [[2026-08-22]] — daily-sync: 인덱스 +7/+67, 레지스트리 32개 (변동 없음), 크론 에러 16건 (keepalive 15회 반복 + 개인 브리핑 1 — 전부 inference config drift unpinned, 조치 필요), 작업 변경 69개
 - [[2026-08-21]] — daily-sync: 인덱스 +10/+78, 레지스트리 32개 (변동 없음), 크론 에러 2건 (supabase DELETE 타임아웃, auto-trading 22642 — 이미 수정됨), 작업 변경 83개
