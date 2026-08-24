@@ -4,6 +4,12 @@
 > Format: `## [YYYY-MM-DD] action | subject`
 > Actions: ingest, update, query, lint, create, archive, delete
 
+## [2026-08-25] daily-sync | 인덱스 +5/-0, 레지스트리 32개 폴더, 크론 에러 4건, 작업 변경 67개
+- 인덱스: 신규 5 / 갱신 69 / 총 11,725개 파일 (FTS 11,480, 303.7MB)
+- 레지스트리: 32개 폴더 (git 13 / 로컬 19) — 전일과 동일, 신규 폴더 없음
+- 크론 에러 4건 — **2개 유형 (조치 필요)**: card-news-supabase-sync 2회 (23:30, 23:52, Supabase 상태 동기화 curl PUT 타임아웃 10초 — 48h 내 동일 원인 3회 반복, 미해결), telecom-3sa-daily-news + auto-trading-morning-briefing 2건 (08:30, HTTP 401 Insufficient balance — opencode.ai 워크스페이스 결제 잔액 부족)
+- 작업 변경 67개: MI8_project 54 (카드뉴스 md), auto-trading 4, post1 1 (git 커밋 e0320fa) / git 커밋 2개 저장소
+
 ## [2026-08-24] daily-sync | 인덱스 +4/+149, 레지스트리 32개 폴더, 크론 에러 1건 (card-news-supabase-sync 타임아웃), 작업 변경 149개
 
 ## [2026-08-23] daily-sync | 인덱스 +5/+68, 레지스트리 32개 폴더, 크론 에러 17건 (inference config drift unpinned), 작업 변경 72개
