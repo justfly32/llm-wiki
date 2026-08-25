@@ -4,6 +4,12 @@
 > Format: `## [YYYY-MM-DD] action | subject`
 > Actions: ingest, update, query, lint, create, archive, delete
 
+## [2026-08-26] daily-sync | 인덱스 +6/-0, 레지스트리 32개 폴더, 크론 에러 0건, 작업 변경 70개
+- 인덱스: 신규 6 / 갱신 69 / 총 11,731개 파일 (FTS 11,486, 303.7MB)
+- 레지스트리: 32개 폴더 (git 13 / 로컬 19) — 전일과 동일, 신규 폴더 없음
+- 크론 에러 0건 (정상) — 전일 반복되던 card-news-supabase-sync 타임아웃 소멸, 경과 관찰 유지
+- 작업 변경 70개: MI8_project 52 (카드뉴스 md + 발행 slug), auto-trading 4 (트랙 리포트), post1 1 / .hermes 13 / git 커밋 2개 저장소 (post1 f5aa224, memories c62e7c6)
+
 ## [2026-08-25] daily-sync | 인덱스 +5/-0, 레지스트리 32개 폴더, 크론 에러 4건, 작업 변경 67개
 - 인덱스: 신규 5 / 갱신 69 / 총 11,725개 파일 (FTS 11,480, 303.7MB)
 - 레지스트리: 32개 폴더 (git 13 / 로컬 19) — 전일과 동일, 신규 폴더 없음
