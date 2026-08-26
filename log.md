@@ -4,6 +4,12 @@
 > Format: `## [YYYY-MM-DD] action | subject`
 > Actions: ingest, update, query, lint, create, archive, delete
 
+## [2026-08-27] daily-sync | 인덱스 +4/-0, 레지스트리 32개 폴더, 크론 에러 3건 (조치 필요), 작업 변경 68개
+- 인덱스: 신규 4 / 갱신 64 / 총 11,736개 파일 (FTS 11,491, 303.8MB)
+- 레지스트리: 32개 폴더 (git 13 / 로컬 19) — 전일과 동일, 신규 폴더 없음
+- 크론 에러 3건 — **단일 유형 반복 (조치 필요)**: naver-session-hourly-keepalive 2회 (23:00, 00:00) + daily-memory-to-notion 1회 (00:00), 전부 `HTTP 401: Model ox-alpha-free is not supported` — 크론 job이 지원되지 않는 모델(ox-alpha-free)로 지정됨
+- 작업 변경 68개: MI8_project 51 (카드뉴스 md + 발행 slug), auto-trading 4 (트랙 리포트), post1 1 / .hermes 12 / git 커밋 2개 저장소 (post1 de32ddf, memories 3c29952)
+
 ## [2026-08-26] daily-sync | 인덱스 +6/-0, 레지스트리 32개 폴더, 크론 에러 0건, 작업 변경 70개
 - 인덱스: 신규 6 / 갱신 69 / 총 11,731개 파일 (FTS 11,486, 303.7MB)
 - 레지스트리: 32개 폴더 (git 13 / 로컬 19) — 전일과 동일, 신규 폴더 없음
