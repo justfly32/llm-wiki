@@ -4,6 +4,12 @@
 > Format: `## [YYYY-MM-DD] action | subject`
 > Actions: ingest, update, query, lint, create, archive, delete
 
+## [2026-08-28] daily-sync | 인덱스 +9/-0, 레지스트리 32개 폴더, 크론 에러 1건, 작업 변경 81개
+- 인덱스: 신규 9 / 갱신 66 / 총 11,745개 파일 (FTS 11,500, 303.9MB)
+- 레지스트리: 32개 폴더 (git 13 / 로컬 19) — 전일과 동일, 신규 폴더 없음
+- 크론 에러 1건 — card-news-supabase-sync (05:20, Supabase `.status.json` curl PUT 타임아웃 10초). 5일 창(08-24~28)에서 이 원인 4회 재발성 간헐 이슈 (08-26·27 소멸 후 재발). 단건이라 "3건 이상 반복" 기준은 미달, 관찰 유지 + 재시도 규칙 추가 권장.
+- 작업 변경 81개: MI8_project 65 (카드뉴스 md + 발행 slug), auto-trading 4 (트랙 리포트), post1 1 / .hermes 11 / git 커밋 2개 저장소 (post1 99550fe, memories 278e56d)
+
 ## [2026-08-27] daily-sync | 인덱스 +4/-0, 레지스트리 32개 폴더, 크론 에러 3건 (조치 필요), 작업 변경 68개
 - 인덱스: 신규 4 / 갱신 64 / 총 11,736개 파일 (FTS 11,491, 303.8MB)
 - 레지스트리: 32개 폴더 (git 13 / 로컬 19) — 전일과 동일, 신규 폴더 없음
