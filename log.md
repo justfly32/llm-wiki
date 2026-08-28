@@ -367,3 +367,10 @@
 - 레지스트리: 32개 폴더 (git 13 / 로컬 19) — 전일과 동일, 신규 폴더 없음
 - 크론 에러 0건 (정상) — 전일까지 재발하던 card-news-supabase-sync Duplicate 미발생
 - 작업 변경 96개: MI8_project 52 (카드뉴스 md), auto-trading 14 (git 커밋 7건: 장중/장후 모드 분리, env별 분리, ops-runbook), post1 1 (git 커밋 0ce483a) / git 커밋 3개 저장소
+
+## [2026-08-29] daily-sync | 인덱스 +7/+65, 레지스트리 32개 폴더, 크론 에러 1건, 작업 변경 68개
+- 인덱스: 신규 7 / 갱신 65 / 총 11,752개 파일 (FTS 11,507, 304.0MB)
+- 레지스트리: 32개 폴더 (git 13 / 로컬 19) — 전일과 동일, 신규 폴더 없음
+- 크론 에러 1건 (card-news-supabase-sync 05:02 상태 정리 DELETE curl 타임아웃 10초) — 콘텐츠 업로드/SEO 정상, 정리 단계만 실패
+- 작업 변경 68개: MI8_project 52 (카드뉴스 md), auto-trading 4, lotto-predictor 2, post1 1 (git 커밋 df5514f), .hermes 9 / git 커밋 2개 저장소 (post1 df5514f, memories 1ccdcae)
+- daily 페이지: concepts/daily/2026-08-29.md 생성
