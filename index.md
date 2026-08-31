@@ -1,9 +1,11 @@
 # Wiki Index
 
-> Hermes 작업 결과물 인덱스. Last updated: 2026-08-30
-> Total pages: 17
+> Hermes 작업 결과물 인덱스. Last updated: 2026-09-01
+> Total pages: 18
 
 ## Daily (작업 일지)
+
+- [[2026-09-01]] — daily-sync: 인덱스 +26/+69, 레지스트리 32개 (변동 없음), 크론 에러 0건, 작업 변경 87개, git 커밋 2개
 
 - [[2026-08-30]] — daily-sync: 인덱스 +5/+67, 레지스트리 32개 (변동 없음), 크론 에러 1건 (card-news-supabase-sync 상태 정리 PUT 타임아웃 — 7일 창 6회 재발, 재시도 래퍼 조치), 작업 변경 67개
 - [[2026-08-29]] — daily-sync: 인덱스 +7/+65, 레지스트리 32개 (변동 없음), 크론 에러 1건 (card-news-supabase-sync 상태 정리 DELETE 타임아웃, 재시도 래퍼 제안), 작업 변경 68개
