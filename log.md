@@ -4,6 +4,13 @@
 > Format: `## [YYYY-MM-DD] action | subject`
 > Actions: ingest, update, query, lint, create, archive, delete
 
+## [2026-09-03] daily-sync | 인덱스 +32/+67, 레지스트리 33개 폴더 (+1: web-crawler-work), 크론 에러 1건, 작업 변경 94개
+- 인덱스: 신규 32 / 갱신 67 / 총 11,829개 파일 (FTS 11,584, 306.5MB)
+- 레지스트리: 33개 폴더 (git 13 / 로컬 20) — **신규 로컬 폴더 +1: web-crawler-work** (부동산 아파트 지도/타일 크롤링, map.html/tiles_SG.json/cl_apt.json)
+- 크론 에러 1건: auto-trading-live-daily (14:15) — ZeroDivisionError (live.py:397, 가격 데이터 부족 px=0) / 근본 원인 IGW40023 모의투자 가격 API 미지원. 커밋 d5e9d12로 ZeroDivisionError 방어 반영
+- 작업 변경 94개: MI8_project 52 (카드뉴스 md + .published_slugs.txt), web-crawler-work 14 (신규), auto-trading 4, post1 1 / .hermes 23 / git 커밋 3개 저장소 (post1 3652c4a, auto-trading d5e9d12, memories e28019e)
+- daily 페이지: concepts/daily/2026-09-03.md 생성
+
 ## [2026-09-02] daily-sync | 인덱스 +11/+76, 레지스트리 32개 폴더, 크론 에러 1건, 작업 변경 81개
 - 인덱스: 신규 11 / 갱신 76 / 총 11,797개 파일 (FTS 11,552, 306.2MB)
 - 레지스트리: 32개 폴더 (git 13 / 로컬 19) — 전일과 동일, 신규 폴더 없음
