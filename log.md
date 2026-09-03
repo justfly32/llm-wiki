@@ -4,6 +4,13 @@
 > Format: `## [YYYY-MM-DD] action | subject`
 > Actions: ingest, update, query, lint, create, archive, delete
 
+## [2026-09-04] daily-sync | 인덱스 +4393/+3202, 레지스트리 33개 폴더 (변동 없음), 크론 에러 1건, 작업 변경 9069개
+- 인덱스: 신규 4393 / 갱신 3202 / 총 16,222개 파일 (FTS 15,967, 356.9MB) — 대부분 hermes-agent 내부 코드(20커밋, schema v30) 반영
+- 레지스트리: 33개 폴더 (git 13 / 로컬 20) — 전일 대비 신규 폴더 없음 (post1 커밋 09-03 갱신, web-crawler-work 파일수 14→23)
+- 크론 에러 1건: card-news-supabase-sync (05:18) — status.json PUT curl 10초 타임아웃 (상태 정리 단계만 실패, 콘텐츠 발행 정상). 과거 08-24~08-30 반복 이력 재발. 08-30 재시도 래퍼 조치에도 재발 → 타임아웃 상향 + non-fatal 처리 제안
+- 작업 변경 9069개: .hermes 7558 (hermes-agent 20커밋), projects 65 (MI8_project 53 카드뉴스 md, web-crawler-work 7, post1 1), git 커밋 3개 저장소 (post1 4b0248e, hermes-agent 20, memories 10a44fe)
+- daily 페이지: concepts/daily/2026-09-04.md 생성
+
 ## [2026-09-03] daily-sync | 인덱스 +32/+67, 레지스트리 33개 폴더 (+1: web-crawler-work), 크론 에러 1건, 작업 변경 94개
 - 인덱스: 신규 32 / 갱신 67 / 총 11,829개 파일 (FTS 11,584, 306.5MB)
 - 레지스트리: 33개 폴더 (git 13 / 로컬 20) — **신규 로컬 폴더 +1: web-crawler-work** (부동산 아파트 지도/타일 크롤링, map.html/tiles_SG.json/cl_apt.json)
