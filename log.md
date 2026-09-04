@@ -4,6 +4,13 @@
 > Format: `## [YYYY-MM-DD] action | subject`
 > Actions: ingest, update, query, lint, create, archive, delete
 
+## [2026-09-05] daily-sync | 인덱스 +20/+71, 레지스트리 34개 폴더 (+1: car-year-lookup), 크론 에러 50건 (조치 필요), 작업 변경 86개
+- 인덱스: 신규 20 / 갱신 71 / 총 16,242개 파일 (FTS 15,987, 357.2MB)
+- 레지스트리: 34개 폴더 (git 13 / 로컬 21) — **신규 로컬 폴더 +1: car-year-lookup** (차량 연식 조회, 10개 파일 변경 감지)
+- 크론 에러 50건: card-news-supabase-sync (05:01~05:28, 3분 간격) — 전부 `Error 402: Payment Required`. 전일 타임아웃(09-04)에서 **결제/요금제 문제로 유형 전환** + 3분 간격 무한 반복 루프 = 명백한 반복 패턴(**3건 초과, 조치 필요**). Supabase 대시보드 Billing/Credits 확인 + 연속실패 회로차단 제안
+- 작업 변경 86개: MI8_project 52 (카드뉴스 md), car-year-lookup 10 (신규), auto-trading 4, lotto-predictor 2, post1 1 / .hermes 17 / git 커밋 2개 저장소 (post1 8f14fec, memories bf8f97c)
+- daily 페이지: concepts/daily/2026-09-05.md 생성
+
 ## [2026-09-04] daily-sync | 인덱스 +4393/+3202, 레지스트리 33개 폴더 (변동 없음), 크론 에러 1건, 작업 변경 9069개
 - 인덱스: 신규 4393 / 갱신 3202 / 총 16,222개 파일 (FTS 15,967, 356.9MB) — 대부분 hermes-agent 내부 코드(20커밋, schema v30) 반영
 - 레지스트리: 33개 폴더 (git 13 / 로컬 20) — 전일 대비 신규 폴더 없음 (post1 커밋 09-03 갱신, web-crawler-work 파일수 14→23)
