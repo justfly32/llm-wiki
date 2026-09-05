@@ -4,6 +4,13 @@
 > Format: `## [YYYY-MM-DD] action | subject`
 > Actions: ingest, update, query, lint, create, archive, delete
 
+## [2026-09-06] daily-sync | 인덱스 +8/+65, 레지스트리 34개 폴더 (변동 없음), 크론 에러 1건, 작업 변경 68개
+- 인덱스: 신규 8 / 갱신 65 / 총 16,250개 파일 (FTS 15,995, 357.2MB)
+- 레지스트리: 34개 폴더 (git 13 / 로컬 21) — 전일과 동일, 신규 폴더 없음
+- 크론 에러 1건: card-news-supabase-sync (00:21) — 상태 동기화 status.json PUT curl 10s 타임아웃(단발). **전일 50건 대량 반복 402 결제 오류 소멸 → Supabase 과금 이슈 해소로 판단**, 스크립트 미수정 상태에서 기존 타임아웃 유형으로 회귀. 1건이라 3건 초과 반복 패턴 아님. 제안: 상태 동기화 PUT 타임아웃 상향+재시도/비치명 처리
+- 작업 변경 68개: MI8_project 53 (카드뉴스 md), post1 1 (git 커밋 43be202), enterprise-search 1, auto-trading 1, lotto-predictor 1 / .hermes 11 / git 커밋 2개 저장소 (post1 43be202, memories 7a32180)
+- daily 페이지: concepts/daily/2026-09-06.md 생성
+
 ## [2026-09-05] daily-sync | 인덱스 +20/+71, 레지스트리 34개 폴더 (+1: car-year-lookup), 크론 에러 50건 (조치 필요), 작업 변경 86개
 - 인덱스: 신규 20 / 갱신 71 / 총 16,242개 파일 (FTS 15,987, 357.2MB)
 - 레지스트리: 34개 폴더 (git 13 / 로컬 21) — **신규 로컬 폴더 +1: car-year-lookup** (차량 연식 조회, 10개 파일 변경 감지)
