@@ -4,6 +4,16 @@
 > Format: `## [YYYY-MM-DD] action | subject`
 > Actions: ingest, update, query, lint, create, archive, delete
 
+## [2026-09-09] daily-sync | 인덱스 +743/+2503, 레지스트리 34개 폴더 (변동 없음), 크론 에러 60건, 작업 변경 3651개
+- 인덱스: 신규 743 / 갱신 2503 / 총 16,996개 파일 (FTS 16,740, 351.3MB)
+- 레지스트리: 34개 폴더 (git 13 / 로컬 21) — 전일과 동일, 신규 폴더 없음
+- 크론 에러 60건 (7개 job, ⚠️ 조치 필요):
+  - card-news-supabase-sync 50건 — `ModuleNotFoundError: bs4` (fetch-pending-content.py, failure_streak 528) → `hermes-agent/venv`에 beautifulsoup4 설치 필요
+  - opencode-go 라우팅 9건 (naver keepalive 5, auto-trading-briefing/daily-geek/wiki-backup/personal-site 각 1) — `missing x-opencode-session`
+  - seo-monitor-search 1건 — `model deepseek-v4-flash HTTP 400`
+- 작업 변경 3651개: MI8_project 56 (카드뉴스 md), auto-trading 4, post1 1 / .hermes 3205 (hermes-agent v0.21.1) / git 커밋 4개 저장소 (post1 53b7577, memories d93e64b·ee55f51, hermes-agent 20개)
+- daily 페이지: concepts/daily/2026-09-09.md 생성 (09-08 페이지 누락)
+
 ## [2026-09-07] daily-sync | 인덱스 +3/+155, 레지스트리 34개 폴더 (변동 없음), 크론 에러 0건, 작업 변경 154개
 - 인덱스: 신규 3 / 갱신 155 / 총 16,253개 파일 (FTS 15,998, 357.3MB)
 - 레지스트리: 34개 폴더 (git 13 / 로컬 21) — 전일과 동일, 신규 폴더 없음
