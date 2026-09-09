@@ -4,6 +4,16 @@
 > Format: `## [YYYY-MM-DD] action | subject`
 > Actions: ingest, update, query, lint, create, archive, delete
 
+## [2026-09-10] daily-sync | 인덱스 +5/+13, 레지스트리 34개 폴더 (변동 없음), 크론 에러 50건, 작업 변경 34개
+- 인덱스: 신규 5 / 갱신 13 / 총 17,001개 파일 (FTS 16,745, 351.4MB)
+- 레지스트리: 34개 폴더 (git 13 / 로컬 21) — 전일(09-09)과 동일, 신규 폴더 없음
+- 크론 에러 50건 (1개 job — card-news-supabase-sync, 전일과 동일한 bs4 누락):
+  - `ModuleNotFoundError: No module named 'bs4'` — `sync-card-news.sh`가 `~/.hermes/hermes-agent/venv/bin/python3`로 `fetch-pending-content.py` 실행 시 bs4 미설치
+  - ✅ **조치 완료:** `pip install beautifulsoup4` → import 검증 통과. 다음 2분 주기 실행부터 해소.
+- 작업 변경: 34개 (auto-trading 4 / MI8_project 1 / post1 1 / .hermes 28)
+- git 커밋: post1 `b8a72ca`, memories `38dc025`
+- 새 daily 페이지: concepts/daily/2026-09-10.md
+
 ## [2026-09-09] daily-sync | 인덱스 +743/+2503, 레지스트리 34개 폴더 (변동 없음), 크론 에러 60건, 작업 변경 3651개
 - 인덱스: 신규 743 / 갱신 2503 / 총 16,996개 파일 (FTS 16,740, 351.3MB)
 - 레지스트리: 34개 폴더 (git 13 / 로컬 21) — 전일과 동일, 신규 폴더 없음
