@@ -1,3 +1,10 @@
+## [2026-09-11] daily-sync | 인덱스 +8/+70, 레지스트리 34개 폴더, 크론 에러 1건, 작업 변경 84개
+- 인덱스: 신규 8 / 갱신 70 / 총 17,009개 파일 (FTS 16,753, 351.5MB)
+- 레지스트리: 34개 폴더 (git 13 / 로컬 21) — 전일과 동일, 신규 폴더 없음
+- 크론 에러 1건 (card-news-supabase-sync 04:30 상태 동기화 PUT curl 타임아웃 10초) — 빌드/SEO/naver_blog 업로드는 정상, 마지막 status.json PUT만 실패. 09-10의 bs4 50건은 해소됨.
+- 작업 변경 84개: MI8_project 53 (카드뉴스 md 신규), auto-trading 4, post1 1 (git 커밋 17a9de1), .hermes 26 / git 커밋 2개 저장소 (post1 17a9de1, memories 12a817c)
+- daily 페이지: concepts/daily/2026-09-11.md 생성
+
 # Wiki Log
 
 > Chronological record of all wiki actions. Append-only.
