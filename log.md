@@ -491,3 +491,5 @@
 - 크론 에러 1건 (card-news-supabase-sync 05:02 상태 정리 DELETE curl 타임아웃 10초) — 콘텐츠 업로드/SEO 정상, 정리 단계만 실패
 - 작업 변경 68개: MI8_project 52 (카드뉴스 md), auto-trading 4, lotto-predictor 2, post1 1 (git 커밋 df5514f), .hermes 9 / git 커밋 2개 저장소 (post1 df5514f, memories 1ccdcae)
 - daily 페이지: concepts/daily/2026-08-29.md 생성
+
+## [2026-09-17] daily-sync | 인덱스 +8/+75, 레지스트리 34개 폴더, 크론 에러 12건(모델 프로바이더 연결 10 + card-news DELETE 타임아웃 2), 작업 변경 79개
