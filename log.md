@@ -492,4 +492,11 @@
 - 작업 변경 68개: MI8_project 52 (카드뉴스 md), auto-trading 4, lotto-predictor 2, post1 1 (git 커밋 df5514f), .hermes 9 / git 커밋 2개 저장소 (post1 df5514f, memories 1ccdcae)
 - daily 페이지: concepts/daily/2026-08-29.md 생성
 
+## [2026-09-18] daily-sync | 인덱스 +6/+65, 레지스트리 34개 폴더, 크론 에러 1건, 작업 변경 76개
+- 인덱스: 신규 6 / 갱신 65 / 총 17,045개 파일 (FTS 16,789, 351.9MB)
+- 레지스트리: 34개 폴더 (git 13 / 로컬 21) — 전일과 동일, 신규 폴더 없음
+- 크론 에러 1건 (card-news-supabase-sync 23:48) — 상태 정리 단계 curl DELETE 10s 타임아웃. 발행·업로드·SEO·네이버 미리보기는 성공, cleanup만 실패. (상위 2일 + 오늘: 09-15 3건 / 09-17 2건 / 09-18 1건 — DELETE 타임아웃 반복 재발, max-time 상향 + 실패 시 continue 제안)
+- 작업 변경 76개: MI8_project 53 (카드뉴스 md 51 재발행 + .seo-context), auto-trading 2 (라이브 추적), post1 1 (git 커밋 e067289), .hermes 20 / git 커밋 2개 저장소 (post1 e067289, memories d87567b)
+- daily 페이지: concepts/daily/2026-09-18.md 생성
+
 ## [2026-09-17] daily-sync | 인덱스 +8/+75, 레지스트리 34개 폴더, 크론 에러 12건(모델 프로바이더 연결 10 + card-news DELETE 타임아웃 2), 작업 변경 79개
