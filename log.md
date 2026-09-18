@@ -500,3 +500,10 @@
 - daily 페이지: concepts/daily/2026-09-18.md 생성
 
 ## [2026-09-17] daily-sync | 인덱스 +8/+75, 레지스트리 34개 폴더, 크론 에러 12건(모델 프로바이더 연결 10 + card-news DELETE 타임아웃 2), 작업 변경 79개
+
+## [2026-09-19] daily-sync | 인덱스 +6/+67, 레지스트리 34개 폴더, 크론 에러 1건, 작업 변경 78개
+- 인덱스: 신규 6 / 갱신 67, 총 17,051개 (FTS 16,795). 루트별 hermes 12,411 / projects 4,101 / documents 276 / wiki 263
+- 레지스트리: 34개 폴더 (git 13 / 로컬 21) — 신규 폴더 없음
+- 크론 에러 1건 (card-news-supabase-sync 09-18 23:56) — 상태 정리 단계 curl PUT(.status.json status=completed) 10s 타임아웃. 51개 발행·업로드·SEO·네이버 미리보기는 성공, update_status()만 실패. (상위 3일: 09-15 3건 / 09-17 2건 / 09-18 1건+오늘 — PUT/DELETE 모두 반복 재발, 3일 연속 → 조치 필요, max-time 상향 + 실패 시 continue 제안)
+- 작업 변경 78개: MI8_project 52 (카드뉴스 md 51 재발행 + .published_slugs), auto-trading 4 (LiveEngine ma_rsi 누락 버그 수정 863258c + 전략 이중 구조 문서화 2d5d976), post1 1 (커밋 fcfdde2), lotto-predictor 1, .hermes 20 / git 커밋 3개 저장소 (post1 fcfdde2, auto-trading 2, memories 1a3bb69)
+- daily 페이지: concepts/daily/2026-09-19.md 생성
