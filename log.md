@@ -477,6 +477,13 @@
 - 인덱스: 신규 7 / 갱신 67 / 총 11,711개 파일 (FTS 11,466, 303.6MB)
 - 레지스트리: 32개 폴더 (git 13 / 로컬 19) — 전일과 동일, 신규 폴더 없음
 - 크론 에러 16건 — **모두 동일 유형 (인퍼런스 설정 drift, unpinned, 조치 필요)**: naver-session-hourly-keepalive 15회(매시간 14:00~05:00), auto-trading-evening-briefing 1회. 원인: 글로벌 설정 migrate(provider opencode-go→openrouter, model deepseek-v4-flash→deepseek/deepseek-v4-flash-0731) 후 unpinned 작업 안전 차단. 해결: 각 job을 `cronjob action=update`로 pin.
+## [2026-09-20] daily-sync | 인덱스 +4/+63, 레지스트리 34개 폴더, 크론 에러 2건, 작업 변경 72개
+- 인덱스: 신규 4 / 갱신 63 / 총 17,055개 파일 (FTS 16,799, 352.0MB)
+- 레지스트리: 34개 폴더 (git 13 / 로컬 21) — 전일과 동일, 신규 폴더 없음
+- 크론 에러 2건 (card-news-supabase-sync 05:21 상태 정리 PUT 10s 타임아웃 — 4일 연속 재발, 조치 필요 / seo-monitor-analyze 09-19 19:00 HTTP 530 업스트림 오류 단발)
+- 작업 변경 72개: MI8_project 53 (카드뉴스 md), auto-trading 1, lotto-predictor 1, post1 1 (git 커밋 df2d110), .hermes 16 / git 커밋 2개 저장소 (post1 df2d110, memories 86095db)
+- daily 페이지: concepts/daily/2026-09-20.md 생성
+
 - 작업 변경 69개: MI8_project 51 (카드뉴스 md), auto-trading 4, lotto-predictor 2, post1 1 (git 커밋 cc3f963) / git 커밋 2개 저장소
 
 ## [2026-08-20] daily-sync | 인덱스 +0/+55, 레지스트리 32개 폴더, 크론 에러 0건, 작업 변경 96개
