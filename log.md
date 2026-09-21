@@ -514,3 +514,10 @@
 - 크론 에러 1건 (card-news-supabase-sync 09-18 23:56) — 상태 정리 단계 curl PUT(.status.json status=completed) 10s 타임아웃. 51개 발행·업로드·SEO·네이버 미리보기는 성공, update_status()만 실패. (상위 3일: 09-15 3건 / 09-17 2건 / 09-18 1건+오늘 — PUT/DELETE 모두 반복 재발, 3일 연속 → 조치 필요, max-time 상향 + 실패 시 continue 제안)
 - 작업 변경 78개: MI8_project 52 (카드뉴스 md 51 재발행 + .published_slugs), auto-trading 4 (LiveEngine ma_rsi 누락 버그 수정 863258c + 전략 이중 구조 문서화 2d5d976), post1 1 (커밋 fcfdde2), lotto-predictor 1, .hermes 20 / git 커밋 3개 저장소 (post1 fcfdde2, auto-trading 2, memories 1a3bb69)
 - daily 페이지: concepts/daily/2026-09-19.md 생성
+
+## [2026-09-22] daily-sync | 인덱스 +6/+64, 레지스트리 34개 폴더, 크론 에러 1건, 작업 변경 72개
+- 인덱스: 신규 6 / 갱신 64, 총 17,067개 (FTS 16,811). 루트별 hermes 12,418 / projects 4,103 / documents 280 / wiki 266
+- 레지스트리: 34개 폴더 (git 13 / 로컬 21) — 신규 폴더 없음
+- 크론 에러 1건 (card-news-supabase-sync 09-22 00:22) — 상태 정리 단계 curl PUT(.status.json) 10s 타임아웃. 51개 발행·업로드·SEO·네이버 미리보기는 성공, update_status()만 실패. 지난 3일간 동일 job 같은 패턴 재발 (09-15 3건 / 09-17 2건 / 09-18 1건 + 오늘) → 4일 연속 → 조치 필요 (curl max-time 상향 + 실패 시 continue)
+- 작업 변경 72개: MI8_project 55 (카드뉴스 md 51 재발행 + published_slugs), auto-trading 2, post1 1, .hermes 14 / git 커밋 2개 저장소 (post1 027fe36, memories c54a773)
+- daily 페이지: concepts/daily/2026-09-22.md 생성
