@@ -1,10 +1,11 @@
 # Wiki Index
 
-> Hermes 작업 결과물 인덱스. Last updated: 2026-09-23
-> Total pages: 32
+> Hermes 작업 결과물 인덱스. Last updated: 2026-09-24
+> Total pages: 33
 
 ## Daily (작업 일지)
 
+- [[2026-09-24]] — daily-sync: 인덱스 +25/+65, 레지스트리 34개 (변동 없음), 크론 에러 2건 (card-news-supabase-sync 상태 PUT 타임아웃 2회 반복 — 조치 필요), 작업 변경 104개 (MI8_project 카드뉴스 52, car-year-lookup 25), git 커밋 2
 - [[2026-09-23]] — daily-sync: 인덱스 +27/+74, 레지스트리 34개 (변동 없음), 크론 에러 0건, 작업 변경 110개 (MI8_project 카드뉴스 55, car-year-lookup 20), git 커밋 2
 - [[2026-09-21]] — daily-sync: 인덱스 +6/+152, 레지스트리 34개 (변동 없음), 크론 에러 0건 (전일까지 재발하던 card-news 타임아웃 진정), 작업 변경 163개, git 커밋 3개
 - [[2026-09-19]] — daily-sync: 인덱스 +6/+67, 레지스트리 34개 (변동 없음), 크론 에러 1건 (card-news-supabase-sync 상태 정리 **PUT** 타임아웃 재발 — 빌드·업로드·SEO·네이버 미리보기 성공, 3일 연속 반복 → 조치 필요), 작업 변경 78개, git 커밋 4개

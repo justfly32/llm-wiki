@@ -528,3 +528,5 @@
 - 크론 에러 1건 (card-news-supabase-sync 09-22 00:22) — 상태 정리 단계 curl PUT(.status.json) 10s 타임아웃. 51개 발행·업로드·SEO·네이버 미리보기는 성공, update_status()만 실패. 지난 3일간 동일 job 같은 패턴 재발 (09-15 3건 / 09-17 2건 / 09-18 1건 + 오늘) → 4일 연속 → 조치 필요 (curl max-time 상향 + 실패 시 continue)
 - 작업 변경 72개: MI8_project 55 (카드뉴스 md 51 재발행 + published_slugs), auto-trading 2, post1 1, .hermes 14 / git 커밋 2개 저장소 (post1 027fe36, memories c54a773)
 - daily 페이지: concepts/daily/2026-09-22.md 생성
+
+## [2026-09-24] daily-sync | 인덱스 +25/-0, 레지스트리 34개 폴더, 크론 에러 2건, 작업 변경 104개
