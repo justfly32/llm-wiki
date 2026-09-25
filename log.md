@@ -530,3 +530,10 @@
 - daily 페이지: concepts/daily/2026-09-22.md 생성
 
 ## [2026-09-24] daily-sync | 인덱스 +25/-0, 레지스트리 34개 폴더, 크론 에러 2건, 작업 변경 104개
+
+## [2026-09-26] daily-sync | 인덱스 +8/+70, 레지스트리 34개 폴더, 크론 에러 5건, 작업 변경 89개
+- 인덱스: 신규 8 / 갱신 70, 총 17,127개 (FTS 16,871, 355.4MB). 루트별 hermes 12,430 / projects 4,142 / documents 286 / wiki 269
+- 레지스트리: 34개 폴더 (git 13 / 로컬 21) — 신규 폴더 없음
+- 크론 에러 5건 (전부 09-25 발생, 오늘 미발생) — 동일 유형 `RuntimeError: agent reported failure`(빈 메시지): Daily World News / Wiki Git Backup / personal site notify (06:00), telecom-3sa-daily-news / auto-trading-morning-briefing (08:30). 서로 다른 job이 동일 시각대 동일 RuntimeError → 일시적 인퍼런스/프로바이더 장애 추정. 3건 반복 패턴은 아니나 동일 유형 다발 → 주시 (지연 재시도, 실행시간대 분산 제안)
+- 작업 변경 89개: MI8_project 53 (카드뉴스 md ~50 재발행 + .published_slugs + 재개_가이드), lotto-predictor 2, post1 1, auto-trading 1, .hermes 32 / git 커밋 3개 저장소 (MI8_project 3cfa37bd, post1 528ca88, memories 0a9f827)
+- daily 페이지: concepts/daily/2026-09-26.md 생성
