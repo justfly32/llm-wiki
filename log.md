@@ -537,3 +537,10 @@
 - 크론 에러 5건 (전부 09-25 발생, 오늘 미발생) — 동일 유형 `RuntimeError: agent reported failure`(빈 메시지): Daily World News / Wiki Git Backup / personal site notify (06:00), telecom-3sa-daily-news / auto-trading-morning-briefing (08:30). 서로 다른 job이 동일 시각대 동일 RuntimeError → 일시적 인퍼런스/프로바이더 장애 추정. 3건 반복 패턴은 아니나 동일 유형 다발 → 주시 (지연 재시도, 실행시간대 분산 제안)
 - 작업 변경 89개: MI8_project 53 (카드뉴스 md ~50 재발행 + .published_slugs + 재개_가이드), lotto-predictor 2, post1 1, auto-trading 1, .hermes 32 / git 커밋 3개 저장소 (MI8_project 3cfa37bd, post1 528ca88, memories 0a9f827)
 - daily 페이지: concepts/daily/2026-09-26.md 생성
+
+## [2026-09-27] daily-sync | 인덱스 +151/+11, 레지스트리 35개 폴더, 크론 에러 0건, 작업 변경 175개
+- 인덱스: 신규 151 / 갱신 11 (텍스트 없음 스킵 4), 총 17,278개 (FTS 17,019, 356.7MB). 루트별 hermes 12,439 / projects 4,282 / documents 287 / wiki 270
+- 레지스트리: 35개 폴더 (git 14 / 로컬 21) — **+1 신규: my-local-agent** (git 프로젝트로 등록, 사내 LLM 업무도우미)
+- 크론 에러 0건 — 전일(09-25) 5건 RuntimeError 다발 이후 완전 회복 확인.
+- 작업 변경 175개: my-local-agent 146 (워크플로우 자동화 v0.29~v0.33 — 예약 자동실행·대량반복·엑셀 내보내기·workflow.from_history), post1 1, auto-trading 1 / git 커밋 3개 저장소 (my-local-agent 20개: 3fd1eb2 등, post1 fd0b7ff, memories 5b70b99)
+- daily 페이지: concepts/daily/2026-09-27.md 생성
