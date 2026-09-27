@@ -1,10 +1,11 @@
 # Wiki Index
 
-> Hermes 작업 결과물 인덱스. Last updated: 2026-09-27
-> Total pages: 35
+> Hermes 작업 결과물 인덱스. Last updated: 2026-09-28
+> Total pages: 36
 
 ## Daily (작업 일지)
 
+- [[2026-09-28]] — daily-sync: 인덱스 +46/+42, 레지스트리 35개 (변동 없음), 크론 에러 0건, 작업 변경 104개 (my-local-agent 75 +20커밋, post1, auto-trading), git 커밋 3
 - [[2026-09-27]] — daily-sync: 인덱스 +151/+11, 레지스트리 35개 (+1: my-local-agent), 크론 에러 0건, 작업 변경 175개 (my-local-agent 워크플로우 자동화 146 +20커밋, post1, auto-trading), git 커밋 3
 - [[2026-09-26]] — daily-sync: 인덱스 +8/+70, 레지스트리 34개 (변동 없음), 크론 에러 5건 (모델/인퍼런스 RuntimeError 09-25 동일 유형 다발), 작업 변경 89개 (MI8_project 카드뉴스 ~50, lotto-predictor 2, post1, auto-trading), git 커밋 3
 - [[2026-09-24]] — daily-sync: 인덱스 +25/+65, 레지스트리 34개 (변동 없음), 크론 에러 2건 (card-news-supabase-sync 상태 PUT 타임아웃 2회 반복 — 조치 필요), 작업 변경 104개 (MI8_project 카드뉴스 52, car-year-lookup 25), git 커밋 2

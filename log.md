@@ -544,3 +544,10 @@
 - 크론 에러 0건 — 전일(09-25) 5건 RuntimeError 다발 이후 완전 회복 확인.
 - 작업 변경 175개: my-local-agent 146 (워크플로우 자동화 v0.29~v0.33 — 예약 자동실행·대량반복·엑셀 내보내기·workflow.from_history), post1 1, auto-trading 1 / git 커밋 3개 저장소 (my-local-agent 20개: 3fd1eb2 등, post1 fd0b7ff, memories 5b70b99)
 - daily 페이지: concepts/daily/2026-09-27.md 생성
+
+## [2026-09-28] daily-sync | 인덱스 +46/+42, 레지스트리 35개 폴더, 크론 에러 0건, 작업 변경 104개
+- 인덱스: 신규 46 / 갱신 42 (텍스트 없음 스킵 0), 총 17,324개 (FTS 17,065, 357.2MB). 루트별 hermes 12,443 / projects 4,320 / documents 290 / wiki 271
+- 레지스트리: 35개 폴더 (git 14 / 로컬 21) — 신규 폴더 없음
+- 크론 에러 0건 — 2일 연속 안정 (09-24~25 인퍼런스/타임아웃 다발 이후 회복 유지)
+- 작업 변경 104개: my-local-agent 75 (v0.45.0~v0.46.0 — 시작 전 묻기·부분 수정·백그라운드 UX, 빈 업무 후보+오류 4회 중단, 감시 폴더 쓰기+무인 실패 원인 보존 + 현장 체크리스트 §11~12), post1 1, auto-trading 1 / git 커밋 3개 저장소 (my-local-agent 20개: 6201f2e 등, post1 31bc814, memories 93c64cc)
+- daily 페이지: concepts/daily/2026-09-28.md 생성
