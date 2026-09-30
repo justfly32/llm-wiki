@@ -1,10 +1,11 @@
 # Wiki Index
 
-> Hermes 작업 결과물 인덱스. Last updated: 2026-09-30
-> Total pages: 38
+> Hermes 작업 결과물 인덱스. Last updated: 2026-10-01
+> Total pages: 39
 
 ## Daily (작업 일지)
 
+- [[2026-10-01]] — daily-sync: 인덱스 +6/+26, 레지스트리 35개 (변동 없음), 크론 에러 0건, 작업 변경 43개 (auto-trading 16: 백테스트 복구·실행라벨 수정·유니버스 교체, post1 1), git 커밋 3
 - [[2026-09-30]] — daily-sync: 인덱스 +11/+24, 레지스트리 35개 (변동 없음), 크론 에러 0건, 작업 변경 39개 (auto-trading 12: 장후 71 주문 전환, post1 1), git 커밋 3
 - [[2026-09-29]] — daily-sync: 인덱스 +11/+19, 레지스트리 35개 (변동 없음), 크론 에러 0건, 작업 변경 32개 (car-year-lookup 9, auto-trading 2, post1 1), git 커밋 2
 - [[2026-09-28]] — daily-sync: 인덱스 +46/+42, 레지스트리 35개 (변동 없음), 크론 에러 0건, 작업 변경 104개 (my-local-agent 75 +20커밋, post1, auto-trading), git 커밋 3
