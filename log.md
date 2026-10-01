@@ -559,6 +559,13 @@
 - 작업 변경 104개: my-local-agent 75 (v0.45.0~v0.46.0 — 시작 전 묻기·부분 수정·백그라운드 UX, 빈 업무 후보+오류 4회 중단, 감시 폴더 쓰기+무인 실패 원인 보존 + 현장 체크리스트 §11~12), post1 1, auto-trading 1 / git 커밋 3개 저장소 (my-local-agent 20개: 6201f2e 등, post1 31bc814, memories 93c64cc)
 - daily 페이지: concepts/daily/2026-09-28.md 생성
 
+## [2026-10-02] daily-sync | 인덱스 +14/+9, 레지스트리 35개 폴더, 크론 에러 0건, 작업 변경 32개
+- 인덱스: 신규 14 / 갱신 9 (텍스트 없음 스킵 0), 총 17,367개 (FTS 17,108, 357.6MB). 루트별 hermes 12,465 / projects 4,328 / documents 299 / wiki 275
+- 레지스트리: 35개 폴더 (git 14 / 로컬 21) — 신규 폴더 없음 (전일과 동일)
+- 크론 에러 0건 — 6일 연속 크론 안정 유지, 정상.
+- 작업 변경 32개: park_watch (주차 감시) 스크립트 하루 5회 수정 보강(백업: 1042/1043_bigo/1046_37/1137_step/1139_holiday, 최종 17:37) + 상태 파일 3종, post1 1 (커밋 bce81f2), auto-trading 리포트 2 (라이브 추적 데이터 자동 갱신), 스킬 2건(korean-brokerage-trading-api + backtest-live-parity.md 신규, park-empty-spot-watch) / git 커밋 2개 저장소 (post1 bce81f2, memories a6a3341)
+- daily 페이지: concepts/daily/2026-10-02.md 생성
+
 ## [2026-10-01] daily-sync | 인덱스 +6/+26, 레지스트리 35개 폴더, 크론 에러 0건, 작업 변경 43개
 - 인덱스: 신규 6 / 갱신 26 (텍스트 없음 스킵 0), 총 17,352개 (FTS 17,093, 357.5MB). 루트별 hermes 12,453 / projects 4,328 / documents 297 / wiki 274
 - 레지스트리: 35개 폴더 (git 14 / 로컬 21) — 신규 폴더 없음
