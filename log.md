@@ -577,3 +577,10 @@
 - 크론 에러 0건 — 3일 연속 안정
 - 작업 변경 32개: car-year-lookup 9 (카히스토리 직접 조회 — 캡처·연식 채우기·현황 갱신, 조회금지 가짜목록 분리), auto-trading 2 (실시간 매매 기록), post1 1 / git 커밋 2개 저장소 (post1 76b24ee, memories 40d8989)
 - daily 페이지: concepts/daily/2026-09-29.md 생성
+
+## [2026-10-03] daily-sync | 인덱스 +6/+10, 레지스트리 35개 폴더, 크론 에러 0건, 작업 변경 20개
+- 인덱스: 신규 6 / 갱신 10 (텍스트 없음 스킵 0), 총 17,373개 (FTS 17,114, 357.6MB). 루트별 hermes 12,467 / projects 4,329 / documents 301 / wiki 276
+- 레지스트리: 35개 폴더 (git 14 / 로컬 21) — 신규 폴더 없음
+- 크론 에러 0건 — 7일 연속 크론 안정 유지, 정상.
+- 작업 변경 20개: post1 1 (개인사이트 업데이트, 커밋 fbe8758), auto-trading 2 (실전 라이브 추적 리포트 자동 갱신), lotto-predictor 2 (로또 추적기+예측), .hermes 메모리 백업 (커밋 94a5212) / git 커밋 2개 저장소 (post1 fbe8758, memories 94a5212)
+- daily 페이지: concepts/daily/2026-10-03.md 생성
