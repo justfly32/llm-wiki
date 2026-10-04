@@ -4,6 +4,7 @@
 > Total pages: 41
 
 ## Daily (작업 일지)
+- [[2026-10-05]] — daily-sync: 인덱스 +3/+6, 레지스트리 35개 (변동 없음), 크론 에러 0건, 작업 변경 14개 (post1 1, auto-trading 1), git 커밋 2
 
 - [[2026-10-04]] — daily-sync: 인덱스 +4/+7, 레지스트리 35개 (변동 없음), 크론 에러 0건, 작업 변경 15개 (post1 1, auto-trading 1, lotto-predictor 1), git 커밋 2
 - [[2026-10-03]] — daily-sync: 인덱스 +6/+10, 레지스트리 35개 (변동 없음), 크론 에러 0건, 작업 변경 20개 (post1 1, auto-trading 2, lotto-predictor 2), git 커밋 2
