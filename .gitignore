@@ -1,1 +1,7 @@
 index.db
+
+__pycache__/
+*.pyc
+index.db-wal
+index.db-shm
+*.bak-*

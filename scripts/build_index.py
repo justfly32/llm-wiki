@@ -57,6 +57,15 @@ EXCLUDE_FILES = {
     ".DS_Store", "LICENSE",
 }
 
+# 경로 기반 제외 — 이름 규칙으로는 못 거르는 것들 (2026-10-05)
+#   · hermes-agent: Hermes 앱 소스 + 번들 freebooks(외부 도서). 'Hermes 작업 결과물'이 아니고
+#     `hermes update` 때마다 수천 파일이 바뀌어 색인만 부풀린다(실측 8,726행 / 본문 99.6MB).
+EXCLUDE_PATHS = {
+    HOME / ".hermes" / "hermes-agent",   # 앱 소스 + 번들 freebooks(외부 도서)
+    HOME / ".hermes" / "installs",       # 툴체인 환경(파이썬/노드 번들) — 업데이트 때마다 재생성
+    HOME / ".hermes" / "tools",          # 번들 런타임(python/node 바이너리 동봉)
+}
+
 # 텍스트 추출 대상 확장자 (바이너리 제외)
 TEXT_EXTS = {
     ".py", ".js", ".ts", ".tsx", ".jsx", ".sh", ".bash", ".go", ".rs",
@@ -86,6 +95,13 @@ def classify(path: Path) -> str:
 
 def should_skip_dir(name: str) -> bool:
     return name in EXCLUDE_DIRS or name.startswith(".")
+
+def should_skip_path(path: Path) -> bool:
+    """EXCLUDE_PATHS 및 그 하위 디렉터리인지"""
+    for ex in EXCLUDE_PATHS:
+        if path == ex or ex in path.parents:
+            return True
+    return False
 
 def extract_text(path: Path, ftype: str) -> str:
     """파일에서 텍스트 추출 (크기 제한 512KB)"""
@@ -155,18 +171,45 @@ def connect_db():
     """)
     conn.execute("""
         CREATE VIRTUAL TABLE IF NOT EXISTS files_fts USING fts5(
-            path, rel, root, type, content, tokenize='unicode61'
+            path, rel, root, type, content,
+            content='files', content_rowid='rowid', tokenize='unicode61'
         )
     """)
     return conn
 
 def sync_fts(conn):
-    """files 테이블 변경분을 FTS로 동기화 (간단 전체 재구축)"""
-    conn.execute("DELETE FROM files_fts")
-    conn.execute("""
-        INSERT INTO files_fts(path, rel, root, type, content)
-        SELECT path, rel, root, type, content FROM files WHERE content != ''
-    """)
+    """files 내용으로 FTS 색인 재구성.
+
+    외부 콘텐츠(external content) 구조라 본문을 FTS 에 복사하지 않는다 → index.db 절반.
+    `rebuild` 는 content 테이블(files)에서 다시 토큰화하므로 DELETE+INSERT 보다 가볍고,
+    매일 돌려도 세그먼트가 조각나지 않는다(예전 방식은 590MB까지 부풀었다).
+    """
+    conn.execute("INSERT INTO files_fts(files_fts) VALUES('rebuild')")
+
+def prune_missing(conn) -> int:
+    """디스크에서 사라진 파일의 잔여 색인 행 제거.
+
+    예전에는 이 정리가 없어 고아가 계속 쌓였다(2026-10-05 실측 1,777행 / 본문 16.7MB).
+    FTS 는 files 기준 rebuild 이므로 여기서 files 만 지우면 색인도 함께 정리된다.
+    """
+    gone = [(p,) for (p,) in conn.execute("SELECT path FROM files") if not os.path.exists(p)]
+    if gone:
+        conn.executemany("DELETE FROM files WHERE path=?", gone)
+        conn.commit()
+    return len(gone)
+
+def optimize_index(conn) -> bool:
+    """조각난 FTS 세그먼트 병합 + VACUUM (다른 프로세스가 잡고 있으면 조용히 건너뜀).
+
+    매일 rebuild 만 하면 세그먼트가 쌓여 590MB까지 부풀었다 → 병합·VACUUM 을 함께 돌린다.
+    """
+    try:
+        conn.execute("INSERT INTO files_fts(files_fts) VALUES('optimize')")
+        conn.commit()
+        conn.execute("VACUUM")
+        return True
+    except sqlite3.OperationalError:
+        return False
 
 def scan_and_index(conn, full=False):
     """루트 스캔 + 인덱싱"""
@@ -187,7 +230,8 @@ def scan_and_index(conn, full=False):
         if not root.exists():
             continue
         for dirpath, dirnames, filenames in os.walk(root):
-            dirnames[:] = [d for d in dirnames if not should_skip_dir(d)]
+            dirnames[:] = [d for d in dirnames
+                           if not should_skip_dir(d) and not should_skip_path(Path(dirpath) / d)]
             for fname in filenames:
                 if fname in EXCLUDE_FILES:
                     continue
@@ -225,13 +269,16 @@ def scan_and_index(conn, full=False):
                 indexed += 1
 
     conn.commit()
+    pruned = prune_missing(conn)
     sync_fts(conn)
     conn.commit()
+    compacted = optimize_index(conn)
 
     # 상태 기록
     STATE_FILE.write_text(str(datetime.now().timestamp()))
 
-    return {"indexed": indexed, "new": new_files, "updated": updated, "skipped": skipped}
+    return {"indexed": indexed, "new": new_files, "updated": updated,
+            "skipped": skipped, "pruned": pruned, "compacted": compacted}
 
 def print_stats(conn):
     total = conn.execute("SELECT COUNT(*) FROM files").fetchone()[0]
