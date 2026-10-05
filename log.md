@@ -1,3 +1,11 @@
+## [2026-10-06] daily-sync | 인덱스 +7/+19, 레지스트리 35개 폴더, 크론 에러 2건, 작업 변경 43개+
+- 인덱스: 신규 7 / 갱신 19 (텍스트 없음 스킵 0) / 총 6,961개 파일 (FTS 6,961). 루트별 projects 4,297 / hermes 2,195 / documents 305 / wiki 164
+  - 총계 감소(17,380→6,961)는 정상: 커밋 34d9bb4에서 앱 소스·툴체인(hermes-agent/installs/tools) 색인 제외 + FTS external-content 전환 (index.db 590MB→93MB)
+- 레지스트리: 35개 폴더 (git 14 / 로컬 21) — 전일과 동일, 신규 폴더 없음
+- 크론 에러 2건 (동일 원인 1건의 파급): auto-trading-intraday-alpha-pm(10-05 14:00), auto-trading-live-afterhours-core(10-05 15:45) — Hermes PYTHONPATH(3.14 site-packages)가 venv(3.11) numpy/pandas를 가려 ImportError. 커밋 4e3da5d로 이미 차단(10-05 16:02), 10-06 실행으로 회귀 검증 필요 — 3건 이상 반복 패턴은 아님
+- 작업 변경 43개+ (요약 기준): auto-trading 39 (PYTHONPATH 차단, no-write 가드 검사 스크립트, 추이 CSV 무결성 문서, 라이브 추적 갱신), post1 1, pc-llm-dashboard 2, MI8_project 1 / git 커밋 5개 저장소 (post1 23697c3, auto-trading aab02c3·4e3da5d, memories 655eaea, skills 29b72bd, hermes-agent 14)
+- daily 페이지: concepts/daily/2026-10-06.md 생성
+
 ## [2026-10-04] daily-sync | 인덱스 +4/+7, 레지스트리 35개 폴더, 크론 에러 0건, 작업 변경 15개
 - 인덱스: 신규 4 / 갱신 7 / 총 17,377개 파일 (FTS 17,118, 357.6MB)
 - 레지스트리: 35개 폴더 (git 14 / 로컬 21) — 전일과 동일, 신규 폴더 없음

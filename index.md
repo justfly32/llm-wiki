@@ -4,6 +4,7 @@
 > Total pages: 41
 
 ## Daily (작업 일지)
+- [[2026-10-06]] — daily-sync: 인덱스 +7/+19 (총 6,961, 색인 대상 정리 반영), 레지스트리 35개 (변동 없음), 크론 에러 2건 (auto-trading ImportError 1원인 2건 — 이미 수정됨), 작업 변경 43개+ (auto-trading 39, post1 1, pc-llm-dashboard 2, MI8_project 1), git 커밋 5개 저장소
 - [[2026-10-05]] — daily-sync: 인덱스 +3/+6, 레지스트리 35개 (변동 없음), 크론 에러 0건, 작업 변경 14개 (post1 1, auto-trading 1), git 커밋 2
 
 - [[2026-10-04]] — daily-sync: 인덱스 +4/+7, 레지스트리 35개 (변동 없음), 크론 에러 0건, 작업 변경 15개 (post1 1, auto-trading 1, lotto-predictor 1), git 커밋 2
