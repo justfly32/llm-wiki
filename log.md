@@ -1,3 +1,10 @@
+## [2026-10-07] daily-sync | 인덱스 +37/+14, 레지스트리 36개 폴더, 크론 에러 0건, 작업 변경 101개
+- 인덱스: 신규 37 / 갱신 14 (텍스트 없음 스킵 0) / 총 6,999개 파일 (FTS 6,999, 223.8MB, index.db 디스크 98.7MB). 루트별 projects 4,327 / hermes 2,200 / documents 307 / wiki 165
+- 레지스트리: 36개 폴더 (git 15 / 로컬 21) — **신규 1개: `shorts-forge`** (유튜브 롱폼 → 쇼츠 자동 생성)
+- 크론 에러 0건 — 10-05 PYTHONPATH 오염(ImportError 2건) 조치(4e3da5d) 후 이틀 연속 정상, 회귀 없음 확인
+- 작업 변경 101개(요약 73개): shorts-forge 50 (기획서 컷 → 롱폼 자막에서 쇼츠 후보·제목·대본 자동 생성, whisper 로컬 음성인식, 인용 검증, 내레이션 TTS+문장 자막, 알파컷 기능), auto-trading 2 (10-06 15:45 장후 코어 라이브 갱신), post1 1 / git 커밋 4개 저장소 (shorts-forge 9커밋 2f20445~0fead9d, post1 b72aa59, skills 80c74bf, memories f470245)
+- daily 페이지: concepts/daily/2026-10-07.md 생성
+
 ## [2026-10-06] daily-sync | 인덱스 +7/+19, 레지스트리 35개 폴더, 크론 에러 2건, 작업 변경 43개+
 - 인덱스: 신규 7 / 갱신 19 (텍스트 없음 스킵 0) / 총 6,961개 파일 (FTS 6,961). 루트별 projects 4,297 / hermes 2,195 / documents 305 / wiki 164
   - 총계 감소(17,380→6,961)는 정상: 커밋 34d9bb4에서 앱 소스·툴체인(hermes-agent/installs/tools) 색인 제외 + FTS external-content 전환 (index.db 590MB→93MB)
