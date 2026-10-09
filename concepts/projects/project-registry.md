@@ -1,7 +1,7 @@
 ---
 title: 프로젝트 레지스트리 (전체 폴더 현황)
-created: 2026-10-09
-updated: 2026-10-09
+created: 2026-10-10
+updated: 2026-10-10
 type: projects
 tags: [registry, projects, folder-map, 중복방지]
 links: [[index]]
@@ -11,7 +11,7 @@ links: [[index]]
 
 > **목적:** 새 코딩 작업 시작 전 반드시 이 문서를 확인해 폴더 중복 생성과 위치 혼란을 방지한다.
 > 자동 생성: `python3 ~/wiki/scripts/generate_project_registry.py` (갱신 시 재실행)
-> Last updated: 2026-10-09
+> Last updated: 2026-10-10
 
 ## 규칙 (중복 방지)
 
@@ -30,7 +30,7 @@ links: [[index]]
 
 | 폴더 | 설명 | remote | 최근 커밋 |
 |------|------|--------|----------|
-| `  post1` | - | justfly32/post1 | 2026-10-08 |
+| `  post1` | - | justfly32/post1 | 2026-10-09 |
 | `  shorts-forge` | - | - | 2026-10-08 |
 | `  auto-trading` | 한국 주식 자동매매 — Mock 가상매매 검증 → NH투자증권 모의투자 → 실전 전환 완료 (500만원). | - | 2026-10-05 |
 | `  my-local-agent` | 폐쇄망 Windows PC에서 사내 LLM과 연결하는 CLI와 PC 내부 웹 화면을 갖춘 업무도우미의 개발 버전입니다. 사람이 수행한 브라우저 행동을 수집·편집해 JSON 업무 절차로 저장하고, 반복 실행하거나 Py | justfly32/my-local-agent | 2026-09-27 |
@@ -56,13 +56,13 @@ links: [[index]]
 | `  ai_business_report` | - | 5 |
 | `  auto-trading-research` | - | 2 |
 | `  best-practice` | - | 1 |
-| `  car-year-lookup` | - | 603 |
+| `  car-year-lookup` | - | 613 |
 | `  claude-cowork-guide` | - | 1 |
 | `  hermes_ops` | - | 148 |
 | `  html2pptx` | HTML 디자인을 PPTX로 최대한 보존 변환하는 도구. | 15 |
 | `  internet-checker` | SKB, KT, LGU+ 통신 3사의 초고속인터넷 주소별 서비스 가용성을 한 번에 조회하는 도구입니다. | 15 |
 | `  kakao-hybrid-adapter` | [GPTers 글 «카톡 매크로 시대 끝? …»](https://www.gpters.org/dev/post/kakaotalk-macro-era-how-lEVSOKmyNxOqCtI)에서 다룬 아키텍처를 코드로 옮긴 예 | 22 |
-| `  lotto-predictor` | 1231회차 전체 데이터 기반 번호별 확률 학습 예측 모델. | 18 |
+| `  lotto-predictor` | 1231회차 전체 데이터 기반 번호별 확률 학습 예측 모델. | 19 |
 | `  orchestration-workflow` | - | 1 |
 | `✅ pc-llm-dashboard` | PC 상태 확인 + LLM 사용량 확인 통합 모니터링 대시보드. | 25 |
 | `  personal-site` | - | 90 |

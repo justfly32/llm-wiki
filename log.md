@@ -1,3 +1,11 @@
+## [2026-10-10] daily-sync | 인덱스 +17/+21, 레지스트리 36개 폴더, 크론 에러 0건, 작업 변경 48개
+- 인덱스: 신규 17 / 갱신 21 (텍스트 없음 스킵 3) / 총 7,226개 파일 (FTS 7,226, 389.0MB). 루트별 projects 4,705 / hermes 2,040 / documents 313 / wiki 168
+  - 전일 7,209 대비 +17 — 정상 증분, bloat 없음
+- 레지스트리: 36개 폴더 (git 15 / 로컬 21) — 전일과 동일, 신규 폴더 없음
+- 크론 에러 0건 — 5일 연속 정상(10-05 PYTHONPATH 조치 후 회귀 없음).
+- 작업 변경 48개(요약 48개): car-year-lookup 13 (연식범위 추정 CSV 재생성·무료사유판별 v2·별지대차내역 재작성·최종보고 md — 사고차 배치 정리 단계), lotto-predictor 2, post1 1 (f5b2768) / git 커밋 3개 저장소 (post1 f5b2768, skills 6e48fef, memories 3d5e5f5)
+- daily 페이지: concepts/daily/2026-10-10.md 생성
+
 ## [2026-10-09] daily-sync | 인덱스 +389/+20, 레지스트리 36개 폴더, 크론 에러 0건, 작업 변경 576개
 - 인덱스: 신규 389 / 갱신 20 (텍스트 없음 스킵 163) / 총 7,209개 파일 (FTS 7,209, 388.8MB, index.db 디스크 144.5MB). 루트별 projects 4,694 / hermes 2,037 / documents 311 / wiki 167
   - 전일 6,840 대비 +369: 대부분 car-year-lookup 증빙(captures 원본/열람용 HTML 373 + jpg + 발송 zip) — 실제 산출물로 인한 정상 성장, bloat 아님
