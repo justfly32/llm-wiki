@@ -1,3 +1,14 @@
+## [2026-10-11] daily-sync | 인덱스 +79/+16, 레지스트리 39개 폴더, 크론 에러 0건, 작업 변경 12개
+- 인덱스: 신규 79 / 갱신 16 (텍스트 없음 스킵 5) / 총 7,305개 파일 (FTS 7,305, 390.3MB). 루트별 projects 4,771 / hermes 2,051 / documents 314 / wiki 169
+  - 전일 7,226 대비 +79 — 대부분 build-plan 신규 폴더(세금 레이어 소스·테스트) 유입, bloat 아님
+- 레지스트리: 39개 폴더 (git 16 / 로컬 23) — 전일 36 대비 **+3 신규**
+  - build-plan (git, justfly32/build-plan) — 10-10 세금 레이어 + 로컬 AI 백엔드 통합 (11커밋)
+  - geomdan-design-contract (local) — 인천 검단구 표준 반영
+  - sangga-tax-calc (local) — 상가주택 세금 계산기 (build-plan 세금 레이어와 동일 도메인 — 정본 구분 확인 권장)
+- 크론 에러 0건 — 6일 연속 정상(10-05 ImportError 조치 후 회귀 없음).
+- 작업 변경 12개: build-plan 11커밋 (로컬 AI 우선 전환·세금 레이어·인쇄리포트 세금 세부담, test:report 14항목 통과), post1 1 (5eb1e34) / git 커밋 4개 저장소 (build-plan 11, post1 5eb1e34, skills 14046ba, memories 522385b)
+- daily 페이지: concepts/daily/2026-10-11.md 생성
+
 ## [2026-10-10] daily-sync | 인덱스 +17/+21, 레지스트리 36개 폴더, 크론 에러 0건, 작업 변경 48개
 - 인덱스: 신규 17 / 갱신 21 (텍스트 없음 스킵 3) / 총 7,226개 파일 (FTS 7,226, 389.0MB). 루트별 projects 4,705 / hermes 2,040 / documents 313 / wiki 168
   - 전일 7,209 대비 +17 — 정상 증분, bloat 없음

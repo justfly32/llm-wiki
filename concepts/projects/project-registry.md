@@ -1,7 +1,7 @@
 ---
 title: 프로젝트 레지스트리 (전체 폴더 현황)
-created: 2026-10-10
-updated: 2026-10-10
+created: 2026-10-11
+updated: 2026-10-11
 type: projects
 tags: [registry, projects, folder-map, 중복방지]
 links: [[index]]
@@ -11,7 +11,7 @@ links: [[index]]
 
 > **목적:** 새 코딩 작업 시작 전 반드시 이 문서를 확인해 폴더 중복 생성과 위치 혼란을 방지한다.
 > 자동 생성: `python3 ~/wiki/scripts/generate_project_registry.py` (갱신 시 재실행)
-> Last updated: 2026-10-10
+> Last updated: 2026-10-11
 
 ## 규칙 (중복 방지)
 
@@ -30,7 +30,8 @@ links: [[index]]
 
 | 폴더 | 설명 | remote | 최근 커밋 |
 |------|------|--------|----------|
-| `  post1` | - | justfly32/post1 | 2026-10-09 |
+| `  build-plan` | - | justfly32/build-plan | 2026-10-10 |
+| `  post1` | - | justfly32/post1 | 2026-10-10 |
 | `  shorts-forge` | - | - | 2026-10-08 |
 | `  auto-trading` | 한국 주식 자동매매 — Mock 가상매매 검증 → NH투자증권 모의투자 → 실전 전환 완료 (500만원). | - | 2026-10-05 |
 | `  my-local-agent` | 폐쇄망 Windows PC에서 사내 LLM과 연결하는 CLI와 PC 내부 웹 화면을 갖춘 업무도우미의 개발 버전입니다. 사람이 수행한 브라우저 행동을 수집·편집해 JSON 업무 절차로 저장하고, 반복 실행하거나 Py | justfly32/my-local-agent | 2026-09-27 |
@@ -58,6 +59,7 @@ links: [[index]]
 | `  best-practice` | - | 1 |
 | `  car-year-lookup` | - | 613 |
 | `  claude-cowork-guide` | - | 1 |
+| `  geomdan-design-contract` | - | 10 |
 | `  hermes_ops` | - | 148 |
 | `  html2pptx` | HTML 디자인을 PPTX로 최대한 보존 변환하는 도구. | 15 |
 | `  internet-checker` | SKB, KT, LGU+ 통신 3사의 초고속인터넷 주소별 서비스 가용성을 한 번에 조회하는 도구입니다. | 15 |
@@ -67,6 +69,7 @@ links: [[index]]
 | `✅ pc-llm-dashboard` | PC 상태 확인 + LLM 사용량 확인 통합 모니터링 대시보드. | 25 |
 | `  personal-site` | - | 90 |
 | `  phone-report` | - | 8 |
+| `  sangga-tax-calc` | 상가주택(1층 근린생활시설 + 주거층)을 신축 → 보유 → 임대 → 처분하는 과정의 | 18 |
 | `✅ simpli-gif-maker` | 텍스트 설명을 받아 간단한 졸라맨 GIF 애니메이션을 생성합니다. | 4232 |
 | `  useful-sites` | - | 1 |
 | `  web-crawler-work` | - | 23 |

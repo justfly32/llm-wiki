@@ -4,6 +4,7 @@
 > Total pages: 45
 
 ## Daily (작업 일지)
+- [[2026-10-11]] — daily-sync: 인덱스 +79/+16 (총 7,305, 390.3MB), 레지스트리 39개 (+3: build-plan, geomdan-design-contract, sangga-tax-calc), 크론 에러 0건 (6일 연속 정상), 작업 변경 12개 (build-plan 11커밋 세금레이어+로컬AI, post1 1), git 커밋 4개 저장소
 - [[2026-10-10]] — daily-sync: 인덱스 +17/+21 (총 7,226, 389.0MB), 레지스트리 36개 (변동 없음), 크론 에러 0건 (5일 연속 정상), 작업 변경 48개 (car-year-lookup 13, lotto-predictor 2, post1 1), git 커밋 3개 저장소
 - [[2026-10-09]] — daily-sync: 인덱스 +389/+20 (총 7,209, 388.8MB — car-year-lookup 증빙 추가), 레지스트리 36개 (변동 없음), 크론 에러 0건 (4일 연속 정상), 작업 변경 576개 (car-year-lookup 409 — 사고차 214대 조회·증빙 발송, auto-trading 2, post1 1), git 커밋 3개 저장소
 - [[2026-10-08]] — daily-sync: 인덱스 +44/+25 (총 6,840 — 고아 정리로 -159, 222.9MB), 레지스트리 36개 (변동 없음), 크론 에러 0건, 작업 변경 116개 (shorts-forge 56, auto-trading 2, post1 1), git 커밋 4개 저장소 (shorts-forge 13커밋 — 웹 UI 전환)
