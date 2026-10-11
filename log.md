@@ -1,3 +1,11 @@
+## [2026-10-12] daily-sync | 인덱스 +41/+22, 레지스트리 39개 폴더, 크론 에러 0건, 작업 변경 79개
+- 인덱스: 신규 41 / 갱신 22 (텍스트 없음 스킵 12) / 총 7,346개 파일 (FTS 7,346, 390.7MB). 루트별 projects 4,801 / hermes 2,061 / documents 314 / wiki 170
+  - 전일 7,305 대비 +41 — 정상 증분 (projects 기반 확장, bloat 아님)
+- 레지스트리: 39개 폴더 (git 16 / 로컬 23) — 전일과 동일, 신규 폴더 없음
+- 크론 에러 0건 — 7일 연속 정상(10-05 ImportError 조치 후 회귀 없음).
+- 작업 변경 79개: build-plan 12커밋 (로컬 AI 제거→opencode-go 단일 백엔드, Vercel 서버리스 api/ai.ts 배포 정상화 glm-5.3-flash, LLM 설정 화면·자료실 탭·더블클릭 실행), sangga-tax-calc 20파일 (상가 세무 가이드 15종), post1 1 (9e6d32e), geomdan-design-contract 2, auto-trading 1 (주간 리포트) / git 커밋 4개 저장소 (build-plan 12, post1 9e6d32e, skills fb45550, memories e47cc38)
+- daily 페이지: concepts/daily/2026-10-12.md 생성
+
 ## [2026-10-11] daily-sync | 인덱스 +79/+16, 레지스트리 39개 폴더, 크론 에러 0건, 작업 변경 12개
 - 인덱스: 신규 79 / 갱신 16 (텍스트 없음 스킵 5) / 총 7,305개 파일 (FTS 7,305, 390.3MB). 루트별 projects 4,771 / hermes 2,051 / documents 314 / wiki 169
   - 전일 7,226 대비 +79 — 대부분 build-plan 신규 폴더(세금 레이어 소스·테스트) 유입, bloat 아님
