@@ -1,3 +1,11 @@
+## [2026-10-13] daily-sync | 인덱스 +3,489/+24, 레지스트리 39개 폴더, 크론 에러 0건, 작업 변경 3,513개
+- 인덱스: 신규 3,489 / 갱신 24 (텍스트 없음 스킵 1,644) / 총 10,835개 파일 (FTS 10,835, 1,961MB). 루트별 projects 8,283 / hermes 2,064 / documents 317 / wiki 171
+  - 전일 7,346 대비 +3,489 — **대부분 car-year-lookup/captures 증빙 자료(5,549개, HTML 3,785+JPG 1,764, 1.9GB) 한 번에 유입** (12일 20:00 이후 생성). 실제 작업 산출물이라 bloat 아님. 단 index.db 580MB로 급증 — 10-05 정리(590→93MB) 후 최대치. 추후 DB 비대 시 EXCLUDE_PATHS에 `car-year-lookup/captures` 추가 고려.
+- 레지스트리: 39개 폴더 (git 16 / 로컬 23) — 전일과 동일, 신규 폴더 없음
+- 크론 에러 0건 — 8일 연속 정상(10-05 ImportError 조치 후 회귀 없음).
+- 작업 변경 3,513개: car-year-lookup 3,512 (captures 증빙 5,549개 + 열람/업로드/검증 임시 스크립트 + 연식캡처현황 CSV), auto-trading 2 (실전 라이브 추적), post1 1 (db0cb62 개인사이트) / git 커밋 3개 저장소 (post1 db0cb62, skills 4960d8a, memories dce14ab)
+- daily 페이지: concepts/daily/2026-10-13.md 생성
+
 ## [2026-10-12] daily-sync | 인덱스 +41/+22, 레지스트리 39개 폴더, 크론 에러 0건, 작업 변경 79개
 - 인덱스: 신규 41 / 갱신 22 (텍스트 없음 스킵 12) / 총 7,346개 파일 (FTS 7,346, 390.7MB). 루트별 projects 4,801 / hermes 2,061 / documents 314 / wiki 170
   - 전일 7,305 대비 +41 — 정상 증분 (projects 기반 확장, bloat 아님)
