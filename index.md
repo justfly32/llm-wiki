@@ -1,9 +1,10 @@
 # Wiki Index
 
-> Hermes 작업 결과물 인덱스. Last updated: 2026-10-13
-> Total pages: 46
+> Hermes 작업 결과물 인덱스. Last updated: 2026-10-14
+> Total pages: 47
 
 ## Daily (작업 일지)
+- [[2026-10-14]] — daily-sync: 인덱스 +5/+12 (총 10,840, 1,961MB), 레지스트리 39개 (변동 없음), 크론 에러 0건 (9일 연속 정상), 작업 변경 24개 (stock-analysis-pipeline 스킬 갱신+세션노트, auto-trading 2, park-empty-watch 2, post1 1), git 커밋 3개 저장소
 - [[2026-10-13]] — daily-sync: 인덱스 +3,489/+24 (총 10,835, 1,961MB), 레지스트리 39개 (변동 없음), 크론 에러 0건 (8일 연속 정상), 작업 변경 3,513개 (car-year-lookup captures 증빙 5,549개 대량 유입, auto-trading 2, post1 1), git 커밋 3개 저장소
 - [[2026-10-12]] — daily-sync: 인덱스 +41/+22 (총 7,346, 390.7MB), 레지스트리 39개 (변동 없음), 크론 에러 0건 (7일 연속 정상), 작업 변경 79개 (build-plan 12커밋 서버리스 AI 정상화, sangga-tax-calc 20파일 상가세무), git 커밋 4개 저장소
 - [[2026-10-11]] — daily-sync: 인덱스 +79/+16 (총 7,305, 390.3MB), 레지스트리 39개 (+3: build-plan, geomdan-design-contract, sangga-tax-calc), 크론 에러 0건 (6일 연속 정상), 작업 변경 12개 (build-plan 11커밋 세금레이어+로컬AI, post1 1), git 커밋 4개 저장소
