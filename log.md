@@ -1,3 +1,11 @@
+## [2026-10-15] daily-sync | 인덱스 +16/+15, 레지스트리 40개 폴더 (+1 diet-calc), 크론 에러 0건, 작업 변경 45개
+- 인덱스: 신규 16 / 갱신 15 (텍스트 없음 스킵 4), 총 10,849개 (FTS 10,849, 1,990.1MB). 루트별 projects 8,292 / hermes 2,063 / documents 321 / wiki 173
+  - 전일 10,840 대비 +9 순증. index.db 554.9MB(581,820,416 bytes, 전일 554MB) — 고아 정리·VACUUM 자동 수행 후에도 소폭 증가, 600MB 재돌파 시 `car-year-lookup/captures` EXCLUDE_PATHS 검토.
+- 레지스트리: 40개 폴더 (git 16 / 로컬 24) — **+1 신규: `diet-calc`** (로컬 12개 파일, 10-11 신규 3건 이후 약 4일 만). post1 최근 커밋일만 10-13→10-14.
+- 크론 에러 0건 — 10일 연속 정상(10-05 ImportError 조치 후 회귀 없음).
+- 작업 변경 45개: diet-calc 12 (신규 단일페이지 식단·영양 계산기 53,797건 DB + korean-nutrition-db 스킬 신규), stock-analysis-pipeline 스킬 갱신(SKILL.md + 2026-10-14 세션노트), auto-trading 2 (실전 라이브 추적 15:45), park-empty-watch 2, post1 1 (7d5a14e), .hermes 운영 30 (야간 백업·크론 기록·curator) / git 커밋 3개 저장소 (post1 7d5a14e, skills 599ee59, memories e71fce0)
+- daily 페이지: concepts/daily/2026-10-15.md 생성
+
 ## [2026-10-14] daily-sync | 인덱스 +5/+12, 레지스트리 39개 폴더, 크론 에러 0건, 작업 변경 24개
 - 인덱스: 신규 5 / 갱신 12 (텍스트 없음 스킵 0), 총 10,840개 (FTS 10,840, 1,961MB). 루트별 projects 8,283 / hermes 2,066 / documents 319 / wiki 172
   - 전일 10,835 대비 +5 — car-year-lookup captures 대량 유입(10-13) 이후 정상 증분으로 복귀. index.db 554MB(전일 580MB, 소폭 감소 — 고아 정리 + VACUUM 자동 수행).
