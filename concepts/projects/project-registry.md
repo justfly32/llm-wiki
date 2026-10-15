@@ -1,7 +1,7 @@
 ---
 title: 프로젝트 레지스트리 (전체 폴더 현황)
-created: 2026-10-15
-updated: 2026-10-15
+created: 2026-10-16
+updated: 2026-10-16
 type: projects
 tags: [registry, projects, folder-map, 중복방지]
 links: [[index]]
@@ -11,7 +11,7 @@ links: [[index]]
 
 > **목적:** 새 코딩 작업 시작 전 반드시 이 문서를 확인해 폴더 중복 생성과 위치 혼란을 방지한다.
 > 자동 생성: `python3 ~/wiki/scripts/generate_project_registry.py` (갱신 시 재실행)
-> Last updated: 2026-10-15
+> Last updated: 2026-10-16
 
 ## 규칙 (중복 방지)
 
@@ -30,7 +30,8 @@ links: [[index]]
 
 | 폴더 | 설명 | remote | 최근 커밋 |
 |------|------|--------|----------|
-| `  post1` | - | justfly32/post1 | 2026-10-14 |
+| `  my-media-agent` | 다양한 생성형 AI 이미지, 영상 및 LLM 모델을 자유롭게 스위칭하며 콘텐츠를 제작할 수 있는 통합 미디어 에이전트 CLI입니다. | justfly32/my-media-agent | 2026-10-16 |
+| `  post1` | - | justfly32/post1 | 2026-10-15 |
 | `  build-plan` | 상가주택 신축 검토용 웹 앱 — 수지 계산 · 법규 검토 · 세금(2026 룰 테이블) · AI 자문 · 인쇄 리포트 | justfly32/build-plan | 2026-10-11 |
 | `  shorts-forge` | - | - | 2026-10-08 |
 | `  auto-trading` | 한국 주식 자동매매 — Mock 가상매매 검증 → NH투자증권 모의투자 → 실전 전환 완료 (500만원). | - | 2026-10-05 |

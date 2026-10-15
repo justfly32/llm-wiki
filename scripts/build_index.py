@@ -286,7 +286,9 @@ def print_stats(conn):
     by_root = conn.execute("SELECT root, COUNT(*) FROM files GROUP BY root").fetchall()
     by_type = conn.execute("SELECT type, COUNT(*) FROM files GROUP BY type ORDER BY 2 DESC").fetchall()
     size = conn.execute("SELECT SUM(size) FROM files").fetchone()[0] or 0
-    print(f"📊 인덱스 통계: 총 {total}개 파일 (FTS {fts}개, {size/1024/1024:.1f}MB)")
+    # size = 색인 대상 "원본 파일 크기 합계" (DB 크기가 아니다 — 과거 보고에서 혼동됨)
+    db_mb = INDEX_DB.stat().st_size / 1024 / 1024 if INDEX_DB.exists() else 0
+    print(f"📊 인덱스 통계: 총 {total}개 파일 (FTS {fts}개, 원본 합계 {size/1024/1024:.1f}MB, index.db {db_mb:.1f}MB)")
     print(f"  루트별: {', '.join(f'{r} {c}개' for r, c in by_root)}")
     print(f"  유형별: {', '.join(f'{t} {c}개' for t, c in by_type[:8])}")
 

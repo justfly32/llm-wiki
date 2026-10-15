@@ -1,9 +1,10 @@
 # Wiki Index
 
-> Hermes 작업 결과물 인덱스. Last updated: 2026-10-15
-> Total pages: 48
+> Hermes 작업 결과물 인덱스. Last updated: 2026-10-16
+> Total pages: 66
 
 ## Daily (작업 일지)
+- [[2026-10-16]] — daily-sync: 인덱스 +93/+19 (총 10,942, 원본합계 1,990.8MB / index.db 556MB), 레지스트리 41개 (+1: my-media-agent), 크론 에러 0건 (11일 연속 정상), 작업 변경 193개 (my-media-agent 신규 107파일·20커밋 — 시리즈·일관성·TTS·정리체계, 스킬 4개 신설+3개 보강, auto-trading 2, post1 1), git 커밋 4개 저장소
 - [[2026-10-15]] — daily-sync: 인덱스 +16/+15 (총 10,849, 1,990.1MB), 레지스트리 40개 (+1: diet-calc), 크론 에러 0건 (10일 연속 정상), 작업 변경 45개 (diet-calc 신규 12 + korean-nutrition-db 스킬 신규, stock-analysis-pipeline 스킬 갱신, auto-trading 2, post1 1), git 커밋 3개 저장소
 - [[2026-10-14]] — daily-sync: 인덱스 +5/+12 (총 10,840, 1,961MB), 레지스트리 39개 (변동 없음), 크론 에러 0건 (9일 연속 정상), 작업 변경 24개 (stock-analysis-pipeline 스킬 갱신+세션노트, auto-trading 2, park-empty-watch 2, post1 1), git 커밋 3개 저장소
 - [[2026-10-13]] — daily-sync: 인덱스 +3,489/+24 (총 10,835, 1,961MB), 레지스트리 39개 (변동 없음), 크론 에러 0건 (8일 연속 정상), 작업 변경 3,513개 (car-year-lookup captures 증빙 5,549개 대량 유입, auto-trading 2, post1 1), git 커밋 3개 저장소
@@ -76,7 +77,7 @@
 
 ## Projects
 
-- [[project-registry]] — 프로젝트 레지스트리 (전체 폴더 현황 32개) — 코딩 전 필수 조회, 중복 방지
+- [[project-registry]] — 프로젝트 레지스트리 (전체 폴더 현황 41개) — 코딩 전 필수 조회, 중복 방지
 - [[personal-sites]] — 개인 사이트 3개 폴더 내역 (justfly32.github.io / post1 / personal-site) 중복 방지 가이드
 
 ## Learnings

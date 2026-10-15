@@ -1,3 +1,12 @@
+## [2026-10-16] daily-sync | 인덱스 +93/+19, 레지스트리 41개 폴더 (+1 my-media-agent), 크론 에러 0건, 작업 변경 193개
+- 인덱스: 신규 93 / 갱신 19 (텍스트 없음 스킵 0), 총 10,942개 (FTS 10,942, 원본 합계 1,990.8MB / index.db 556MB). 루트별 projects 8,367 / hermes 2,078 / documents 323 / wiki 174.
+  - 전일 10,849 대비 +93 — my-media-agent 신설 + 스킬 references 대량 생성분. index.db 556MB(전일 554.9MB) — 600MB 재돌파 시 `car-year-lookup/captures` EXCLUDE_PATHS 검토.
+  - `build_index.py --stats` 라벨 수정: `SUM(size)`(원본 합계)를 DB 크기처럼 표기하던 것을 `원본 합계 …MB, index.db …MB`로 분리(실제 DB 실측 출력).
+- 레지스트리: 41개 폴더 (git 17 / 로컬 24) — **+1 신규: `my-media-agent`** (git, justfly32/my-media-agent, 최근 커밋 10-16). 2일 연속 신규 폴더(diet-calc → my-media-agent).
+- 크론 에러 0건 — 11일 연속 정상(10-05 ImportError 조치 후 회귀 없음).
+- 작업 변경 193개: my-media-agent 107 (20커밋 — 쇼츠 시리즈 모드, 일관성 유지 모드+로컬 자동 점검, TTS 호흡·쉼·간격 난수화, project.json/meta.json 이력, /clean·/manual·/help·/set·/status, MarkupError·먹싱 버그 수정), .hermes 31 (스킬 4개 신설: ai-media-consistency·third-party-api-integration·install-github-python-app·interactive-cli-surface / 보강: local-video-production·stock-analysis-pipeline·paid-batch-operations·daily-memory-notion, 야간 백업 e7f85af·6cf015f, 크론 기록), auto-trading 2 (실전 라이브 추적, bear 국면 총자산 4,727,707), park-empty-watch 2, post1 1 (3a7fd19) / git 커밋 4개 저장소
+- daily 페이지: concepts/daily/2026-10-16.md 생성
+
 ## [2026-10-15] daily-sync | 인덱스 +16/+15, 레지스트리 40개 폴더 (+1 diet-calc), 크론 에러 0건, 작업 변경 45개
 - 인덱스: 신규 16 / 갱신 15 (텍스트 없음 스킵 4), 총 10,849개 (FTS 10,849, 1,990.1MB). 루트별 projects 8,292 / hermes 2,063 / documents 321 / wiki 173
   - 전일 10,840 대비 +9 순증. index.db 554.9MB(581,820,416 bytes, 전일 554MB) — 고아 정리·VACUUM 자동 수행 후에도 소폭 증가, 600MB 재돌파 시 `car-year-lookup/captures` EXCLUDE_PATHS 검토.
