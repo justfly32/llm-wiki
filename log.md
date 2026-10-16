@@ -1,3 +1,13 @@
+## [2026-10-17] daily-sync | 인덱스 +222/+60, 레지스트리 41개 폴더, 크론 에러 3건(동일 원인 1건·재시도 복구), 작업 변경 345개
+- 인덱스: 신규 222 / 갱신 60 (텍스트 없음 스킵 17), 총 11,159개 (FTS 11,159, 원본 합계 1,998.4MB / index.db 557.7MB). 루트별 projects 8,550 / hermes 2,109 / documents 325 / wiki 175.
+  - 전일 10,942 대비 +217 — my-media-agent 장면·캐릭터 이미지, car-year-lookup 백업 xlsx, 스킬 스크립트 동시 유입. index.db 557.7MB(전일 556MB, +1.7MB) 완만 증가.
+- 레지스트리: 41개 폴더 (git 17 / 로컬 24) — 전일과 동일, **신규 폴더 없음**. 변동은 파일 수(car-year-lookup 5,706→5,736, lotto-predictor 19→21).
+- 크론 에러 3건 — 전부 `HTTP 403 Model access is disabled`(opencode-go 프로바이더 모델 접근 차단), 10-16 16:00 Daily Stock Analysis / 16:00 auto-trading-evening-briefing / 20:00 로또-주간-예측-알림.
+  - 세 건 모두 **재시도로 복구**(20:03·20:10·20:13 정상 산출물). 96시간 창에서 해당 4시간 외 에러 0건 → 단일 시간대 프로바이더 장애(반복 패턴 아님).
+  - 개선 제안: `fallback_providers`가 빈 배열 → 대체 프로바이더 1개 등록 시 403 유형 자동 우회(근본 조치). 재시도 규칙 목록에 403 명시.
+- 작업 변경 345개: my-media-agent 233 (20커밋 — 법률 사례 홍보 파이프라인 신설·캐릭터 시트 고정, 사례 002 제작 기준, 1:1 카드·쇼츠 가독성 5커밋, HeyGen 480p 요율 실측 정본화(3.5배 과대계산 교정), 카메라 무브·매치컷 $0 개선, 승격 480p+업스케일 3경로), car-year-lookup 30 (증빙 기반 판정·모델 표준화·OOXML 직접 패치 + 단계별 백업 4개), .hermes 77 (스킬 4개 신설: legal-case-promo·shortform-video-layout(+스크립트 2)·vehicle-model-standardization·legacy-xlsx-xml-patching / 보강 6개, Home Assistant 플러그인 신설 13파일, 야간 백업 411135f·c30efb8, config.yaml 20:02 403 대응, 크론 기록·park_watch·kanban), auto-trading 2 (실전 라이브 추적, bear·총자산 472,933), lotto-predictor 2 (1246회차·추적 15회차), post1 1 (6321e9d) / git 커밋 4개 저장소
+- daily 페이지: concepts/daily/2026-10-17.md 생성
+
 ## [2026-10-16] daily-sync | 인덱스 +93/+19, 레지스트리 41개 폴더 (+1 my-media-agent), 크론 에러 0건, 작업 변경 193개
 - 인덱스: 신규 93 / 갱신 19 (텍스트 없음 스킵 0), 총 10,942개 (FTS 10,942, 원본 합계 1,990.8MB / index.db 556MB). 루트별 projects 8,367 / hermes 2,078 / documents 323 / wiki 174.
   - 전일 10,849 대비 +93 — my-media-agent 신설 + 스킬 references 대량 생성분. index.db 556MB(전일 554.9MB) — 600MB 재돌파 시 `car-year-lookup/captures` EXCLUDE_PATHS 검토.
