@@ -1,3 +1,15 @@
+## [2026-10-19] daily-sync | 인덱스 +1,339/+80, 레지스트리 42개 폴더 (+1 work), 크론 에러 24h 2건·96h 6건(전부 프로바이더 4xx, 401 키 만료 3건은 조치 필요), 작업 변경 1,441개
+- 인덱스: 신규 1,339 / 갱신 80 (텍스트 없음 스킵 24), 총 12,401개 (FTS 12,401, 원본 합계 2,009.6MB / index.db 568.2MB). 루트별 projects 9,730 / hermes 2,169 / documents 326 / wiki 176.
+  - 전일 11,159 대비 +1,242 — 변경 창이 **이틀치**(10-18 05:30 실행 실패)라 10-18·10-19 분이 합산 유입. index.db 557.7→568.2MB(+10.5MB).
+  - **index.db 최대 용량원 = `car-year-lookup/captures`**: 3,785개 HTML(디스크 1.9GB)이 본문 352MB로 전체 본문(415MB)의 85%. 10-16 로그의 "600MB 재돌파 시 EXCLUDE_PATHS 검토" 조건에 근접(568MB) → 제외 후보 1순위. 잡음 후보 2순위 `.hermes/browser-profile/**` 33행.
+- 레지스트리: 42개 폴더 (git 17 / 로컬 25) — **+1 신규: `work`** (LLM 예산 추적 단일 파일 `llm_budget.json`). my-media-agent 최근 커밋 10-19, post1 10-17.
+- 크론 에러: 최근 24h 2건 / 96시간 6건, 원인 3종 — `HTTP 401` 키 만료 3건(10-18 05:30 llm-wiki-daily-sync **자신 포함**, 06:00 Wiki Git Backup·personal site 갱신), `HTTP 429 Policy budget exceeded` 1건(10-17 17:00 주간-주식매매 → 17:03 복구), `HTTP 403 Model access is disabled` 2건(10-16 16:00 주식분석·자동매매브리핑 → 20:10/20:13 복구).
+  - 전부 업스트림 4xx, 로컬 스크립트 결함 0건. 401은 08:36 `auth.json` 키 교체로 해소(자동 복구 불가 유형).
+  - 개선 제안: ①`fallback_providers` 등록(빈 배열, 401/403/429 자동 우회) ②키 만료 알림 ③집계자(llm-wiki-daily-sync) 자기 실패 사각지대 보완 ④17:00대 무거운 job 시각 분산.
+  - **조치 필요** — 401 3건은 재시도로 안 풀리고 사람이 키를 교체해야 복구되며, 10-18 daily 페이지가 하루 공백이 됐다(10-19 실행에서 복원).
+- 작업 변경 1,441개 (창 5,069개 중): my-media-agent 1,358 (창 전체 **207커밋** — 무료 음악 생성기 v1~v5·유튜브 보관함 12곡·스튜디오 대확장(프리셋·시네마룩·인트로엔딩·비용탭·연속재생)·사진 여러 장→영상·동적 자막·프리비즈 자체 구현(블렌더 없이 평면도+3D 와이어프레임)·EP20·22·23·28), .hermes 79 (스킬 신설 2: reverse-engineer-anything·local-tool-web-shell, 보강 6 + music-sourcing-and-licensing 신규, 야간 백업 2일치, config.yaml 00:30, 크론 기록), post1 1 (d4049e2), auto-trading 1 (주간 리포트), lotto-predictor 1, work 1 / git 커밋 4개 저장소
+- daily 페이지: concepts/daily/2026-10-19.md 생성 + **2026-10-18.md 복원**(전일 실패분, 이틀치 창으로 재구성)
+
 ## [2026-10-17] daily-sync | 인덱스 +222/+60, 레지스트리 41개 폴더, 크론 에러 3건(동일 원인 1건·재시도 복구), 작업 변경 345개
 - 인덱스: 신규 222 / 갱신 60 (텍스트 없음 스킵 17), 총 11,159개 (FTS 11,159, 원본 합계 1,998.4MB / index.db 557.7MB). 루트별 projects 8,550 / hermes 2,109 / documents 325 / wiki 175.
   - 전일 10,942 대비 +217 — my-media-agent 장면·캐릭터 이미지, car-year-lookup 백업 xlsx, 스킬 스크립트 동시 유입. index.db 557.7MB(전일 556MB, +1.7MB) 완만 증가.
