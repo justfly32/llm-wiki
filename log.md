@@ -1,3 +1,18 @@
+## [2026-10-20] daily-sync | 인덱스 +156/+231, 레지스트리 42개 폴더(변동 없음), 크론 에러 24h 1건·96h 7건(신규 `RecursionError` 1건 = 프레임워크·조치 필요), 작업 변경 412개
+- 인덱스: 신규 156 / 갱신 231 (텍스트 없음 스킵 13), 총 12,468개 (원본 합계 2,011.4MB / index.db 569.4MB). 루트별 projects 9,771 / hermes 2,190 / documents 329 / wiki 178.
+  - 전일 12,401 대비 +67. index.db 568.2→569.4MB(+1.2MB). `car-year-lookup/captures` 3,785행 = 본문 352.2MB로 **전체 본문 416.2MB의 84.6%** (600MB 임박, EXCLUDE_PATHS 후보 유지).
+- 레지스트리: 42개 폴더 (git 17 / 로컬 25) — **변동 없음** (어제 신규 `work` 포함, 신규 0개).
+- 크론 에러: 최근 24h **1건**, 96시간 **7건**, 원인 4종.
+  - **신규 유형 — `RecursionError: maximum recursion depth exceeded`** (10-20 00:10 `심해 발행 진행 — 매일 00:10 다음 6편 비공개 업로드+예약`, 94e321b817b7).
+    실패 지점은 job 본문이 아니라 **에이전트 생성 단계**: `_construct_cron_agent → _setup_logging → _line_buffer_piped_stdout → getattr(stream,'line_buffering')` 에서
+    `process_bootstrap.__getattr__` ↔ `thread_scoped_output.__getattr__` 상호 위임으로 프레임 2배 소모. 게이트웨이 10-05 12:07부터 **14일 17시간 무재시작** → stdout 프록시 체인 누적이 원인(로그상 최초 발생).
+    job은 10-19 23:14 생성, **성공 이력 0회**(failure_streak=1, retry 없음) → **10-20 예약 발행 6편 실제 누락**.
+  - 기존 6건: `401` 키 만료 ×2 (10-18 06:00 Wiki Git Backup·personal site — 08:36 키 교체로 해소), `429` 예산 ×1 (10-17 17:00 주간주식 → 17:03 복구), `403` 모델차단 ×3 (10-16 16:00 ×2·20:00 로또 → 전부 재시도 복구).
+  - 집계자 자기 점검: `llm-wiki-daily-sync`(28ea8625654b) 직전 실행 10-19 정상. 10-18 실패분은 10-19 실행에서 복원 완료.
+  - **조치 필요** — ①게이트웨이 재시작(누적 프록시 체인 초기화) ②`심해 발행 진행` 수동 1회 재실행(오늘 몫 6편) ③해당 job에 지연 재시도 추가 ④upstream 수정(현 설치본 2026-10-04 빌드, 미포함).
+- 작업 변경 412개 (원본 1,800개 중): my-media-agent 350 (20커밋 — 심해 시리즈 제작·검수 277파일, 발행 파이프라인 정비(다음 N편 자동 발행·예약 안전화·[EP번호]·재생목록·AI 사용 공개 실측), 신규 '기억 복원 상담소' 기획·캐릭터시트·30화 편성·대본 생성기 재작성 루프, 품질 게이트), .hermes 46 (local-video-production references 12개 신규/개편 + SKILL.md 9개 갱신, 야간 백업 2, memories), car-year-lookup 12 (xlsx 표준차량모델·표준열 개선 + 백업 3), auto-trading 2, post1 1 / git 커밋 4개 저장소 (my-media-agent 20, post1 1, skills 1, memories 1)
+- daily 페이지: concepts/daily/2026-10-20.md 생성
+
 ## [2026-10-19] daily-sync | 인덱스 +1,339/+80, 레지스트리 42개 폴더 (+1 work), 크론 에러 24h 2건·96h 6건(전부 프로바이더 4xx, 401 키 만료 3건은 조치 필요), 작업 변경 1,441개
 - 인덱스: 신규 1,339 / 갱신 80 (텍스트 없음 스킵 24), 총 12,401개 (FTS 12,401, 원본 합계 2,009.6MB / index.db 568.2MB). 루트별 projects 9,730 / hermes 2,169 / documents 326 / wiki 176.
   - 전일 11,159 대비 +1,242 — 변경 창이 **이틀치**(10-18 05:30 실행 실패)라 10-18·10-19 분이 합산 유입. index.db 557.7→568.2MB(+10.5MB).
