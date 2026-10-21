@@ -1,3 +1,18 @@
+## [2026-10-22] daily-sync | 인덱스 +928/+124, 레지스트리 45개 폴더 (+3: blender-mcp·blender-vse-mcp·craft-clis), 크론 에러 24h 0건·96h 5건(전량 기분석 — 게이트웨이 재시작 효과 2일차, 재발 0), 작업 변경 1,079개
+- 인덱스: 신규 928 / 갱신 124 (텍스트 없음 스킵 37), 총 13,447개 (원본 합계 2,927.3MB / index.db 583.1MiB·실측 611.4MB). 루트별 projects 10,723 / hermes 2,212 / documents 332 / wiki 180.
+  - 전일 12,690 대비 **+757**. index.db 571.0→583.1MiB(+12.1). 원본 합계 +739MB는 **car-year-lookup inbox xlsx 백업 13개(각 ~56MB)** 때문 — 바이너리라 DB 영향 없음.
+  - `car-year-lookup/captures` **3,786행 / 본문 352.3MB = 전체 본문 425.4MB의 82.8%** → "600MB 재돌파 시 EXCLUDE_PATHS" 조건 **초과**(611.4MB). 제외 시 200MB대. **대표님 승인 대기**(크론은 정책 변경 안 함).
+- 레지스트리: **45개 폴더 (git 19 / 로컬 26) — 신규 3개**: `blender-mcp`(sandraschi/blender-mcp 클론), `blender-vse-mcp`(헤드리스 VSE MCP 신설), `craft-clis`(PhotoCraft 0.11.1·FilmCraft 0.9.0·VectorCraft 0.13.1 CLI).
+- 크론 에러: 최근 24h **0건**, 96시간 **5건**(전량 10-18~10-20 기분석, 신규 0).
+  - **✅ 게이트웨이 재시작 효과 검증** — 10-20 08:51:30 기동 후 가동 44시간, 재시작 이후 크론 산출물 누적 **137건 FAILED 0건**(10-21~10-22 실행 77건 전부 정상).
+  - ✅ `auto-trading-morning-briefing` 복구(`last_status=ok`, `failure_streak=0`) · ✅ 1회성 재개 예약 2건 정상(심해 B 재개 06:05 → 본잡 10-21 17:00 completed·delivered / A 재개 12:00).
+  - ⏳ `daily-geek-hacker-news`만 `last_status=error` 유지(10-20 실패분) → **10-22(목) 08:00 첫 재실행**으로 최종 복구 확인 예정.
+  - **발행 운영**: 심해 A는 대표님 지시(10-21)로 **paused**(B와 공개 시각 겹침) → **B 단독 3편/일**(17:00 업로드 → 20·21·22시 공개), 상담소 paused + 재개 예약 **10-28 06:00** 활성. 중복 위험 없음.
+  - **남은 리스크**: 근본 코드 결함 미수정(설치본 2026-10-04 빌드) + 실패 이력 job retry 미설정 → **주 1회 게이트웨이 재시작** 예방 루틴 권장(다음 권장일 10-27 전후).
+  - **판정: 안정(재발 0)**
+- 작업 변경 1,079개 (원본 2,288개 중): my-media-agent 468 (20커밋 — **신규 프로젝트 `심해-3년전-트레일러`**: 30편 완결 시리즈 15초 예고편(9:16·5초×3컷·Seedance 2.5) 스토리보드→클립 3개→자막/조립 배선, **사연카드 = PhotoCraft 하이브리드 패널 기본값**(620px·y1260·딤0.22, ASS 폴백), 인코딩 상향→정지화면 콘텐츠 결론으로 원복(+maxrate 9M 가드), FilmCraft vs ffmpeg Phase0 비교(5.2초/14.4MB vs 14.7초/23.0MB)·활용계획 승인 대기, 영상생성 모델 기준 검토(20종·Wan 3.0 $0.05/s), 대본 규칙(쉼표=호흡·인용 종결부호·34문장 교정), `.env` 추적 해제), blender-vse-mcp 3 (VSE MCP 15도구 신설 + README 함정), car-year-lookup 58 (표준화 3일차 — 표본 조회 세트·조회실패/X시리즈 CSV 4종·오인식 점검·작업보고서 md+docx), .hermes 71 (skills 50 — 발행 운영안·공개슬롯 20/21/22시·craft-apps-photo-film-vector 신설·blender-vse-video-editing 신설·중복 스킬 흡수(영상 7→3, 카드뉴스 4→2)), post1 1 / git 커밋 5개 저장소 (my-media-agent 20, blender-vse-mcp 3, skills 8, memories 1, post1 1)
+- daily 페이지: concepts/daily/2026-10-22.md 생성
+
 ## [2026-10-21] daily-sync | 인덱스 +224/+72, 레지스트리 42개 폴더(변동 없음), 크론 에러 24h 2건·96h 6건(24h 전부 `RecursionError` — 게이트웨이 재시작으로 재발 0건, retry 미설정이 남은 리스크), 작업 변경 325개
 - 인덱스: 신규 224 / 갱신 72 (텍스트 없음 스킵 11), 총 12,690개 (원본 합계 2,187.8MB / index.db 571.0MiB·실측 598.7MB). 루트별 projects 9,973 / hermes 2,208 / documents 330 / wiki 179.
   - 전일 12,468 대비 **+222**. index.db 569.4→571.0MiB(+1.6). 원본 합계 +176MB는 **car-year-lookup inbox xlsx 3개(185MB)** 때문 — 바이너리라 DB 영향 없음.

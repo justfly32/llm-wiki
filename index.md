@@ -1,9 +1,10 @@
 # Wiki Index
 
-> Hermes 작업 결과물 인덱스. Last updated: 2026-10-21
-> Total pages: 71
+> Hermes 작업 결과물 인덱스. Last updated: 2026-10-22
+> Total pages: 72
 
 ## Daily (작업 일지)
+- [[2026-10-22]] — daily-sync: 인덱스 +928/+124 (총 13,447, 원본합계 2,927.3MB / index.db 583.1MiB·실측 611.4MB), 레지스트리 **45개 (+3: blender-mcp, blender-vse-mcp, craft-clis)**, **크론 에러 24h 0건 / 96h 5건(10-18~10-20 기분석, 신규 0) — 게이트웨이 재시작 효과 2일차: 10-20 08:51 재기동 후 크론 산출물 누적 137건 FAILED 0건. auto-trading-morning-briefing 복구(failure_streak 0), 1회성 재개 예약 2건 정상(B 10-21 17:00 completed·delivered). 심해 발행 A는 대표님 지시로 paused → B 단독 3편/일, 상담소 10-28 재개 예약 유지. 남은 확인: daily-geek-hacker-news 10-22 08:00**, 작업 변경 1,079개 (my-media-agent 468·20커밋: 심해 15초 트레일러 프로젝트 신설·사연카드 PhotoCraft 하이브리드 정착·인코딩 실험 원복·FilmCraft Phase0 비교·대본 규칙 정비, blender-vse-mcp 신설 3커밋, car-year-lookup 58: 표준화 3일차+작업보고서, skills 8커밋: 발행 운영안·공개슬롯 20/21/22시·중복 스킬 흡수), index.db captures 82.8% (**600MB 초과 — 색인 제외 승인 대기**) / 안정(재발 0)
 - [[2026-10-21]] — daily-sync: 인덱스 +224/+72 (총 12,690, 원본합계 2,187.8MB / index.db 571.0MiB), 레지스트리 42개 (변동 없음), **크론 에러 24h 2건 / 96h 6건 — 24h 2건은 전부 `RecursionError`(08:00 daily-geek-hacker-news, 08:30 auto-trading-morning-briefing, 게이트웨이 14일 무재시작 누적). 전일 조치 필요 1번(게이트웨이 재시작)은 10-20 08:51 이행 확인 — 재시작 후 20시간 40분·크론 산출물 60건 FAILED 0건, 재발 없음. 대표님이 심해 발행을 A/B로 분리 + 1회성 재개 예약 3건 예약, retry 미설정은 남은 리스크**, 작업 변경 325개 (my-media-agent 256·20커밋: 상담소 EP01~03 제작·화면 문법 확정·발행 슬롯 --step·대본 규칙 2층 분리, car-year-lookup 14: 차량모델 표준화 2일차 + 기준서), index.db 최대 용량원 car-year-lookup/captures = 본문 84.5% (**승인 대기: 색인 제외 시 200MB대**) / 재발 감시 중
 - [[2026-10-20]] — daily-sync: 인덱스 +156/+231 (총 12,468, 원본합계 2,011.4MB / index.db 569.4MB), 레지스트리 42개 (변동 없음), **크론 에러 24h 1건 — 신규 유형 `RecursionError`(00:10 심해 발행 진행, 에이전트 생성 단계·stdout 프록시 위임 체인, 게이트웨이 14일 무재시작 누적). 10-20 예약 발행 6편 실제 누락 → 게이트웨이 재시작 + job 재실행 필요. 96h 7건 중 나머지 6건은 프로바이더 4xx로 복구됨**, 작업 변경 412개 (my-media-agent 350·20커밋: 심해 EP 검수·발행 파이프라인 정비·신규 '기억 복원 상담소' 기획, local-video-production references 12개 정본화), 조치 필요
 - [[2026-10-19]] — daily-sync: 인덱스 +1,339/+80 (총 12,401, 원본합계 2,009.6MB / index.db 568.2MB), 레지스트리 42개 (+1: work), **크론 에러 24h 2건 / 96h 6건 — 전부 프로바이더 4xx(401 키 만료 3·429 예산 1·403 모델차단 2), 복구됨. 401은 사람이 키를 교체해야 풀리는 유형 → 조치 필요(키 만료 알림 + fallback_providers 등록)**, 작업 변경 1,441개 (my-media-agent 1,358·창 207커밋: 무료 음악 생성기·스튜디오 대확장·사진→영상·동적 자막·프리비즈 자체 구현·EP20·22·23·28, 스킬 신설 2·보강 6), index.db 최대 용량원은 car-year-lookup/captures(본문 352MB = 85%, 색인 제외 후보)
