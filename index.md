@@ -1,9 +1,10 @@
 # Wiki Index
 
-> Hermes 작업 결과물 인덱스. Last updated: 2026-10-22
-> Total pages: 72
+> Hermes 작업 결과물 인덱스. Last updated: 2026-10-23
+> Total pages: 73
 
 ## Daily (작업 일지)
+- [[2026-10-23]] — daily-sync: 인덱스 +297/+44 (총 13,742, 원본합계 3,003.1MB / index.db 585.1MiB·실측 613.5MB), 레지스트리 **45개 (변동 없음 — 신규 0)**, **크론 에러 24h 0건 / 96h 3건(전량 10-20 기분석, 신규 0) — 게이트웨이 재시작 효과 3일차: 10-20 08:51 재기동 후 가동 68시간 FAILED 0건. daily-geek-hacker-news 복구 확정(10-22 08:01 ok), auto-trading-morning-briefing ok 유지. 신규 관찰: 주간-주식매매-진행경과-및-전망 10-17 HTTP 429 1회 실패(failure_streak 1, 단일 실패 — 10-24 17:00 결과로 판정)**, 작업 변경 366개 (my-media-agent 317·20커밋: 윤서 실사 EP01~03 마스터·'감정 실린 끝 앵커'로 배우 연기 해결·클립 이음새 3원칙(check_seams·check_naturalness 신설)·오픈라우터 frame_images 카메라 통제 성공($0.212)·비용 5초 블록 정정, car-year-lookup 4: xlsx 시간 열 삽입 도구(원본 XML 패치), auto-trading 2, post1 1), index.db captures 82.6% (**600MB 초과 2일차 — 색인 제외 승인 대기**) / 안정(3일 연속 에러 0)
 - [[2026-10-22]] — daily-sync: 인덱스 +928/+124 (총 13,447, 원본합계 2,927.3MB / index.db 583.1MiB·실측 611.4MB), 레지스트리 **45개 (+3: blender-mcp, blender-vse-mcp, craft-clis)**, **크론 에러 24h 0건 / 96h 5건(10-18~10-20 기분석, 신규 0) — 게이트웨이 재시작 효과 2일차: 10-20 08:51 재기동 후 크론 산출물 누적 137건 FAILED 0건. auto-trading-morning-briefing 복구(failure_streak 0), 1회성 재개 예약 2건 정상(B 10-21 17:00 completed·delivered). 심해 발행 A는 대표님 지시로 paused → B 단독 3편/일, 상담소 10-28 재개 예약 유지. 남은 확인: daily-geek-hacker-news 10-22 08:00**, 작업 변경 1,079개 (my-media-agent 468·20커밋: 심해 15초 트레일러 프로젝트 신설·사연카드 PhotoCraft 하이브리드 정착·인코딩 실험 원복·FilmCraft Phase0 비교·대본 규칙 정비, blender-vse-mcp 신설 3커밋, car-year-lookup 58: 표준화 3일차+작업보고서, skills 8커밋: 발행 운영안·공개슬롯 20/21/22시·중복 스킬 흡수), index.db captures 82.8% (**600MB 초과 — 색인 제외 승인 대기**) / 안정(재발 0)
 - [[2026-10-21]] — daily-sync: 인덱스 +224/+72 (총 12,690, 원본합계 2,187.8MB / index.db 571.0MiB), 레지스트리 42개 (변동 없음), **크론 에러 24h 2건 / 96h 6건 — 24h 2건은 전부 `RecursionError`(08:00 daily-geek-hacker-news, 08:30 auto-trading-morning-briefing, 게이트웨이 14일 무재시작 누적). 전일 조치 필요 1번(게이트웨이 재시작)은 10-20 08:51 이행 확인 — 재시작 후 20시간 40분·크론 산출물 60건 FAILED 0건, 재발 없음. 대표님이 심해 발행을 A/B로 분리 + 1회성 재개 예약 3건 예약, retry 미설정은 남은 리스크**, 작업 변경 325개 (my-media-agent 256·20커밋: 상담소 EP01~03 제작·화면 문법 확정·발행 슬롯 --step·대본 규칙 2층 분리, car-year-lookup 14: 차량모델 표준화 2일차 + 기준서), index.db 최대 용량원 car-year-lookup/captures = 본문 84.5% (**승인 대기: 색인 제외 시 200MB대**) / 재발 감시 중
 - [[2026-10-20]] — daily-sync: 인덱스 +156/+231 (총 12,468, 원본합계 2,011.4MB / index.db 569.4MB), 레지스트리 42개 (변동 없음), **크론 에러 24h 1건 — 신규 유형 `RecursionError`(00:10 심해 발행 진행, 에이전트 생성 단계·stdout 프록시 위임 체인, 게이트웨이 14일 무재시작 누적). 10-20 예약 발행 6편 실제 누락 → 게이트웨이 재시작 + job 재실행 필요. 96h 7건 중 나머지 6건은 프로바이더 4xx로 복구됨**, 작업 변경 412개 (my-media-agent 350·20커밋: 심해 EP 검수·발행 파이프라인 정비·신규 '기억 복원 상담소' 기획, local-video-production references 12개 정본화), 조치 필요
@@ -83,7 +84,7 @@
 
 ## Projects
 
-- [[project-registry]] — 프로젝트 레지스트리 (전체 폴더 현황 42개) — 코딩 전 필수 조회, 중복 방지
+- [[project-registry]] — 프로젝트 레지스트리 (전체 폴더 현황 45개) — 코딩 전 필수 조회, 중복 방지
 - [[personal-sites]] — 개인 사이트 3개 폴더 내역 (justfly32.github.io / post1 / personal-site) 중복 방지 가이드
 
 ## Learnings
