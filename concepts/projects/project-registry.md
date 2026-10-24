@@ -1,7 +1,7 @@
 ---
 title: 프로젝트 레지스트리 (전체 폴더 현황)
-created: 2026-10-24
-updated: 2026-10-24
+created: 2026-10-25
+updated: 2026-10-25
 type: projects
 tags: [registry, projects, folder-map, 중복방지]
 links: [[index]]
@@ -11,7 +11,7 @@ links: [[index]]
 
 > **목적:** 새 코딩 작업 시작 전 반드시 이 문서를 확인해 폴더 중복 생성과 위치 혼란을 방지한다.
 > 자동 생성: `python3 ~/wiki/scripts/generate_project_registry.py` (갱신 시 재실행)
-> Last updated: 2026-10-24
+> Last updated: 2026-10-25
 
 ## 규칙 (중복 방지)
 
@@ -31,7 +31,7 @@ links: [[index]]
 | 폴더 | 설명 | remote | 최근 커밋 |
 |------|------|--------|----------|
 | `  my-media-agent` | 다양한 생성형 AI 이미지, 영상 및 LLM 모델을 자유롭게 스위칭하며 콘텐츠를 제작할 수 있는 통합 미디어 에이전트 CLI입니다. | justfly32/my-media-agent | 2026-10-24 |
-| `  post1` | - | justfly32/post1 | 2026-10-23 |
+| `  post1` | - | justfly32/post1 | 2026-10-24 |
 | `  blender-vse-mcp` | Blender Video Sequence Editor 를 헤드리스로 조작하는 MCP 서버. | - | 2026-10-21 |
 | `  blender-mcp` | Control Blender with natural language through MCP. Tell Claude to create a steampunk robot | sandraschi/blender-mcp | 2026-10-13 |
 | `  build-plan` | 상가주택 신축 검토용 웹 앱 — 수지 계산 · 법규 검토 · 세금(2026 룰 테이블) · AI 자문 · 인쇄 리포트 | justfly32/build-plan | 2026-10-11 |
