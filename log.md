@@ -1,3 +1,14 @@
+## [2026-10-29] daily-sync | 인덱스 +495/+125, 레지스트리 45개 폴더 (신규 html-slides 1 · 제거 windfriend-archive), 크론 에러 3건(전부 HTTP 410 모델 폐기·교체로 해소), 작업 변경 1,638개(이틀치·요약 723)
+- 인덱스: 신규 495 / 갱신 125 (텍스트 없음 스킵 89), 총 13,549개 (원본 합계 3,102.8MB / index.db 580.2MiB·실측 608.4MB). 루트별 projects 10,933 / hermes 2,086 / documents 344 / wiki 186.
+  - 전일 15,490 대비 **−1,941** — projects 12,894 → 10,933(−1,961). 신규 495 유입에도 순감한 것은 **prune_missing 고아 정리** 때문(10-27 `_raw`·구버전 렌더 **외장 이관 8.30GB** + archive 정리 반영). 버그 아님.
+  - **index.db 596.0 → 580.2MiB (−15.8MiB)** — 600MiB 라인 아래 유지. VACUUM 회수가 신규 유입분보다 큼.
+  - `car-year-lookup/captures` **3,786행 / 본문 369.4M자 = 전체 본문 442.6M자의 83.5%** → 색인 제외는 **계속 승인 대기**(크론은 정책 변경 안 함).
+  - **AppleDouble `._*` 123행이 색인에 잔존**(10-28 대량 복사 부산물) — `._*` 제외도 승인 대기 후보.
+- 레지스트리: **45개 폴더 (git 19 / 로컬 26)** — 신규 **`html-slides`**(~/projects, 10-28 reports/out 14파일), 제거 **`windfriend-archive`**.
+- 크론 에러: 최근 24h **3건 — 전부 2026-10-28 06:00 `HTTP 410: Model deepseek-v4-flash has been deprecated.`**(Daily World News Report · Wiki Git Backup · Update personal site timestamp). 같은 원인으로 전일 05:30 **이 job 자신도 FAILED** → 10-28 daily 페이지 누락분 오늘 복원. 세 job이 같은 분에 동일 메시지로 실패 = 업스트림 모델 폐기 단일 원인(로컬 스크립트 아님). **전역 모델 `deepseek-v4.1-flash` 교체로 해소 확인**(오늘 전 실행 정상). 410은 재시도 무효 유형. **남은 리스크: `fallback_providers`가 구형 `deepseek/deepseek-v4-flash-0731`(openrouter) 지목 → 교체 승인 대기**. 게이트웨이 10-25 22:03:07 기동 후 **79.5시간 무결**, RecursionError 없음, 예방 재시작 11-01 전후.
+- 작업 변경: 창이 **이틀치**(10-27 05:30~10-29 05:30, 전일 실패) — 원본 1,638 / 요약 723, 그중 AppleDouble `._*` **147개 노이즈**(실변경 576). **my-media-agent**(10-27 314 + 10-28 163 + 10-29 9): **법률 시리즈 4개를 `series/법률/`로 통합 + fcproj·스크립트 경로 일괄 치환**(`8c16ea8`), **운전자보험 20컷 최종 3연작**(`dea5fa8` 여명준 애니 아바타판 → `b5b3a49` 제목카드+아바타C+엔드카드 → `ca1818f` 효과음·자막·상반신), **발음 위험 검수기 신설 — TTS 대사 사전 점검 + ASR 역검수**(`c671ae0`), `웃기는-변호사` 시즌1 설계(세계관·아크·시놉-대사·연출계획·EP01~시즌1 대본) + `ep01_fc` FilmCraft 착수, 심해 30편 `_raw`·구버전 렌더 외장 이관(8.30GB) + BGM 10곡 교체, ep16 「벌거벗은 임금님」 기획·앵커 생성(`gen_ep16_anchors.py`), `docs/외장-아카이브-인덱스.{md,json}`·`docs/동화법률-신규3편-기획안.md`, 스킬 3건 개정(media-asset-retention·ai-video-voice-delivery·anime-series-filmcraft-structure). post1 1(`ea1d760`), html-slides 신규 14, craft-clis 11(filmcraft-cli 0.13.0 배포본), auto-trading state 2(커밋 없음), skills·memories 백업 각 2 / git 커밋 4개 저장소 15건.
+- daily 페이지: concepts/daily/2026-10-29.md · **2026-10-28.md(복원)** 생성.
+
 ## [2026-10-27] daily-sync | 인덱스 +1177/+56, 레지스트리 45개 폴더 (변동 없음 — 신규 0, 5일 연속), 크론 에러 24h·96h 0건, 작업 변경 1291개
 - 인덱스: 신규 1177 / 갱신 56 (텍스트 없음 스킵 7), 총 15,490개 (원본 합계 3,296.1MB / index.db 596.0MB). 루트별 projects 12,894 / hermes 2,071 / documents 340 / wiki 185.
   - 전일 14,313 대비 **+1,177 순증** — 고아 정리(prune) 감소 없이 신규 유입분이 그대로 반영. 프로젝트 대부분은 my-media-agent(심해 애니판 ep13~ep30 신규 + 영상/이미지/config).
