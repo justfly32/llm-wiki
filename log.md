@@ -1,3 +1,11 @@
+## [2026-10-30] daily-sync | 인덱스 +230/+29, 레지스트리 46개 폴더, 크론 에러 0건, 작업 변경 697개
+- 인덱스: 신규 230 / 갱신 29 (텍스트 없음 스킵 12), 총 13,779개 (FTS 13,779, 원본합계 3,103.8MB). 루트별 hermes 2,091 / projects 11,154 / documents 346 / wiki 188. index.db 581.6MiB(609.9MB), 전일 580.2MiB 대비 +1.4MiB
+- 레지스트리: 46개 폴더 (git 19 / 로컬 27) — 신규 1개 `k-shorts-automaker` (K-shorts 반응형 자동 파이프라인 골격, 커밋 0)
+- 크론 에러 24h 0건 — 3일 연속 안정. 96h 6건은 전량 10-27~10-28 HTTP 410(모델 폐기) 기분석, 신규 0
+- 작업 변경 697개 (요약 292, AppleDouble 0): my-media-agent 212 (동화법률 ep17_놀부전 최종마스터 28M·ep18_도깨비감투 A안 확정·최종 34M·stage 빌드 스크립트 12종·video_qa_gate/fc_preflight 보강, 미커밋 360), k-shorts-automaker 51, auto-trading 2, post1 1 / git 커밋 3개 저장소 (post1 5f05d9d, skills 4af7188, memories f2aeab0)
+- daily 페이지: concepts/daily/2026-10-30.md 생성
+- captures 83.3% (3,786행·369.4MB / 전체 443.4MB) — 색인 제외 승인 대기 유지
+
 ## [2026-10-29] daily-sync | 인덱스 +495/+125, 레지스트리 45개 폴더 (신규 html-slides 1 · 제거 windfriend-archive), 크론 에러 3건(전부 HTTP 410 모델 폐기·교체로 해소), 작업 변경 1,638개(이틀치·요약 723)
 - 인덱스: 신규 495 / 갱신 125 (텍스트 없음 스킵 89), 총 13,549개 (원본 합계 3,102.8MB / index.db 580.2MiB·실측 608.4MB). 루트별 projects 10,933 / hermes 2,086 / documents 344 / wiki 186.
   - 전일 15,490 대비 **−1,941** — projects 12,894 → 10,933(−1,961). 신규 495 유입에도 순감한 것은 **prune_missing 고아 정리** 때문(10-27 `_raw`·구버전 렌더 **외장 이관 8.30GB** + archive 정리 반영). 버그 아님.
