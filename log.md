@@ -1,3 +1,11 @@
+## [2026-10-31] daily-sync | 인덱스 +113/+34, 레지스트리 46개 폴더, 크론 에러 0건, 작업 변경 921개
+- 인덱스: 신규 113 / 갱신 34 (텍스트 없음 스킵 1), 총 13,887개 (FTS 13,887, 원본합계 3,104.4MB). 루트별 projects 11,254 / hermes 2,096 / documents 348 / wiki 189. 전일 13,779 대비 +108(prune 5행). index.db 582.6MiB(실측 610.9MB), 전일 581.6MiB 대비 +1.0MiB
+- 레지스트리: 46개 폴더 (git 19 / 로컬 27) — 신규·제거 0 (diff는 날짜·커밋수 갱신뿐, `k-shorts-automaker` 239→636파일)
+- 크론 에러 24h 0건 — 4일 연속 안정. 96h 6건은 전량 10-27~10-28 HTTP 410(모델 폐기) 기분석, 신규 0. 게이트웨이 10-25 22:03 기동 후 127.5시간 무결, 마지막 RecursionError 10-20. 자기 job 헤더 직접 확인 → FAILED 아님
+- 작업 변경 921개 (요약 182, AppleDouble 0): k-shorts-automaker 77 (AI 해외화제 ai04~ai10 7편 조립·`build_ai.py` 스펙 정본화·발행큐 AI06 11-01/AI10 11-02 예약, 커밋 0), my-media-agent 68 (심해 애니판30 Aoede 나레이션 전면 교체 + whisper 정렬 + 묶음01·07·08·09 재조립, 01~06 업로드 검증·01~04 replaced, 캐릭터시트_그레이니트남 동작5종, BGM 6→50곡, 미커밋 372), lotto 2, auto-trading 2, post1 1 / git 커밋 3개 저장소 (post1 fa15322, skills f43381b, memories 0734891)
+- daily 페이지: concepts/daily/2026-10-31.md 생성
+- captures 83.2% (3,786행·352.3MB / 전체 423.4MB, 전일 369.4MB에서 −17.1MB) — 색인 제외 승인 대기 유지
+
 ## [2026-10-30] daily-sync | 인덱스 +230/+29, 레지스트리 46개 폴더, 크론 에러 0건, 작업 변경 697개
 - 인덱스: 신규 230 / 갱신 29 (텍스트 없음 스킵 12), 총 13,779개 (FTS 13,779, 원본합계 3,103.8MB). 루트별 hermes 2,091 / projects 11,154 / documents 346 / wiki 188. index.db 581.6MiB(609.9MB), 전일 580.2MiB 대비 +1.4MiB
 - 레지스트리: 46개 폴더 (git 19 / 로컬 27) — 신규 1개 `k-shorts-automaker` (K-shorts 반응형 자동 파이프라인 골격, 커밋 0)

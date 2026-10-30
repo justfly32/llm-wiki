@@ -1,9 +1,10 @@
 # Wiki Index
 
-> Hermes 작업 결과물 인덱스. Last updated: 2026-10-30
-> Total pages: 82
+> Hermes 작업 결과물 인덱스. Last updated: 2026-10-31
+> Total pages: 83
 
 ## Daily (작업 일지)
+- [[2026-10-31]] — daily-sync: 인덱스 **+113/+34** (총 13,887, 원본합계 3,104.4MB / **index.db 582.6MiB·실측 610.9MB — MiB 기준 600 아래**, 전일 581.6MiB), 레지스트리 **46개 폴더 (신규·제거 0)**, **크론 에러 24h 0건 · 96h 6건(전량 10-27~10-28 `HTTP 410` 기분석 — 모델 교체 후 4일 연속 안정, 게이트웨이 127.5시간 무결)**, 작업 변경 921개(요약 182, AppleDouble 0) — **k-shorts-automaker 77(커밋 0): AI 해외화제 파이프라인 실가동 — ai04~ai10 7편 조립·`build_ai.py` 스펙 정본화(커버-대사 싱크·중복 자막 제거)·발행큐 AI06 11-01 21:00 / AI10 11-02 21:00 예약**, **my-media-agent 68(미커밋 372): 심해 애니판30 나레이션 Aoede 전면 교체(TTS→whisper 정렬→묶음01·07·08·09 재조립)·01~06 업로드 검증(private 예약, 01~04 replaced)·캐릭터시트_그레이니트남 동작5종 신규·BGM 6곡→50곡(20테마)**, lotto 2·auto-trading 2·post1 1(`fa15322`) / captures 83.2%(3,786행·352.3M자 — **색인 제외 승인 대기 유지**) / 남은 리스크: `fallback_providers` 구형 v4-flash-0731 지목(승인 대기)·게이트웨이 예방 재시작 11-01 전후
 - [[2026-10-30]] — daily-sync: 인덱스 **+230/+29** (총 13,779, 원본합계 3,103.8MB / **index.db 581.6MiB·실측 609.9MB — 600MiB 라인 아래**, 전일 580.2MiB), 레지스트리 **46개 폴더 (신규 `k-shorts-automaker` 1개)**, **크론 에러 24h 0건 · 96h 6건(전량 10-27~10-28 `HTTP 410` 모델 폐기, 기분석 — 신규 0) → 전역 모델 교체 후 3일 연속 안정**, 작업 변경 697개(요약 292, AppleDouble 0) — **my-media-agent 212(미커밋 360): 동화법률 `ep17_놀부전` 19컷 최종마스터 28M + `ep18_도깨비감투` A안 확정·앵커3컷·타이틀 EffectCraft·최종 34M, 편별 stage 빌드 스크립트 12종·`video_qa_gate`/`fc_preflight` 보강**, **k-shorts-automaker 신규(discover→fetch→script→tts→broll→edit→thumb→publish 8단계 골격, 커밋 0)**, auto-trading state 2(core 411060·high 035420/005930), post1 1(`5f05d9d`) / captures 83.3%(3,786행·369.4M자 — **색인 제외 승인 대기 유지**) / 남은 리스크: `fallback_providers` 구형 v4-flash-0731 지목 → 교체 승인 대기
 - [[2026-10-29]] — daily-sync: 인덱스 **+495/+125** (총 13,549, 원본합계 3,102.8MB / **index.db 580.2MiB·실측 608.4MB — 600MiB 라인 아래**, 전일 596.0MiB), 레지스트리 **45개 폴더 (신규 html-slides 1개, windfriend-archive 제거)**, **크론 에러 3건 — 전부 `HTTP 410 Model deepseek-v4-flash has been deprecated`(10-28 06:00 동시 실패, +전일 daily-sync 자체 포함 4건). 전역 모델 deepseek-v4.1-flash 교체로 해소 확인, 재시도 무의미 유형. 남은 리스크: fallback_providers가 구형 v4-flash-0731 지목 → 교체 승인 대기**, 작업 변경 이틀치 1,638개(요약 723, AppleDouble 147 제외 실변경 576) — **my-media-agent: 법률 시리즈 `series/법률/` 통합·운전자보험 20컷 최종 3연작·발음 위험 검수기(TTS 사전+ASR 역검수) 신설·웃기는-변호사 시즌1 설계+ep01_fc 착수 / ep16 벌거벗은임금님 앵커·외장 아카이브 인덱스**, post1 1(`ea1d760`), html-slides 신규, auto-trading state 2 / captures 83.5%(3,786행·369.4M자 — **색인 제외 승인 대기 유지**) / 총 색인 −1,941은 외장 이관 prune(고아 정리, 버그 아님)
 - [[2026-10-28]] — **복원 페이지**: 전일(10-28 05:30) daily-sync가 `HTTP 410` 모델 폐기로 FAILED → 페이지 누락분을 10-29 실행에서 분리 복원 (창 10-27 05:30~10-28 23:59, 요약 723개·AppleDouble 147). 작업: my-media-agent 커밋 10건 — **법률 시리즈 4개를 `series/법률/`로 통합(경로 일괄 치환)**·**운전자보험 20컷 최종(제목카드+아바타C+엔드카드)**·**발음 위험 검수기 신설(TTS 대사 사전 점검+ASR 역검수)**·웃기는-변호사 시즌1 설계·심해 30편 외장 이관(8.30GB), post1 1(`ea1d760`), html-slides 신규 폴더 / 크론: 10-28 06:00 3건 동시 실패 — 전부 모델 deprecation(업스트림 단일 원인, 재시도 무효)
@@ -91,7 +92,7 @@
 
 ## Projects
 
-- [[project-registry]] — 프로젝트 레지스트리 (전체 폴더 현황 45개) — 코딩 전 필수 조회, 중복 방지
+- [[project-registry]] — 프로젝트 레지스트리 (전체 폴더 현황 46개) — 코딩 전 필수 조회, 중복 방지
 - [[personal-sites]] — 개인 사이트 3개 폴더 내역 (justfly32.github.io / post1 / personal-site) 중복 방지 가이드
 
 ## Learnings
