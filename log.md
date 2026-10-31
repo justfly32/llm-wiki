@@ -845,3 +845,10 @@
 - 크론 에러 0건 — 7일 연속 크론 안정 유지, 정상.
 - 작업 변경 20개: post1 1 (개인사이트 업데이트, 커밋 fbe8758), auto-trading 2 (실전 라이브 추적 리포트 자동 갱신), lotto-predictor 2 (로또 추적기+예측), .hermes 메모리 백업 (커밋 94a5212) / git 커밋 2개 저장소 (post1 fbe8758, memories 94a5212)
 - daily 페이지: concepts/daily/2026-10-03.md 생성
+
+## [2026-11-01] daily-sync | 인덱스 +269/+51, 레지스트리 47개 폴더, 크론 에러 0건(24h), 작업 변경 851개
+- 인덱스: 신규 269 / 갱신 51 (텍스트 없음 스킵 1), 총 14,157개 (FTS 14,157, 본문 445.3MB, index.db 584.7MiB·613.2MB). 루트별 projects 11,509 / hermes 2,109 / documents 349 / wiki 190
+- 레지스트리: 47개 폴더 (git 19 / 로컬 28) — 신규 `web-craft` 1개
+- 크론 에러: 24h 0건 / 96h 3건(전량 2026-10-28 06:00 HTTP 410 모델 폐기, 기분석·복구 완료). 게이트웨이 10-25 22:03 기동 후 6일 7시간 무재시작
+- 작업 변경 851개(요약 336, AppleDouble 0): my-media-agent 228(소리를보는아이 EP01 26컷 프리비즈·animatic / ep09_ani 아바타 18클립 $2.0178·마크·asm_list / 캐릭터시트_단발여성 동작5종), k-shorts-automaker 40(AI11 공개, AI12·AI04 예약, gate_check 보강), web-craft 23(신규), skills 23개정 / git 커밋 3개 저장소 (post1 d8e32ec, skills fcfcd5f, memories 5dfe9f4)
+- daily 페이지: concepts/daily/2026-11-01.md 생성

@@ -1,7 +1,7 @@
 ---
 title: 프로젝트 레지스트리 (전체 폴더 현황)
-created: 2026-10-31
-updated: 2026-10-31
+created: 2026-11-01
+updated: 2026-11-01
 type: projects
 tags: [registry, projects, folder-map, 중복방지]
 links: [[index]]
@@ -11,7 +11,7 @@ links: [[index]]
 
 > **목적:** 새 코딩 작업 시작 전 반드시 이 문서를 확인해 폴더 중복 생성과 위치 혼란을 방지한다.
 > 자동 생성: `python3 ~/wiki/scripts/generate_project_registry.py` (갱신 시 재실행)
-> Last updated: 2026-10-31
+> Last updated: 2026-11-01
 
 ## 규칙 (중복 방지)
 
@@ -30,7 +30,7 @@ links: [[index]]
 
 | 폴더 | 설명 | remote | 최근 커밋 |
 |------|------|--------|----------|
-| `  post1` | - | justfly32/post1 | 2026-10-30 |
+| `  post1` | - | justfly32/post1 | 2026-10-31 |
 | `  my-media-agent` | 다양한 생성형 AI 이미지, 영상 및 LLM 모델을 자유롭게 스위칭하며 콘텐츠를 제작할 수 있는 통합 미디어 에이전트 CLI입니다. | justfly32/my-media-agent | 2026-10-27 |
 | `  blender-vse-mcp` | Blender Video Sequence Editor 를 헤드리스로 조작하는 MCP 서버. | - | 2026-10-21 |
 | `  blender-mcp` | Control Blender with natural language through MCP. Tell Claude to create a steampunk robot | sandraschi/blender-mcp | 2026-10-13 |
@@ -62,16 +62,16 @@ links: [[index]]
 | `  best-practice` | - | 1 |
 | `  car-year-lookup` | - | 5837 |
 | `  claude-cowork-guide` | - | 1 |
-| `  craft-clis` | - | 52 |
+| `  craft-clis` | - | 116 |
 | `  diet-calc` | - | 12 |
 | `  geomdan-design-contract` | - | 11 |
 | `  hermes_ops` | - | 148 |
 | `  html-slides` | 브라우저에서 열면 바로 발표 가능한 인터랙티브 슬라이드. | 14 |
 | `  html2pptx` | HTML 디자인을 PPTX로 최대한 보존 변환하는 도구. | 15 |
 | `  internet-checker` | SKB, KT, LGU+ 통신 3사의 초고속인터넷 주소별 서비스 가용성을 한 번에 조회하는 도구입니다. | 15 |
-| `  k-shorts-automaker` | - | 636 |
+| `  k-shorts-automaker` | - | 799 |
 | `  kakao-hybrid-adapter` | [GPTers 글 «카톡 매크로 시대 끝? …»](https://www.gpters.org/dev/post/kakaotalk-macro-era-how-lEVSOKmyNxOqCtI)에서 다룬 아키텍처를 코드로 옮긴 예 | 22 |
-| `  lotto-predictor` | 1231회차 전체 데이터 기반 번호별 확률 학습 예측 모델. | 25 |
+| `  lotto-predictor` | 1231회차 전체 데이터 기반 번호별 확률 학습 예측 모델. | 26 |
 | `  orchestration-workflow` | - | 1 |
 | `✅ pc-llm-dashboard` | PC 상태 확인 + LLM 사용량 확인 통합 모니터링 대시보드. | 25 |
 | `  personal-site` | - | 90 |
@@ -79,6 +79,7 @@ links: [[index]]
 | `  sangga-tax-calc` | 상가주택(1층 근린생활시설 + 주거층)을 신축 → 보유 → 임대 → 처분하는 과정의 | 37 |
 | `✅ simpli-gif-maker` | 텍스트 설명을 받아 간단한 졸라맨 GIF 애니메이션을 생성합니다. | 4232 |
 | `  useful-sites` | - | 1 |
+| `  web-craft` | - | 56 |
 | `  web-crawler-work` | - | 23 |
 | `  work` | - | 1 |
 
