@@ -1,9 +1,10 @@
 # Wiki Index
 
-> Hermes 작업 결과물 인덱스. Last updated: 2026-11-01
-> Total pages: 84
+> Hermes 작업 결과물 인덱스. Last updated: 2026-11-02
+> Total pages: 85
 
 ## Daily (작업 일지)
+- [[2026-11-02]] — daily-sync: 인덱스 **+198/+64** (총 14,355, 본문 425.9MB / **index.db 586.7MiB·실측 615.2MB — 실측 600MB 라인 초과 지속**, 전일 584.7MiB), 레지스트리 **48개 폴더 (신규 `arch-maker` 1개 — `0ccb84e` 초기 커밋으로 git 20/로컬 28)**, **크론 에러 24h 0건 · 96h 0건(5일 연속 무에러, 게이트웨이 7일 7시간 무재시작)**, 작업 변경 4,714개(요약 3,508 — 툴체인 3,224 제외 **실변경 1,490·요약 284**, AppleDouble 0) — **🎬 `소리를보는아이` EP01 26컷 유료 생성 완료($9.0249·logs 19건)+`ep01.fcproj`·animatic·endstills, EP02 22컷 프리비즈 완성(`split_refs` 규칙 첫 적용)**, **arch-maker: `검단구 원당동 1000-15` 4개 안(기본/A최대/B코어동측/C평지붕옥상) + ArchVibe 3D Studio 최초 커밋**, **build-plan DXF 도면 임포트(`dxfPlan.ts`·`DxfPlanPreview.tsx`, 미커밋)**, k-shorts AI13 로봇격투 11-02 20:00 예약·trending 갱신, web-craft video-tools 99KB·previz studio.json, auto-trading 주간리포트(bear 14일·총자산 4,707,767원) / skills 15개 개정 / captures 82.7%(3,786행·352.3MB — **색인 제외 승인 대기 유지**) / 남은 리스크: `fallback_providers` 구형 v4-flash-0731 지목·게이트웨이 무재시작 7일 초과(예방 재시작 권장)
 - [[2026-11-01]] — daily-sync: 인덱스 **+269/+51** (총 14,157, 본문 445.3MB / **index.db 584.7MiB·실측 613.2MB — 600MiB 라인 아래**, 전일 582.6MiB), 레지스트리 **47개 폴더 (신규 `web-craft` 1개 — 로컬 28)**, **크론 에러 24h 0건 · 96h 3건(전량 10-28 06:00 `HTTP 410` 모델 폐기 기분석, 교체 후 4일 연속 신규 0 · 게이트웨이 6일 7시간 무재시작)**, 작업 변경 851개(요약 336, AppleDouble 0) — **🎬 신규 시리즈 `소리를보는아이` 착수: 2분 쇼츠 애니 10화 완결 기획(세계관·시놉시스·10회) + EP01 「종소리」 26컷 script·프리비즈 26세트·animatic 조립 — 유료 생성 전 승인 대기**, **기억-복원-상담소 `ep09_ani` 아바타 18클립 전량 성공(118초·$2.0178) + 타임라인 마크(155.1초)·asm_list 조립 직전**, **web-craft 신규(23파일): video-tools 제작규칙 탭·previz-studio·planning·preview studio.json = 시리즈 기획 정본 레이어**, my-media-agent 228·k-shorts-automaker 40(AI11 공개·AI12/AI04 예약)·skills 23개정·auto-trading 주간리포트·post1(`d8e32ec`) / captures 83.0%(3,786행·369.4M자 — **색인 제외 승인 대기 유지**) / 남은 리스크: `fallback_providers` 구형 v4-flash-0731 지목(승인 대기)
 - [[2026-10-31]] — daily-sync: 인덱스 **+113/+34** (총 13,887, 원본합계 3,104.4MB / **index.db 582.6MiB·실측 610.9MB — MiB 기준 600 아래**, 전일 581.6MiB), 레지스트리 **46개 폴더 (신규·제거 0)**, **크론 에러 24h 0건 · 96h 6건(전량 10-27~10-28 `HTTP 410` 기분석 — 모델 교체 후 4일 연속 안정, 게이트웨이 127.5시간 무결)**, 작업 변경 921개(요약 182, AppleDouble 0) — **k-shorts-automaker 77(커밋 0): AI 해외화제 파이프라인 실가동 — ai04~ai10 7편 조립·`build_ai.py` 스펙 정본화(커버-대사 싱크·중복 자막 제거)·발행큐 AI06 11-01 21:00 / AI10 11-02 21:00 예약**, **my-media-agent 68(미커밋 372): 심해 애니판30 나레이션 Aoede 전면 교체(TTS→whisper 정렬→묶음01·07·08·09 재조립)·01~06 업로드 검증(private 예약, 01~04 replaced)·캐릭터시트_그레이니트남 동작5종 신규·BGM 6곡→50곡(20테마)**, lotto 2·auto-trading 2·post1 1(`fa15322`) / captures 83.2%(3,786행·352.3M자 — **색인 제외 승인 대기 유지**) / 남은 리스크: `fallback_providers` 구형 v4-flash-0731 지목(승인 대기)·게이트웨이 예방 재시작 11-01 전후
 - [[2026-10-30]] — daily-sync: 인덱스 **+230/+29** (총 13,779, 원본합계 3,103.8MB / **index.db 581.6MiB·실측 609.9MB — 600MiB 라인 아래**, 전일 580.2MiB), 레지스트리 **46개 폴더 (신규 `k-shorts-automaker` 1개)**, **크론 에러 24h 0건 · 96h 6건(전량 10-27~10-28 `HTTP 410` 모델 폐기, 기분석 — 신규 0) → 전역 모델 교체 후 3일 연속 안정**, 작업 변경 697개(요약 292, AppleDouble 0) — **my-media-agent 212(미커밋 360): 동화법률 `ep17_놀부전` 19컷 최종마스터 28M + `ep18_도깨비감투` A안 확정·앵커3컷·타이틀 EffectCraft·최종 34M, 편별 stage 빌드 스크립트 12종·`video_qa_gate`/`fc_preflight` 보강**, **k-shorts-automaker 신규(discover→fetch→script→tts→broll→edit→thumb→publish 8단계 골격, 커밋 0)**, auto-trading state 2(core 411060·high 035420/005930), post1 1(`5f05d9d`) / captures 83.3%(3,786행·369.4M자 — **색인 제외 승인 대기 유지**) / 남은 리스크: `fallback_providers` 구형 v4-flash-0731 지목 → 교체 승인 대기
@@ -93,7 +94,7 @@
 
 ## Projects
 
-- [[project-registry]] — 프로젝트 레지스트리 (전체 폴더 현황 46개) — 코딩 전 필수 조회, 중복 방지
+- [[project-registry]] — 프로젝트 레지스트리 (전체 폴더 현황 48개) — 코딩 전 필수 조회, 중복 방지
 - [[personal-sites]] — 개인 사이트 3개 폴더 내역 (justfly32.github.io / post1 / personal-site) 중복 방지 가이드
 
 ## Learnings

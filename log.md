@@ -852,3 +852,11 @@
 - 크론 에러: 24h 0건 / 96h 3건(전량 2026-10-28 06:00 HTTP 410 모델 폐기, 기분석·복구 완료). 게이트웨이 10-25 22:03 기동 후 6일 7시간 무재시작
 - 작업 변경 851개(요약 336, AppleDouble 0): my-media-agent 228(소리를보는아이 EP01 26컷 프리비즈·animatic / ep09_ani 아바타 18클립 $2.0178·마크·asm_list / 캐릭터시트_단발여성 동작5종), k-shorts-automaker 40(AI11 공개, AI12·AI04 예약, gate_check 보강), web-craft 23(신규), skills 23개정 / git 커밋 3개 저장소 (post1 d8e32ec, skills fcfcd5f, memories 5dfe9f4)
 - daily 페이지: concepts/daily/2026-11-01.md 생성
+
+## [2026-11-02] daily-sync | 인덱스 +198/+64, 레지스트리 48개 폴더, 크론 에러 0건(24h), 작업 변경 4,714개(실변경 1,490)
+- 인덱스: 신규 198 / 갱신 64 (텍스트 없음 스킵 1), 총 14,355개 (FTS 14,355, 본문 425.9MB, index.db 586.7MiB·615.2MB). 루트별 projects 11,686 / hermes 2,129 / documents 349 / wiki 191
+- 레지스트리: 48개 폴더 (git 20 / 로컬 28) — 신규 `arch-maker` 1개(`0ccb84e` ArchVibe 3D Studio initial commit)
+- 크론 에러: 24h 0건 / 96h 0건 — 5일 연속 무에러. 게이트웨이 10-25 22:03 기동 후 7일 7시간 29분 무재시작
+- 작업 변경 4,714개(요약 3,508): `~/.hermes/tools/python-3.14…` 툴체인 3,224건 제외 실변경 1,490(요약 284) — my-media-agent 144(`소리를보는아이` EP01 26컷 생성 $9.0249·fcproj·animatic / EP02 22컷 프리비즈), arch-maker 48(원당동 1000-15 4개 안·mcp_server), k-shorts-automaker 31(AI13 11-02 20:00 예약·trending), build-plan 13(DXF 도면 임포트, 미커밋), web-craft 4(video-tools), auto-trading 1(주간리포트), post1 1(`571475c`), skills 15개정 / git 커밋 4개 저장소 (arch-maker 0ccb84e, post1 571475c, skills 7ddb322, memories f013b08)
+- captures 3,786행·352.3MB = 본문의 82.7% — 색인 제외 승인 대기 유지(정책 변경 없음). index.db 실측 615.2MB로 600MB 라인 초과 지속
+- daily 페이지: concepts/daily/2026-11-02.md 생성
