@@ -860,3 +860,12 @@
 - 작업 변경 4,714개(요약 3,508): `~/.hermes/tools/python-3.14…` 툴체인 3,224건 제외 실변경 1,490(요약 284) — my-media-agent 144(`소리를보는아이` EP01 26컷 생성 $9.0249·fcproj·animatic / EP02 22컷 프리비즈), arch-maker 48(원당동 1000-15 4개 안·mcp_server), k-shorts-automaker 31(AI13 11-02 20:00 예약·trending), build-plan 13(DXF 도면 임포트, 미커밋), web-craft 4(video-tools), auto-trading 1(주간리포트), post1 1(`571475c`), skills 15개정 / git 커밋 4개 저장소 (arch-maker 0ccb84e, post1 571475c, skills 7ddb322, memories f013b08)
 - captures 3,786행·352.3MB = 본문의 82.7% — 색인 제외 승인 대기 유지(정책 변경 없음). index.db 실측 615.2MB로 600MB 라인 초과 지속
 - daily 페이지: concepts/daily/2026-11-02.md 생성
+
+## [2026-11-03] daily-sync | 인덱스 +35/+44, 레지스트리 48개 폴더, 크론 에러 0건(24h), 작업 변경 436개(실변경 114)
+- 인덱스: 신규 35 / 갱신 44 (텍스트 없음 스킵 1), 총 14,390개 (FTS 14,390, 본문 426.2MB, index.db 587.2MiB·588MB). 루트별 projects 11,707 / hermes 2,139 / documents 352 / wiki 192
+- 레지스트리: 48개 폴더 (git 20 / 로컬 28) — 신규·제거 0
+- 크론 에러: 24h 0건 / 96h 0건 — 6일 연속 무에러. 게이트웨이 10-25 22:03 기동 후 8일 7시간 27분 무재시작(예방 재시작 권장). 자기 실행 헤더 정상(11-02 FAILED 아님)
+- 작업 변경 436개(요약 131): `~/.hermes/tools` cv2(5.0.0.93) 설치 17건 제외 실변경 114(AppleDouble 0) — arch-maker 36(3DM 내보내기 rhino3dm·사이트 에디터·사다리꼴 clip 수정, 커밋 9ea23ec), k-shorts-automaker 33(mzeN0BXR4e0 심해 괴생물 9컷·TTS 35.8초·접촉시트 9장·trending 05:12), my-media-agent 13(23:30 통계 배치·구독자 12), skills 13(9개 개정, underlay-trace.md·headless-interaction-test.md 신규), auto-trading 2(live_track/live_state), post1 1(fa27ff9) / git 커밋 4개 저장소 (arch-maker 9ea23ec, post1 fa27ff9, skills a7d5e20, memories 54ca86f)
+- captures 3,786행·352.3MB = 본문의 82.7% — 색인 제외 승인 대기 유지(정책 변경 없음). index.db 실측 588MB
+- 남은 리스크: 발행큐 11-03 21:00 AI08(백조)↔애니07 슬롯 충돌 미해소 · fallback_providers 구형 v4-flash-0731 지목(승인 대기)
+- daily 페이지: concepts/daily/2026-11-03.md 생성
