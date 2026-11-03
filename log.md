@@ -869,3 +869,12 @@
 - captures 3,786행·352.3MB = 본문의 82.7% — 색인 제외 승인 대기 유지(정책 변경 없음). index.db 실측 588MB
 - 남은 리스크: 발행큐 11-03 21:00 AI08(백조)↔애니07 슬롯 충돌 미해소 · fallback_providers 구형 v4-flash-0731 지목(승인 대기)
 - daily 페이지: concepts/daily/2026-11-03.md 생성
+
+## [2026-11-04] daily-sync | 인덱스 +51/+51, 레지스트리 48개 폴더, 크론 에러 1건, 작업 변경 216개
+- 인덱스: 신규 51 / 갱신 51 (텍스트 없음 스킵 1), 총 14,441개 (FTS 14,441, 본문 426.6MB, index.db 587.9MB). 루트별 projects 11,743 / hermes 2,151 / documents 354 / wiki 193
+- 레지스트리: 48개 폴더 (git 20 / 로컬 28) — 신규·제거 0
+- 크론 에러: 24h 1건 / 96h 1건 — 6일 연속 무에러 끊김. `애니판 발행`(44c14e38e9ee, 11-03 17:00) `RecursionError`(프레임워크 stdout 프록시 체인, 게이트웨이 10-25 22:03 기동 후 9일 7시간 27분 무재시작) → job 본문 미실행·재시도 미설정 → 애니판 9/10에서 하루 지연. 자기 실행 헤더 정상(11-03 FAILED 아님)
+- 작업 변경 216개(요약 138, AppleDouble 0): arch-maker 46+커밋 20(제안서 63KB·proposal assets 6장, 사업성 모듈 sunCalc/revenue/costCalc/regCheck/evacCheck 신규, 건물외곽 자유 폴리곤 4/5/6각·꺾음점 드래그·실시간 건폐율, 좌표계 통일, docs/DEFAULT_PIPELINE.md 정본), k-shorts-automaker 45(tfwF3987bMI=AI14 드론쇼 완결·12:00 공개 HtAu5BFtAno·release_queue AI08 20:00 조정으로 슬롯 충돌 해소·trending 04:35 DB 482), my-media-agent 11(23:30 통계 배치), skills 20(12종 개정, lh84-key-figures·lh-case-library·datago-bldrgst 신규), auto-trading 2, post1 1(b7461f5) / git 커밋 4개 저장소 (arch-maker 20, post1 b7461f5, skills ab2251d, memories 1c91e60)
+- captures 3,786행·352.3MB = 본문의 82.6% — 색인 제외 승인 대기 유지(정책 변경 없음). index.db 실측 588MB
+- 조치 필요: ①게이트웨이 예방 재시작(오늘 05:30~17:00 창) ②애니판 발행 job 지연 재시도 20분 추가 ③애니10 수동 1회 실행으로 9/10→10/10 복구 · 리스크 유지: fallback_providers 구형 v4-flash-0731 지목(승인 대기)
+- daily 페이지: concepts/daily/2026-11-04.md 생성
