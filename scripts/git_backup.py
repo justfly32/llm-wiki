@@ -50,10 +50,17 @@ def backup():
     push = run_git(["push", "origin", "main", "--force"], check=False)
     if push and push.returncode == 0:
         print(f"[{now}] ✅ Backed up {changes} changes", flush=True)
+    elif push is None:
+        print(f"[{now}] ⚠️ Push could not be attempted", flush=True)
     else:
-        # try with SSH key
+        # retry with an explicit SSH key (meituan key if present, else default)
+        key = Path.home() / ".ssh" / "id_ed25519_meituan"
+        if not key.exists():
+            key = Path.home() / ".ssh" / "id_ed25519"
         env = os.environ.copy()
-        env["GIT_SSH_COMMAND"] = "ssh -i ~/.ssh/id_ed25519_meituan -o StrictHostKeyChecking=no"
+        env["GIT_SSH_COMMAND"] = (
+            f"ssh -i {key} -o IdentitiesOnly=yes -o StrictHostKeyChecking=no -o BatchMode=yes"
+        )
         push2 = subprocess.run(
             ["git", "-C", str(WIKI_PATH), "push", "origin", "main", "--force"],
             capture_output=True, text=True, timeout=30, env=env
