@@ -1,9 +1,10 @@
 # Wiki Index
 
-> Hermes 작업 결과물 인덱스. Last updated: 2026-11-05
-> Total pages: 88
+> Hermes 작업 결과물 인덱스. Last updated: 2026-11-06
+> Total pages: 89
 
 ## Daily (작업 일지)
+- [[2026-11-06]] — daily-sync: 인덱스 **+160/+85** (총 14,588, daily 페이지 반영 후 14,589, 원본 합계 3,108.5MB / **index.db 588.9MB**, 전일 587.5MiB), 레지스트리 **49개 폴더 (신규 `ablework` 1개 — 로컬 29, git 20)**, **크론 에러 24h 0건 · 96h 0건 — 11-03 `RecursionError` 이후 3일 연속 무에러(게이트웨이 11일 7시간 무재시작, 리스크 유지)**, 작업 변경 2,144개(요약 484 → 툴체인 204 제외 **실변경 280**, AppleDouble 0) — **🎬 `소리를보는아이` EP02 「우는 아기」 본작업: 22컷 대본·프리비즈 22·스틸 49장·클립 5컷($3.66), cut11/12 대사오염(zh/en) 2건 실패**, **카메라 무브 프로브 12종 실측($4.99) — `_capability_matrix`: static_pan 0.175·drone_chase 0.153 강 / push_in·dolly_out·side_track·follow·crane_up·pov 0.010~0.013 약**, **k-shorts: AI16 허블 `O6YuhjQrgk0` 완결→`AKdT-Zubq9Q`(39.29초) 11-05 20:00 예약·⚠ AI 사용 공개 미저장(API 필드 없음)**, **arch-maker 14커밋: 표준도면 GEN 방식 revert 복귀 + 층별 morph 기준·사다리꼴 날개채움(FAR 110→180)·대지추종 59.8% inside·Vercel 프록시 서울리전(VWorld 차단 우회)**, **ablework 신규: 에이블 홈 첫 화면 시안(`able_standalone.html` 253KB)+Bricks 조립 설명서**, skills 12종 개정 / captures 3,786행(디스크 1.74GB) — **색인 제외 승인 대기 유지** / 남은 리스크: 게이트웨이 예방 재시작(승인 대기)·`fallback_providers` 구형 지목(승인 대기)
 - [[2026-11-05]] — daily-sync: 인덱스 **+40/+61** (총 14,428, 본문 426.5MB / **index.db 587.5MiB·실측 616.0MB**, 전일 587.9MB), 레지스트리 **48개 폴더 (신규·제거 0, git 20/로컬 28)**, **크론 에러 24h 0건 · 96h 1건(11-03 애니판 `RecursionError` 재발 0) — 게이트웨이 10일 7시간 무재시작, 리스크 유지**, 작업 변경 1,510개(요약 519 → 툴체인 383 제외 **실변경 136**, AppleDouble 0) — **arch-maker 74커밋(최대치): CAD 명령 세트(TRIM/EXTEND/MIRROR/HATCH/ARRAY/ROTATE/UNDO)+커맨드창·미닫이 슬라이딩 도어·방이름 배율, S-00 제출전 점검표 7종+법조문 인용+일조 높이제한 판정 → 올그린, 대지기준 주차 배치(남쪽평행·4모드 43→59.3%), 모바일 전체화면·3D 핀치**, **k-shorts: AI15 창고로봇 `U2AGLeJBFNg` 완결→업로드 `2mQNx-7MTCU`(42.5초) 11-04 22:00 예약, trending DB 532**, **my-media-agent: 🎉 심해 애니판 10/10 완결(11-04 17:04 애니10 업로드 — 전일 실패 자동 복구)**, skills 10종 개정 / captures 82.6%(3,786행·352.3MB — **색인 제외 승인 대기 유지**) / 남은 리스크: 게이트웨이 예방 재시작(승인 대기)·애니판 job 재시도 미설정·`fallback_providers` 구형 지목
 - [[2026-11-04]] — daily-sync: 인덱스 **+51/+51** (총 14,441, 본문 426.6MB / **index.db 587.9MB**, 전일 587.2MiB), 레지스트리 **48개 폴더 (신규·제거 0, git 20/로컬 28)**, **크론 에러 24h 1건 · 96h 1건 — 6일 연속 무에러 끊김. `애니판 발행`(17:00) `RecursionError`(프레임워크 stdout 프록시 누적·게이트웨이 9일 7시간 무재시작) → job 본문 미실행, 애니판 9/10에서 하루 지연**, 작업 변경 216개(요약 138, AppleDouble 0) — **arch-maker 46·커밋 20: 제안서(`원당동1000-15_사업제안서.html` 63KB)+`proposal/assets` 6장, 사업성 모듈 5종(`sunCalc`·`revenue`·`costCalc`·`regCheck`·`evacCheck`) 신규, 건물외곽 자유 폴리곤(4/5/6각·꺾음점 드래그·실시간 건폐율), 좌표계 통일, `docs/DEFAULT_PIPELINE.md` 정본**, **k-shorts: AI14 드론쇼 `tfwF3987bMI` 완결(12:00 공개 `HtAu5BFtAno`)·발행큐 AI08 20:00 조정으로 슬롯 충돌 해소**, my-media-agent 23:30 통계 배치, skills 12종 개정(`lh84-key-figures`·`lh-case-library`·`datago-bldrgst` 신규) / captures 82.6%(3,786행·352.3MB — **색인 제외 승인 대기 유지**) / **조치 필요: 게이트웨이 예방 재시작 + 애니판 job 재시도 설정 + 애니10 수동 복구**
 - [[2026-11-03]] — daily-sync: 인덱스 **+35/+44** (총 14,390, 본문 426.2MB / **index.db 587.2MiB·실측 588MB**, 전일 586.7MiB), 레지스트리 **48개 폴더 (신규 없음, git 20/로컬 28)**, **크론 에러 24h 0건 · 96h 0건(6일 연속 무에러, 게이트웨이 8일 7시간 무재시작)**, 작업 변경 436개(요약 131 — cv2 설치 17건 제외 **실변경 114**, AppleDouble 0) — **arch-maker: 3DM(Rhino) 내보내기(`export3dm.js`+`rhino3dm.wasm`)·사이트 에디터·사다리꼴 clip 수정 커밋 `9ea23ec`**, **k-shorts: 심해 괴생물 `mzeN0BXR4e0` 9컷 완성(TTS 35.8초·접촉시트 9장)**, my-media-agent 23:30 통계 배치(구독자 12명), skills 9개 개정(`underlay-trace.md`·`headless-interaction-test.md` 신규) / captures 82.7%(3,786행·352.3MB — **색인 제외 승인 대기 유지**) / 남은 리스크: 발행큐 11-03 21:00 AI08↔애니07 슬롯 충돌 미해소·게이트웨이 8일 무재시작
@@ -97,7 +98,7 @@
 
 ## Projects
 
-- [[project-registry]] — 프로젝트 레지스트리 (전체 폴더 현황 48개) — 코딩 전 필수 조회, 중복 방지
+- [[project-registry]] — 프로젝트 레지스트리 (전체 폴더 현황 49개) — 코딩 전 필수 조회, 중복 방지
 - [[personal-sites]] — 개인 사이트 3개 폴더 내역 (justfly32.github.io / post1 / personal-site) 중복 방지 가이드
 
 ## Learnings
