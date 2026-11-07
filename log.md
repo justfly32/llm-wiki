@@ -906,3 +906,12 @@
 - captures 3,786행·352.3MB = 본문의 82.6% — 색인 제외 승인 대기 유지(정책 변경 없음). index.db 실측 588MB
 - 조치 필요: ①게이트웨이 예방 재시작(오늘 05:30~17:00 창) ②애니판 발행 job 지연 재시도 20분 추가 ③애니10 수동 1회 실행으로 9/10→10/10 복구 · 리스크 유지: fallback_providers 구형 v4-flash-0731 지목(승인 대기)
 - daily 페이지: concepts/daily/2026-11-04.md 생성
+
+## [2026-11-08] daily-sync | 인덱스 +685/+69, 레지스트리 49개 폴더, 크론 에러 0건, 작업 변경 292개(실변경)
+- 인덱스: 신규 685 / 갱신 69 (텍스트 없음 스킵 1), 총 15,374개 (FTS 15,374, 원본 합계 3,115.9MB, index.db 599.9MiB — 전일 589.4MiB, 600MiB 선 직하). 루트별 projects 12,669 / hermes 2,147 / documents 361 / wiki 197
+- 레지스트리: 49개 폴더 (git 20 / 로컬 29) — 신규·제거 0, 커밋 최신화만(arch-maker 11-08, post1 11-07, k-shorts 1,847→1,960)
+- 크론 에러: 24h 0건 / 96h 0건 — 11-03 `RecursionError` 이후 5일 연속 무에러. 게이트웨이 11-07 09:23:56 재기동(PID 16315, v0.21.5 갱신) → 12일 무재시작 리스크 해소(현재 20시간)
+- 작업 변경 6,470개 raw / 2,759 요약 → 툴체인 2,467 제외 실변경 292, AppleDouble 0: my-media-agent 201(`소리를보는아이` EP03 12컷 생성·승인 12건·cut03 재생성 $0.4944·유사도 평균 75.9%·검토 조립 컷1-12·ep03_full.fcproj, NEWTAKE MCP 연동), arch-maker 15·커밋 33(DWG 3종→심볼 500개·DWG/DXF 변환 복구·3D 외곽 폴리곤 정합), k-shorts 28(AI18 `EwZ-mM4MBCc` 33.88초 11-07 22:00 예약·containsSyntheticMedia true), post1 b9c957c, skills 21종 개정
+- captures 3,786행·352.3MB = 본문의 81.1% — 색인 제외 승인 대기 유지(정책 변경 없음)
+- 리스크(모두 승인 대기): collect_work.py 툴체인 미제외(보고 수치 부풀림)·daily-sync 지연 재시도 미설정·fallback_providers 구형 v4-flash-0731 지목 · 관찰: 심해 애니판30 3.27일 0회(공개 상태 점검 후보)
+- daily 페이지: concepts/daily/2026-11-08.md 생성 · log.md 11-05~11-07 항목 누락(해당일 기록은 index.md에만 존재)
