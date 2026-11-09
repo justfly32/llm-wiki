@@ -930,3 +930,21 @@
 - captures 3,786행·352.3MB = 본문의 81.1% — 색인 제외 승인 대기 유지(정책 변경 없음)
 - 리스크(모두 승인 대기): collect_work.py 툴체인 미제외(보고 수치 부풀림)·daily-sync 지연 재시도 미설정·fallback_providers 구형 v4-flash-0731 지목 · 관찰: 심해 애니판30 3.27일 0회(공개 상태 점검 후보)
 - daily 페이지: concepts/daily/2026-11-08.md 생성 · log.md 11-05~11-07 항목 누락(해당일 기록은 index.md에만 존재)
+
+## [2026-11-09] daily-sync | 인덱스 +56/+40, 레지스트리 49개 폴더, 크론 에러 0건, 작업 변경 1,177개(실변경 139)
+- (11-10 실행분에서 복원 — 당시 log.md 미기록)
+- 인덱스: 신규 56 / 갱신 40, 총 15,425 (원본 합계 3,116.2MB, index.db 600.3MiB). 레지스트리 49개 폴더(신규·제거 0).
+- 크론 에러 24h 0건 — 11-03 `RecursionError` 이후 6일 연속 무에러. 게이트웨이 11-07 09:23:57 기동 → 2일 20시간.
+- 작업 변경 1,177 raw / 요약 864 → 툴체인 `.hermes/tools` 725 제외 실변경 139, AppleDouble 0.
+- 주요: 🎬 신규 시리즈 `건축-이야기` 착수·당일 EP00(원당동 상가주택 46.7MB)+EP01(에펠탑 70.9초 48.4MB) 완성, arch-maker 20커밋(헤더 2줄·기본 설정값 저장·3D 조경·계단/문 버그 4계열), k-shorts AI19 `2WtLJlDwa18`(40.25초) 22:00 예약·AI 사용 공개 미저장 재현, auto-trading 주간(KOSPI −11.71%·bear 19일·데이터 파이프라인 5주 정지 지적), post1 `894adcc`, skills 9종 개정.
+- captures 3,786행·352.3MB = 본문 81.1% — 색인 제외 승인 대기 유지. daily 페이지: concepts/daily/2026-11-09.md 생성.
+
+## [2026-11-10] daily-sync | 인덱스 +256/+47, 레지스트리 49개 폴더, 크론 에러 0건, 작업 변경 232개
+- 인덱스: 신규 256 / 갱신 47 (텍스트 없음 스킵 2,113), 총 **15,682** (daily 페이지 반영 후 15,683, FTS 15,683, 원본 합계 3,118.3MB, **index.db 602.9MiB ≈632MB** — 전일 600.3MiB, 600선 재돌파). 루트별 projects 12,957 / hermes 2,162 / documents 364 / wiki 199
+- 레지스트리: **49개 폴더 (git 20 / 로컬 29) — 신규·제거 0**
+- 크론 에러: **24h 0건 — 7일 연속 무에러**. 게이트웨이 11-09 07:19:30 재기동(PID 906) → 가동 22시간(프록시 누적 리스크 없음)
+- 작업 변경 2,122 raw → 요약 232, AppleDouble 0: my-media-agent 158(건축-이야기 EP01~EP04 4편 최종 마스터, 모션 인포그래픽 전환 67.1/74.6/74.4/73.9초, `tts_paced_ep.py`), arch-maker 17(DXF/PDF 도면 임포트 파이프라인 — 시트 분해→픽셀 워터세드, **미커밋 18건**), k-shorts 23(`sjlDbiu-RXY` 43.75초 11-09 20:00 KST 예약·AI 사용 공개 4연속 미저장·trending DB 743), auto-trading 2(11-09 15:45 bear·노출 0·4,727,432원 −5.45%), post1 `d38a4b8` / git 커밋 3개 저장소(post1 1, skills 1, memories 1 — **arch-maker 0**)
+- skills 6종 개정: `dxf-plan-import` 신규, `floorplan-vector-import`(+pdf-vector-extraction·overmerge-diagnosis), `arch-maker-floor-plan`(+cad-pdf-import), `shortform-video-finishing`(+animated-infographics·scripts/anim_info.py), `korean-shorts-full-pipeline`, `stock-analysis-pipeline`(v1.8.0)
+- captures 3,786행·352.3MB = 본문 435.9MB의 **80.8%** — 색인 제외 승인 대기 유지(정책 변경 없음)
+- 리스크(모두 승인 대기): ①arch-maker·my-media-agent 미커밋(롤백 지점 없음) ②`collect_work.py` 툴체인 미제외 ③captures 색인 제외 ④daily-sync 지연 재시도 ⑤`fallback_providers` 구형 지목
+- daily 페이지: concepts/daily/2026-11-10.md 생성 · log.md 11-09 항목 복원
