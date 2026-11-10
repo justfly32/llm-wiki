@@ -948,3 +948,13 @@
 - captures 3,786행·352.3MB = 본문 435.9MB의 **80.8%** — 색인 제외 승인 대기 유지(정책 변경 없음)
 - 리스크(모두 승인 대기): ①arch-maker·my-media-agent 미커밋(롤백 지점 없음) ②`collect_work.py` 툴체인 미제외 ③captures 색인 제외 ④daily-sync 지연 재시도 ⑤`fallback_providers` 구형 지목
 - daily 페이지: concepts/daily/2026-11-10.md 생성 · log.md 11-09 항목 복원
+
+## [2026-11-11] daily-sync | 인덱스 +44/+52, 레지스트리 49개 폴더, 크론 에러 0건, 작업 변경 136개
+- 인덱스: 신규 44 / 갱신 52 (텍스트 없음 스킵 1), 총 **15,727** (FTS 15,727, 원본 합계 3,118.7MB, **index.db 603.5MiB** — 전일 602.9MiB). 루트별 projects 12,987 / hermes 2,174 / documents 366 / wiki 200
+- 레지스트리: **49개 폴더 (git 20 / 로컬 29) — 신규·제거 0**
+- 크론 에러: **24h 0건 — 8일 연속 무에러**. 게이트웨이 PID 906, 11-09 07:19:30 기동 → 가동 1일 22시간 12분
+- 작업 변경 195 raw → 요약 136, AppleDouble 0: arch-maker 31(도면→plan/1 JSON 규격 `dxf_to_json`·기본모델 매칭 `template_import`·이름 정규화 `room_names`·일치율 측정기 `plan_match` 27→100%, 문·창 벽 스냅 2F 17/18·21/21, CAD 변환 서비스 상시화 5스크립트, **커밋 30건**), k-shorts 59(`5F-uXBzIepA`→`aACQVKiKnVA` 38.67초 11-10 22:00 KST 예약·AI 사용 공개 5연속 미저장·trending DB 799·**커밋 0건 unborn main**), my-media-agent 11(23:30 통계 배치·ai10 2,034뷰·심해 애니판30 3뷰·**미커밋 465**), auto-trading 2(11-10 15:45 bear·노출 0·4,725,057원 −5.50%·`LATEST.md` 10-02 정지), post1 `d55eb5b` / git 커밋 4개 저장소(post1 1, arch-maker 30, skills 1, memories 1)
+- skills 8종 개정: `llm-wiki`, `production-deploy-verification`, `stock-analysis-pipeline`(+session-notes), `cad-drawing-pipeline`(+2 refs), `floorplan-vector-import`(+building-outline-and-lot-fit), `korean-land-intake`(+lot-fit-verification·lot_fit_probe.py), `arch-maker-floor-plan`(+2 refs), `web-ui-verification`
+- captures 3,786행·352.3MB = 본문 436.2MB의 **80.8%** — 색인 제외 승인 대기 유지(정책 변경 없음)
+- 리스크(모두 승인 대기): ①**k-shorts 저장소 커밋 0건(롤백 지점 없음)** ②my-media-agent 미커밋 465 ③`collect_work.py` 툴체인 미제외 ④captures 색인 제외 ⑤daily-sync 지연 재시도 ⑥`fallback_providers` 구형 지목
+- daily 페이지: concepts/daily/2026-11-11.md 생성
