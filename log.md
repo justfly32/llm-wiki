@@ -949,6 +949,17 @@
 - 리스크(모두 승인 대기): ①arch-maker·my-media-agent 미커밋(롤백 지점 없음) ②`collect_work.py` 툴체인 미제외 ③captures 색인 제외 ④daily-sync 지연 재시도 ⑤`fallback_providers` 구형 지목
 - daily 페이지: concepts/daily/2026-11-10.md 생성 · log.md 11-09 항목 복원
 
+## [2026-11-12] daily-sync | 인덱스 +277/+61, 레지스트리 49개 폴더(변동 0), 크론 에러 1건(재발 확정), 작업 변경 5,986개(요약 385)
+- 인덱스: 신규 277 / 갱신 61 (텍스트 없음 스킵 1), 총 15,973개 (FTS 15,973, 원본합계 3,120.1MB). 루트별 projects 13,249 / hermes 2,155 / documents 368 / wiki 201. 유형별 web 4,444·code 4,017·config 3,718·doc 2,712·image 717·pptx 104. **index.db 605.7MiB(≈635MB)**, 전일 603.5MiB 대비 +2.2MiB
+- 레지스트리: 49개 폴더 (git 20 / 로컬 29) — 신규·제거 0
+- ⚠ 크론 에러 24h **1건 — `성과 지표 수집`(2a9822bcc83f) 2026-11-11 23:30 script failed, `KeyError: '2026-10-25'`**. 원인 확정: `my-media-agent/tools/export_stats.py` `build_trend()`에서 `daily_keys=days[-14:]`(버킷 14일)인데 `stack()` 루프가 전체 `days`를 순회 → `history.csv`가 15일치(10-25~11-11)가 된 이번 실행에서 창 밖 날짜 유입. weekly(`wks[-8:]`)·monthly(`mos[-6:]`) 동일 구조의 잠재 버그. **결정적 버그라 패치 없이는 매일 23:30 재발 — 조치 필요**. 수정안(1줄, 승인 대기): `for d in [x for x in days if key_of(x) in buckets]:`. 파급은 `summary`/`trend`만 — `stats/ko_cache.json`·`durations.json`·`work/stats_log/*`는 23:30자 부분 산출(ai06 1,077·ai10 2,034·ai11 1,007뷰)
+- 게이트웨이 PID 906, 11-09 07:19:30 기동 → **2일 22시간 11분** 무재시작(3일 임계 11-12 오후~11-13). self-check: 11-11 05:33:28 실행 파일 FAILED 아님
+- 작업 변경 5,986개 raw → 요약 385(AppleDouble 0): **my-media-agent 268** — 🎬 **`건축-이야기` EP05~EP10 6편 당일 렌더**(245파일, 17:45~22:33): 사그라다파밀리아 19:51·타지마할 20:06·숭례문 20:31·경회루 21:39·콜로세움 21:47·피사의사탑 22:31, 각 31~38MB `_최종`+`_모션인포`, `shots` 16컷·`motion/*.json`·`tts`·`build_overlays`; 공용 계층 `compose_anim.py`·`motion_lib.py`(22:26)·`tts_paced_ep.py`(22:04)·`tools/{motion_lint,word_times,render_sheet}`. 시리즈 EP01 `HC0WYkFu2Ng`·EP02 `oxgHghr-ZME`·EP03 `LXR1sNB6tqo`(11-11 15:19) 공개 = 3편, **EP04~EP10 7편 렌더 완료·업로드 대기**(arch_publish.json 1~3만), EP10 `publish.json` 메타 준비; **arch-maker 47파일·커밋 24건** — `tools/dxf_layers.py` 신규(4F 도면 **13실 이름 정확·문 8/8·창 3/3·110ms** vs 기존 11실·문·창 0·1740ms), 도면 보기 240dpi + `_sheets()` 폴백 + `open_doc()` 한글 인코딩(cp1252 오독) 수정, `dxf_compare.py` 검수, `docs/dxf_import_worklog.md`(남은 과제 4건); **k-shorts 31** — `8FOm5LaSicM`→**`exN9I6cD2F4`**(41.25초·1080×1920·shorts_ok·private·publishAt 11-11T11:00Z=20:00 KST), ★**`containsSyntheticMedia` true 저장 — 5연속 미저장 해소**; auto-trading 2 — 11-11 15:45 bear·노출 0·**4,716,602원(−5.67%)**·`LATEST.md` 10-02 정지 지속; post1 `ce1dd5f`; skills 13종 개정(21파일: cad-drawing-pipeline·batch-file-patching·arch-maker-floor-plan+refs5·stock-analysis-pipeline+notes·k-shorts-automaker·youtube-publish-operations·media-agent-studio-ops·cut-canvas-ops·arch-episode-production·series-episode-scripting·motion-graphics-spec·shortform-video-finishing·cron-job-maintenance) / git 커밋 5개 저장소(arch-maker 24·my-media-agent 2·post1 1·skills 1·memories 1)
+- captures 3,786행·352.3MB = 본문 437.5MB의 **80.5%** — **색인 제외 승인 대기 유지(정책 변경 없음)**
+- ⚠ 미커밋: my-media-agent **467**(+2)·arch-maker **17**(새벽 DXF 작업분, 롤백 지점 없음)·auto-trading 14·k-shorts 7(unborn main)
+- 개선 제안: ①`export_stats.py` 14일창/전체순회 불일치 1줄 패치(승인 대기) ②건축 시리즈 EP04~EP10 발행 배치(7편 대기) ③arch-maker 새벽 작업분 커밋 ④`collect_work.py` 툴체인 미제외·captures 색인 제외(승인 대기) ⑤게이트웨이 3일 도달 전 예방 재시작 검토
+- daily 페이지: concepts/daily/2026-11-12.md 생성
+
 ## [2026-11-11] daily-sync | 인덱스 +44/+52, 레지스트리 49개 폴더, 크론 에러 0건, 작업 변경 136개
 - 인덱스: 신규 44 / 갱신 52 (텍스트 없음 스킵 1), 총 **15,727** (FTS 15,727, 원본 합계 3,118.7MB, **index.db 603.5MiB** — 전일 602.9MiB). 루트별 projects 12,987 / hermes 2,174 / documents 366 / wiki 200
 - 레지스트리: **49개 폴더 (git 20 / 로컬 29) — 신규·제거 0**
