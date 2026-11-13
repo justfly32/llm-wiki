@@ -981,3 +981,16 @@
 - ⚠ 미커밋: my-media-agent **467**(3일째 동일 — 워킹트리에만 적재) · auto-trading 14 · k-shorts 7(unborn main) · arch-maker 0
 - 개선 제안: ①`export_stats.py` 14일창/전체순회 불일치 1줄 패치(**2일 연속 재발 — 최우선 승인 대기**) ②게이트웨이 예방 재시작(3일 22시간 초과) ③my-media-agent 467건 커밋(롤백 지점 확보) ④`._*` 색인 스킵·captures 제외(승인 대기) ⑤건축 시리즈 EP04~EP10 발행 7편 + EP12·EP13 3분판 발행 계획
 - daily 페이지: concepts/daily/2026-11-13.md 생성
+
+## [2026-11-14] daily-sync | 인덱스 +160/+35, 레지스트리 50개 폴더(신규·제거 0), 크론 에러 1건(3일 연속 동일 버그 — 조치 필요), 작업 변경 672개(요약 251)
+- 인덱스: 신규 160 / 갱신 35 (텍스트 없음 스킵 1), 총 **16,235개** (FTS 16,235, 원본 합계 3,133.7MB). 루트별 projects 13,460 / hermes 2,200 / documents 372 / wiki 203. 유형별 web 4,480·code 4,094·config 3,815·doc 2,760·image 717·pptx 104·data 74·other 72. **index.db 608.4MiB(≈638MB)**, 전일 606.8MiB 대비 **+1.6MiB**
+- 레지스트리: **50개 폴더 (git 20 / 로컬 30) — 신규·제거 0** (날짜·커밋수만 갱신: post1→2026-11-13, k-shorts 파일 2,829→2,954행)
+- ⚠ 크론 에러 24h **1건 — `성과 지표 수집`(2a9822bcc83f) 2026-11-13 23:30 script failed, `KeyError: '2026-10-25'`** — 11-11·11-12에 이어 **3일 연속 동일 traceback = 확정 버그**. 원인 불변: `export_stats.py` `build_trend()`의 `daily_keys=days[-14:]`(14일 버킷) vs `stack()` 전체 `days` 순회. 파급은 `summary`/`trend` JSON만. **수정안(1줄, 승인 대기)**: `for d in [x for x in days if key_of(x) in buckets]:`. 그 외 `RecursionError`·프로바이더 4xx·Broken pipe 0건
+- 게이트웨이 PID 906, 11-09 07:19:30 기동 → **4일 22시간 10분 무재시작(3일 임계 1.9배)** — 예방 재시작 권고(승인 대기). `~/.hermes/.restart_pending.json`(11-14 00:26) 마커가 남아 있음 = 재시작 요청 미이행
+- 작업 변경 672 raw → 요약 251(AppleDouble 0): **`three-demos`(로컬·비git) 166** — `원리` 시리즈 9편 체계화(`series.json` EP01~EP09) + **첫 3분 편 EP09 ABS(172초) 완성**: `ep09_abs/master.mp4` 62MB → `원리_EP09_ABS_172s.mp4` 8.4MB(02:00), `tools/{physics_abs.py,verify_abs.py,verify_scene.js,render_abs.js}` 신규, 렌더 반복 EP01 v4~v10·EP02 v5·v6·EP05 v2·v3·EP06 v2·v3·EP07 v2·v3·EP08 v2~v7 + `_cc_sample_EP01`·`쇼츠_EP13_시드니_50s`, `out/` mp4 46개; **k-shorts 40** — AI23 「엑소스켈레톤」`NCXSnIShzD0`→**`KQ2ui91NlLE`**(39.9MB·private·11-13 20:00 KST·재생목록 29개·verify ok, ⚠ **AI 사용 공개 미저장**), trending DB 928개(신규 2)·`release_queue.md`; **my-media-agent 9** — 23:30 통계 배치가 `summary`/`trend`만 실패(`history.csv` 392행·`ko_cache.json`·`durations.json`·`stats_log/latest.json` 정상); **lotto-predictor 3** — 1,249회차 예측 `20261113.json`(20:01); **auto-trading 2** — 11-13 15:45 bear·노출 0·**4,700,357원(−5.99%)**·core `411060` 19주; **post1** `9c4b4d1`; **skills 신규 `principles-series-pipeline`**(SKILL.md 114줄 + references 9종: threejs-scene-craft·motion-craft·gear-meshing·verify-patterns·post-processing-cc·detail-standards·flow-visuals·production-stack·blender-integration) / git 커밋 3개 저장소(post1 1·skills 1·memories 1)
+- captures 3,786행·352.3MB = 본문 439.0MB의 **80.2%** — 색인 제외 승인 대기 유지(정책 변경 없음)
+- 새 관찰: **`._*`(AppleDouble) 색인 행 2,302 → 88로 급감**(디스크 `find ~/projects -name '._*'` 0건) — `prune_missing()`이 잔재를 회수한 결과, 남은 88행은 `my-media-agent/projects/법률사례-홍보/`. `._*` 색인 스킵 정책 우선순위 하향
+- 새 관찰: `series.json`의 `format.max_seconds: 60`이 172초 EP09와 **규격 충돌** — 3분 포맷 필드 분리 검토 필요
+- ⚠ 미커밋: my-media-agent **467**(4일째 동일) · auto-trading 14 · k-shorts 7(unborn main) · three-demos **비git**(166파일 롤백 지점 없음) · arch-maker 0
+- 개선 제안: ①`export_stats.py` 1줄 패치(**3일 연속 재발 — 최우선 승인 대기**) ②게이트웨이 재시작(4일 22시간 + 마커 미이행) ③my-media-agent 467건 커밋 ④k-shorts AI 사용 공개 수동 체크리스트 단계 추가 ⑤`series.json` 60초/3분 규격 분리
+- daily 페이지: concepts/daily/2026-11-14.md 생성
