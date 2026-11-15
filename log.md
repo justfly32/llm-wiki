@@ -1007,3 +1007,15 @@
 - ⚠ 미커밋 적체 5일째 증가: my-media-agent **500**(467→500) · auto-trading 14 · k-shorts 8(unborn) — 롱폼 마스터 825MB·장면 이미지가 전부 워킹트리에만 있음
 - 개선 제안: ①게이트웨이 재시작(5일 22시간 + 마커 미이행) ②my-media-agent 500건 커밋 ③k-shorts AI 사용 공개 수동 체크리스트 **차단 단계**로 승격 ④ablelaw-promo·three-demos git 초기화(롤백 지점 부재) ⑤롱폼 정책 문구 갱신 여부 결정
 - daily 페이지: concepts/daily/2026-11-15.md 생성
+## [2026-11-16] daily-sync | 인덱스 +135/+61, 레지스트리 51개 폴더(신규 0), 크론 에러 0건, 작업 변경 11,260개(요약 231)
+- 인덱스: 신규 135 / 갱신 61 (텍스트 없음 스킵 9), 총 **16,598개** (FTS 16,598, 원본 합계 3,139.3MB). 루트별 projects 13,792 / hermes 2,228 / documents 373 / wiki 205. 유형별 web 4,486·code 4,171·config 4,011·doc 2,834·image 717·pptx 104·data 77·other 73. **index.db 611.4MiB(≈641MB)**, 전일 610.3MiB 대비 **+1.1MiB**
+- 레지스트리: **51개 폴더 (git 20 / 로컬 31) — 신규·제거 0**, 날짜·최근커밋만 갱신(my-media-agent 11-16·arch-maker 11-15·post1 11-15)
+- ✅ 크론 에러 24h **0건** — 실행 **148회 / 24 job**(silent 106·구형포맷 42, 실패 0). 11-13 `성과 지표 수집` KeyError 종료 후 3일 연속 무에러. 28ea…11-15 파일의 "FAILED" 매치는 프롬프트 본문 문자열
+- 게이트웨이 PID 906, 11-09 07:19:30 기동 → **6일 22시간 무재시작(3일 임계 2.3배)**. `~/.hermes/.restart_pending.json` mtime이 **11-16 04:30으로 갱신**됐으나 내용 `requested_at`=**11-07 09:23** → 마커가 갱신·미이행 반복. RecursionError 예방 재시작 권고
+- 작업 변경 11,260 raw → 요약 231(AppleDouble 0): **my-media-agent 162** — `건축-이야기` **롱폼 03 「파르테논」** 야간 완주(8챕터 96컷 2,594자, 장면 32 실패 0, TTS 96개 311.59초, 01:00:32→01:15:20 = build 353.07초), 마스터 **841MB(1080p·−16.2 LUFS/peak −1.2)** → 배포본 **63MB(720p·−16.3 LUFS/peak −0.7)**, `_nightly.json` done·`_queue.json` 다음 대기(성 바실리→하기아 소피아→부르즈 할리파); **골프 EP02 파이프라인 커밋 3건**(기획서 v3+96컷 대본·소재 배분 / TTS 96컷 327.5s+three.js 씬 29컷 / Blender 샤프트 13종 34컷+BGM 4구간 생성); **k-shorts 25** — 11-15 2편 발행 `8WClHBbHF4Q`(12:00·25.2MB)·`PIYPQs4AJkQ`(20:00·20.7MB) 둘 다 private 예약·verify ok, ⚠ **AI 사용 공개 미저장 4연속**, trending DB **1,021개**(신규 5·제작済 28 제외); **arch-maker 6** — 평면편집 삭제 UX 정리(커밋 4건: 전체 메뉴 삭제 버튼·계단실 버튼 복구·툴바 정리·내보낸 안 3개 남쪽2/남쪽3/동쪽수정3 추가 5층 60/60/59실); **auto-trading 1** — 11-09~13 주간 분석(bear 24거래일째·노출 0·KOSPI 5,290.53 +4.56%·고점 대비 −41.96%·MA200 −18.89%); **post1** 06:00 index.html(702KB)
+- git 커밋 5개 저장소: post1 `7636110` · my-media-agent `0b25b61`·`062dcd4`·`3730043` · arch-maker `5e592d2`·`49b579b`·`24bf72d`·`7a3661b` · skills `4a8f7c3` · memories `420d438`
+- captures 3,786행·352.3MB = 본문 440.5MB의 **79.9%** — 색인 제외 승인 대기 유지(정책 변경 없음). AppleDouble 색인 **88행**·디스크 `._*` 510개(변동 0)
+- 새 관찰: **롱폼 야간 배치 3일 연속 무인 완주**(EP13 5:46 → EP14 5:53) — "01:00 조립 + 15분"이 표준 소요. 단 `script.json target_sec 480` vs 실제 **353초(73.6%)** 격차 = `series.json format.max_seconds 60` 충돌과 같은 뿌리(포맷 필드 분리 필요)
+- ⚠ 미커밋 적체 6일째 증가: my-media-agent **517**(500→517, 롱폼 마스터 841MB가 워킹트리에만) · auto-trading 14 · k-shorts 8(unborn main)
+- 개선 제안: ①게이트웨이 재시작(6일 22시간 + 마커 11-07 이후 미이행) ②my-media-agent 517건 커밋 ③k-shorts AI 사용 공개 **차단 단계** 승격 ④롱폼 `target_sec`/`max_seconds` 규격 분리
+- daily 페이지: concepts/daily/2026-11-16.md 생성
