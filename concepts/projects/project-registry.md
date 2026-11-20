@@ -1,7 +1,7 @@
 ---
 title: 프로젝트 레지스트리 (전체 폴더 현황)
-created: 2026-11-20
-updated: 2026-11-20
+created: 2026-11-21
+updated: 2026-11-21
 type: projects
 tags: [registry, projects, folder-map, 중복방지]
 links: [[index]]
@@ -11,7 +11,7 @@ links: [[index]]
 
 > **목적:** 새 코딩 작업 시작 전 반드시 이 문서를 확인해 폴더 중복 생성과 위치 혼란을 방지한다.
 > 자동 생성: `python3 ~/wiki/scripts/generate_project_registry.py` (갱신 시 재실행)
-> Last updated: 2026-11-20
+> Last updated: 2026-11-21
 
 ## 규칙 (중복 방지)
 
@@ -31,8 +31,8 @@ links: [[index]]
 | 폴더 | 설명 | remote | 최근 커밋 |
 |------|------|--------|----------|
 | `  golf-swing-repo` | - | justfly32/golf-swing | 2026-11-20 |
+| `  post1` | - | justfly32/post1 | 2026-11-20 |
 | `  golf-ball-explorer` | 골프공 30종 데이터베이스 + three.js 단면/비행 시각화. 영상 제작과 웹 도구에 같은 데이터를 쓴다. | - | 2026-11-19 |
-| `  post1` | - | justfly32/post1 | 2026-11-19 |
 | `  web-craft` | - | - | 2026-11-19 |
 | `  arch-maker` | AI 기반 건축 명세 분석 및 3D BIM(Building Information Modeling) 시각화 스튜디오입니다. | justfly32/arch-maker | 2026-11-18 |
 | `  my-media-agent` | 다양한 생성형 AI 이미지, 영상 및 LLM 모델을 자유롭게 스위칭하며 콘텐츠를 제작할 수 있는 통합 미디어 에이전트 CLI입니다. | justfly32/my-media-agent | 2026-11-17 |
@@ -77,17 +77,17 @@ links: [[index]]
 | `  html-slides` | 브라우저에서 열면 바로 발표 가능한 인터랙티브 슬라이드. | 14 |
 | `  html2pptx` | HTML 디자인을 PPTX로 최대한 보존 변환하는 도구. | 15 |
 | `  internet-checker` | SKB, KT, LGU+ 통신 3사의 초고속인터넷 주소별 서비스 가용성을 한 번에 조회하는 도구입니다. | 15 |
-| `  k-shorts-automaker` | - | 4045 |
+| `  k-shorts-automaker` | - | 4388 |
 | `  k-shorts-automator_tmp` | - | 14 |
 | `  kakao-hybrid-adapter` | [GPTers 글 «카톡 매크로 시대 끝? …»](https://www.gpters.org/dev/post/kakaotalk-macro-era-how-lEVSOKmyNxOqCtI)에서 다룬 아키텍처를 코드로 옮긴 예 | 22 |
-| `  lotto-predictor` | 1231회차 전체 데이터 기반 번호별 확률 학습 예측 모델. | 30 |
+| `  lotto-predictor` | 1231회차 전체 데이터 기반 번호별 확률 학습 예측 모델. | 33 |
 | `  orchestration-workflow` | - | 1 |
 | `✅ pc-llm-dashboard` | PC 상태 확인 + LLM 사용량 확인 통합 모니터링 대시보드. | 25 |
 | `  personal-site` | - | 90 |
 | `  phone-report` | - | 8 |
 | `  sangga-tax-calc` | 상가주택(1층 근린생활시설 + 주거층)을 신축 → 보유 → 임대 → 처분하는 과정의 | 37 |
 | `✅ simpli-gif-maker` | 텍스트 설명을 받아 간단한 졸라맨 GIF 애니메이션을 생성합니다. | 4232 |
-| `  story-workshop` | - | 210 |
+| `  story-workshop` | - | 211 |
 | `  three-demos` | - | 381 |
 | `  useful-sites` | - | 1 |
 | `  web-crawler-work` | - | 23 |
