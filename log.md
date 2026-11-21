@@ -1085,3 +1085,14 @@
 - ⚠ 미커밋 적체 11일째: my-media-agent **524**(487→518→520→524) · k-shorts 19(unborn main) · golf-swing 1 / 비git: story-workshop · ansishorts · ablelaw-promo
 - 개선 제안: ①게이트웨이 예방 재시작(11일 22시간 + 마커 11-07 이후 14일 미이행) ②my-media-agent 524건 커밋 ③story-workshop·ansishorts git init ④k-shorts `tmp_*` 스크립트 정리 후 커밋(오늘도 2개 추가)
 - daily 페이지: concepts/daily/2026-11-21.md 생성
+
+## [2026-11-22] daily-sync | 인덱스 +115/+83, 레지스트리 57개 폴더, 크론 에러 0건, 작업 변경 8,652개(요약 218)
+- 인덱스: 신규 115 / 갱신 83 (텍스트 없음 스킵 9), 총 **13,615개** (FTS 13,615, 원본 합계 1,412.5MB, **index.db 162.3MiB ≈170.2MB**, 전일 161.2MiB — +1.1MiB). 루트별 projects 10,710 / hermes 2,309 / documents 385 / wiki 211. 유형별 code 4,498 · config 4,243 · doc 2,980 · web 727 · image 717
+- 레지스트리: **57개 폴더 (git 23 / 로컬 34)** — 신규·제거 0
+- 크론 에러 24h **0건** · 96h **0건**. `executions.db` completed 1,000 / running 1 / failed 0 — 11-13 KeyError 이후 **9일 연속 무에러**(단 completed 수치 전일과 동일 → 집계 갱신 정지 의심). 자기 job 헤더(2026-11-21_05-33-27) 정상
+- 게이트웨이 PID 906, 11-09 07:19:30 기동 → **12일 22시간 무재시작**. `.restart_pending.json` mtime 11-22 04:20이나 `requested_at`=11-07 09:23:56 = **이행 15일째 없음**
+- 작업 변경 8,652 raw → 요약 218 (AppleDouble 0): **my-media-agent 96 — 🎬 골프-과학 EP04 「샤프트의 진실」 대본 96컷 확정(17:10)·측정 원장 3단, EP03 「스윙의 궤도」 마감(build 329.1초·96컷·1080p·−16.4 LUFS) + 마스터 외장 이관 542MB + 배포본 61.8MB/28MB + 쇼츠 8편 S1~S8 예약(11-25~29), 롱폼 `F3oTOhJLoR0` 11-24 19:00, 나레이션 라우팅 3커밋(Orus 기본→aoede/orus→내용 기반 남·여)**; **golf-swing-repo 25(커밋 16) — D-Plane 스핀축→공력(바람·기온·고도·습도)→기어효과+기하 임팩트→contact 프로브→임팩트 순간 접촉 보정**; **k-shorts 59 — AI 2편 `HLvYWh5hwaI`(12:00)·`f59qWm7EpmU`(21:00), `tmp_*` 38개 추가(누적 236/289 = 81%)**; story-workshop 4(비git); **auto-trading 주간 결산 −0.92% vs KOSPI −7.95%(+7.4%p 방어)·bear 29거래일·금 헤지 훼손·장후 코어 체결률 1/5**; post1 `cd02dec`
+- ⚠ 미커밋: my-media-agent **2**(524→2 급감, EP04 커밋으로 11일 적체 해소) · k-shorts 19 · arch-maker 16 · golf-swing 1 / 비git: story-workshop · ansishorts · ablelaw-promo
+- 개선 제안: ①게이트웨이 예방 재시작 1회(12일 22시간 + 마커 15일 미이행) ②`restart_pending` 요청 무시 시 재요청 시각을 올리지 않게 구조 점검 ③k-shorts `tmp_*` 236개를 `tools/_tmp/`로 이동(삭제는 Bear J 직접) ④EP04 스틸 96장 생성이 다음 작업 단위
+- daily 페이지: concepts/daily/2026-11-22.md 생성
+
