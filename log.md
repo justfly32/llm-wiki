@@ -1,16 +1,3 @@
-## [2026-11-23] daily-sync | 인덱스 +132/+62, 레지스트리 58개 폴더(+1 recon-chronicle), 크론 에러 0건(집계기)·실패 1건 발견(executions.db), 작업 변경 765개(요약 202)
-- 인덱스: 신규 132 / 갱신 62 (텍스트 없음 333), 총 **13,748개** (FTS 13,748, 원본 합계 1,416.0MB, **index.db 163.7MiB ≈171.6MB**, 전일 162.3MiB — +1.4MiB). 루트별 projects 10,818 / hermes 2,333 / documents 385 / wiki 212
-- 레지스트리: **58개 폴더 (git 23 / 로컬 35)** — 신규 `recon-chronicle`(580K·10파일) · k-shorts 파일 5,047→5,494 · story-workshop 212→213
-- 크론: 집계기 24h·96h **0건**이나 `executions.db` 교차확인서 **failed 1건** = `영상허브 갱신(07:40)` 79717d2c6a04 · 11-22 07:40 `script failed`(YouTube Analytics 토큰 갱신 HTTP 400 → `tools/yt_analytics_setup.py` 재동의 필요, retention·daily_views만 결손·조회수 통계 정상). **미탐 원인 = `collect_cron_errors.py:84`가 `Status: script failed`(소문자) 미매칭** → 1줄 수정 제안. `.restart_pending.json` `requested_at`=11-07 09:23:56(15일) 그대로, 실제로는 게이트웨이 11-22 10:35 SIGTERM→10:51:48 재기동(가동 18h40m)
-- 작업 변경 765 raw → 요약 202, AppleDouble 0: **k-shorts 76 — AI 11-22 2편 `0Y-no7b85Xk`(제당 설탕 12:00)·`ea2OE7lCIuE`(제재소 판재 21:00) private+publishAt 실측·재생목록 46→47, 컷표 2종·trending 1,367(신규 6)·배경 6종**; **my-media-agent 31 — 골프 EP03 썸네일(롱폼+쇼츠 S1~S8)·`golf_ep03_thumb.py`/`golf_short_thumbs.py` 신규·23:30 통계 109편(유지율 96편 중앙 63.6
-## [2026-11-23] daily-sync | 인덱스 +132/+62, 레지스트리 58개 폴더(+1 recon-chronicle), 크론 에러 0건(집계기)·실패 1건 발견(executions.db), 작업 변경 765개(요약 202)
-- 인덱스: 신규 132 / 갱신 62 (텍스트 없음 333), 총 **13,748개** (FTS 13,748, 원본 합계 1,416.0MB, **index.db 163.7MiB ≈171.6MB**, 전일 162.3MiB — +1.4MiB). 루트별 projects 10,818 / hermes 2,333 / documents 385 / wiki 212
-- 레지스트리: **58개 폴더 (git 23 / 로컬 35)** — 신규 `recon-chronicle`(580K·10파일) · k-shorts 파일 5,047→5,494 · story-workshop 212→213
-- 크론: 집계기 24h·96h **0건**이나 `executions.db` 교차확인서 **failed 1건** = `영상허브 갱신(07:40)` 79717d2c6a04 · 11-22 07:40 `script failed`(YouTube Analytics 토큰 갱신 HTTP 400 → `tools/yt_analytics_setup.py` 재동의 필요, retention·daily_views만 결손·조회수 통계 정상). **미탐 원인 = `collect_cron_errors.py:84`가 `Status: script failed`(소문자) 미매칭** → 1줄 수정 제안. `.restart_pending.json` `requested_at`=11-07 09:23:56(15일) 그대로, 실제로는 게이트웨이 11-22 10:35 SIGTERM→10:51:48 재기동(가동 18h40m)
-- 작업 변경 765 raw → 요약 202, AppleDouble 0: **k-shorts 76 — AI 11-22 2편 `0Y-no7b85Xk`(제당 설탕 12:00)·`ea2OE7lCIuE`(제재소 판재 21:00) private+publishAt 실측·재생목록 46→47, 컷표 2종·trending 1,367(신규 6)·배경 6종**; **my-media-agent 31 — 골프 EP03 썸네일(롱폼+쇼츠 S1~S8)·`golf_ep03_thumb.py`/`golf_short_thumbs.py` 신규·23:30 통계 109편(유지율 96편 중앙 63.6%)**; **arch-maker 29(커밋 8) — 개산↔내역서 단일 출처(대조행 0.1%)·마감 4종·외벽 면적 버그 2건·시스템에어컨 18대·자동저장 초/ms 버그, 트리 clean**; **recon-chronicle 신규(비git) 「재건천하」 7화+PDF**; auto-trading 주간(KOSPI 4,869.96 −7.95%·5,000선 붕괴·bear 29일·노출 0.0); post1 `c0ff0db`; skills `66330f4`; memories `7651fce`
-- ⚠ 미커밋: k-shorts **38** · auto-trading 14 · my-media-agent 8 · golf-swing 2 / 비git: story-workshop · recon-chronicle
-- daily 페이지: concepts/daily/2026-11-23.md 생성
-
 ## [2026-11-09] daily-sync | 인덱스 +56/+40, 레지스트리 49개 폴더(변동 0), 크론 에러 0건, 작업 변경 1,177개(실변경 139)
 - 인덱스: 신규 56 / 갱신 40 (텍스트 없음 스킵 1), 총 15,425개 (FTS 15,425, 원본합계 3,116.2MB). 루트별 projects 12,713 / hermes 2,153 / documents 361 / wiki 198. 유형별 web 4,417·code 3,904·config 3,425·doc 2,603·image 716. **index.db 600.3MiB(629.5MB)**, 전일 599.9MiB 대비 +0.4MiB
 - 레지스트리: 49개 폴더 (git 20 / 로컬 29) — 신규·제거 0, 커밋 최신화만(arch-maker·post1 11-08, k-shorts 1,960→2,113)
@@ -1108,3 +1095,11 @@
 - ⚠ 미커밋: my-media-agent **2**(524→2 급감, EP04 커밋으로 11일 적체 해소) · k-shorts 19 · arch-maker 16 · golf-swing 1 / 비git: story-workshop · ansishorts · ablelaw-promo
 - 개선 제안: ①게이트웨이 예방 재시작 1회(12일 22시간 + 마커 15일 미이행) ②`restart_pending` 요청 무시 시 재요청 시각을 올리지 않게 구조 점검 ③k-shorts `tmp_*` 236개를 `tools/_tmp/`로 이동(삭제는 Bear J 직접) ④EP04 스틸 96장 생성이 다음 작업 단위
 - daily 페이지: concepts/daily/2026-11-22.md 생성
+
+## [2026-11-23] daily-sync | 인덱스 +132/+62, 레지스트리 58개 폴더(+1 recon-chronicle), 크론 에러 0건(집계기)·실패 1건 발견(executions.db), 작업 변경 765개(요약 202)
+- 인덱스: 신규 132 / 갱신 62 (텍스트 없음 333), 총 **13,748개** (FTS 13,748, 원본 합계 1,416.0MB, **index.db 163.7MiB ≈171.6MB**, 전일 162.3MiB — +1.4MiB). 루트별 projects 10,818 / hermes 2,333 / documents 385 / wiki 212
+- 레지스트리: **58개 폴더 (git 23 / 로컬 35)** — 신규 `recon-chronicle`(580K·10파일) · k-shorts 파일 5,047→5,494 · story-workshop 212→213
+- 크론: 집계기 24h·96h **0건**이나 `executions.db` 교차확인서 **failed 1건** = `영상허브 갱신(07:40)` 79717d2c6a04 · 11-22 07:40 `script failed`(YouTube Analytics 토큰 갱신 HTTP 400 → `tools/yt_analytics_setup.py` 재동의 필요, retention·daily_views만 결손·조회수 통계 정상). **미탐 원인 = `collect_cron_errors.py:84`가 `Status: script failed`(소문자) 미매칭** → 1줄 수정 제안. `.restart_pending.json` `requested_at`=11-07 09:23:56(15일) 그대로, 실제로는 게이트웨이 11-22 10:35 SIGTERM→10:51:48 재기동(가동 18h40m)
+- 작업 변경 765 raw → 요약 202, AppleDouble 0: **k-shorts 76 — AI 11-22 2편 `0Y-no7b85Xk`(제당 설탕 12:00)·`ea2OE7lCIuE`(제재소 판재 21:00) private+publishAt 실측·재생목록 46→47, 컷표 2종·trending 1,367(신규 6)·배경 6종**; **my-media-agent 31 — 골프 EP03 썸네일(롱폼+쇼츠 S1~S8)·`golf_ep03_thumb.py`/`golf_short_thumbs.py` 신규·23:30 통계 109편(유지율 96편 중앙 63.6%)**; **arch-maker 29(커밋 8) — 개산↔내역서 단일 출처(대조행 0.1%)·마감 4종·외벽 면적 버그 2건·시스템에어컨 18대·자동저장 초/ms 버그, 트리 clean**; **recon-chronicle 신규(비git) 「재건천하」 7화+PDF**; auto-trading 주간(KOSPI 4,869.96 −7.95%·5,000선 붕괴·bear 29일·노출 0.0); post1 `c0ff0db`; skills `66330f4`; memories `7651fce`
+- ⚠ 미커밋: k-shorts **38** · auto-trading 14 · my-media-agent 8 · golf-swing 2 / 비git: story-workshop · recon-chronicle
+- daily 페이지: concepts/daily/2026-11-23.md 생성
